@@ -125,10 +125,13 @@
 <a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim pb-1 transition-colors duration-300 relative" data-target="introduction" href="#introduction">Introduction</a>
 <a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim pb-1 transition-colors duration-300 relative" data-target="about" href="about.html">About</a>
 <a class="nav-link dark:text-tertiary-fixed-dim pb-1 font-bold transition-colors duration-300 relative text-tertiary" data-target="map" href="#map">Map</a>
-<button class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center p-2 rounded-full hover:bg-surface-variant duration-300">
+<button type="button" class="nav-search-btn text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center p-2 rounded-full hover:bg-surface-variant duration-300" aria-label="Search locations">
 <span class="material-symbols-outlined" data-icon="search">search</span>
 </button>
 </div>
+<button type="button" class="nav-search-btn md:hidden text-on-surface p-2 hover:bg-surface-variant rounded-full transition-colors" aria-label="Search locations">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
 <button class="md:hidden text-on-surface p-2 hover:bg-surface-variant rounded-full transition-colors">
 <span class="material-symbols-outlined" data-icon="menu">menu</span>
 </button>
@@ -284,4 +287,6 @@
         });
     });
 </script>
+<script src="js/locations.js"></script>
+<script src="js/site-search.js"></script>
 </body></html>

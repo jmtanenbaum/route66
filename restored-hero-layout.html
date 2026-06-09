@@ -279,11 +279,14 @@
 <a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim pb-1 transition-colors duration-300 relative" data-target="introduction" href="#introduction">Introduction</a>
 <a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim pb-1 transition-colors duration-300 relative" data-target="about" href="about.html">About</a>
 <div class="absolute bottom-0 left-0 h-0.5 bg-tertiary transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]" id="nav-indicator" style="width: 45.9844px; transform: translateX(0px);"></div>
-<a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim pb-1 transition-colors duration-300 relative" data-target="map" href="#map">Map</a><button class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center p-2 rounded-full hover:bg-surface-variant duration-300">
+<a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim pb-1 transition-colors duration-300 relative" data-target="map" href="#map">Map</a><button type="button" class="nav-search-btn text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center p-2 rounded-full hover:bg-surface-variant duration-300" aria-label="Search locations">
 <span class="material-symbols-outlined" data-icon="search">search</span>
 </button>
 </div>
 <!-- Mobile Menu Button -->
+<button type="button" class="nav-search-btn md:hidden text-on-surface p-2 hover:bg-surface-variant rounded-full transition-colors" aria-label="Search locations">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
 <button class="md:hidden text-on-surface p-2 hover:bg-surface-variant rounded-full transition-colors">
 <span class="material-symbols-outlined" data-icon="menu">menu</span>
 </button>
@@ -333,7 +336,7 @@
 <!-- Section Transition: Introduction -> Map -->
 <div class="road-line" aria-hidden="true"></div>
 <!-- Main Map Section -->
-<section class="reveal bg-surface flex flex-col md:flex-row h-[800px] max-h-[90vh]" id="map"><div class="relative w-full h-full flex overflow-hidden"><div class="absolute top-6 left-6 z-40 w-80 flex flex-col gap-4 pointer-events-none"><div class="bg-surface-container-lowest/95 backdrop-blur-md p-6 rounded-xl shadow-xl border border-outline pointer-events-auto"><h3 class="font-headline-md text-headline-md text-primary mb-4 flex items-center gap-2"><span class="material-symbols-outlined">map</span> Archive Map</h3><div class="space-y-4"><div class="relative"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline-variant">search</span><input class="w-full pl-10 pr-4 py-2 bg-surface-container-low border border-outline rounded-lg text-sm focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all" id="map-search" placeholder="Search locations..." type="text"></div><div class="space-y-2"><h4 class="font-label-caps text-[10px] text-outline uppercase tracking-widest">Categories</h4><div class="flex flex-wrap gap-2"><button class="px-3 py-1 rounded-full border border-primary bg-primary text-white text-xs font-ui-main transition-all">Lesbian Space</button><button class="px-3 py-1 rounded-full border border-outline text-on-surface-variant text-xs font-ui-main hover:border-secondary transition-all">Mixed LGBT</button><button class="px-3 py-1 rounded-full border border-outline text-on-surface-variant text-xs font-ui-main hover:border-tertiary transition-all">Owned Business</button></div></div><div class="pt-2"><div class="flex justify-between items-center mb-2"><h4 class="font-label-caps text-[10px] text-outline uppercase tracking-widest">Active Era</h4><span class="text-primary font-bold text-sm" id="year-display">1975</span></div><input class="w-full h-1.5 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-primary" id="year-slider" max="2026" min="1920" step="1" type="range" value="1975"><div class="flex justify-between text-[10px] font-label-caps text-outline-variant mt-1"><span class="">1920</span><span class="">1950</span><span class="">1980</span><span class="">2026</span></div></div></div></div></div><div class="flex-1 relative bg-surface-dim cursor-grab active:cursor-grabbing"><img alt="West Hollywood Map" class="absolute inset-0 w-full h-full object-cover opacity-80 sepia-[.1]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDlZJkG3NuZbjxSZ3CSubR2oNeGU7ahqqa6WNjzr7_ZyY3HIS8CJ1roPI69QXfgcLupr1cR5yVsyGN-hZGz29hfYNEazGu66UjDpUdIqhVOVxVCf2Mcf2Bz10rHOMfYXH3R_J3DzQ49LrQowSm78T1E-D20Lo_AxlelGm5IDhfU-GTqACVXpBbeJDaqVJmzN4EUPEwXFoT5yS1Qw_LvQG635iisclCZSNpZGrljzH1K077Cq3CN5yNYy7Cyi5Zbd6qDpZ4jfv1qQ"><div class="absolute inset-0" id="map-pins-container"></div><div class="absolute top-6 right-6 flex flex-col gap-2"><button class="w-10 h-10 bg-white border border-outline rounded-lg shadow-md flex items-center justify-center hover:text-primary transition-colors"><span class="material-symbols-outlined">add</span></button><button class="w-10 h-10 bg-white border border-outline rounded-lg shadow-md flex items-center justify-center hover:text-primary transition-colors"><span class="material-symbols-outlined">remove</span></button></div></div><div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-50 w-[400px] max-w-[90vw] bg-surface-container-lowest rounded-2xl shadow-2xl border border-outline overflow-hidden hidden animate-in fade-in slide-in-from-bottom-4 duration-300" id="location-popup"><div class="h-48 bg-surface-variant relative"><img class="w-full h-full object-cover" id="popup-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgcng9IjgiIGZpbGw9IiNlOGVhZWQiLz48cGF0aCBkPSJNMTcwIDEzMCBsMzAgNDAgbDIwLTE1IGw0MCA1NSBIMTQweiIgZmlsbD0iI2JkYzFjNiIvPjxjaXJjbGUgY3g9IjI1MCIgY3k9IjEyMCIgcj0iMTgiIGZpbGw9IiNiZGMxYzYiLz48L3N2Zz4="><button class="absolute top-3 right-3 w-8 h-8 bg-black/20 hover:bg-black/40 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-colors" id="close-popup"><span class="material-symbols-outlined text-sm">close</span></button></div><div class="p-6"><div class="flex justify-between items-start mb-2"><h4 class="font-headline-md text-2xl text-on-surface" id="popup-name"></h4><span class="text-[10px] font-label-caps bg-primary/10 text-primary px-2 py-1 rounded border border-primary/20" id="popup-dates"></span></div><p class="text-sm text-on-surface-variant mb-4 flex items-center gap-1" id="popup-address"><span class="material-symbols-outlined text-sm">location_on</span> <span></span></p><p class="text-essay-body text-sm text-on-surface leading-relaxed mb-6 line-clamp-3" id="popup-desc"></p><button class="w-full py-3 bg-tertiary-container hover:bg-tertiary text-white font-label-caps text-xs uppercase rounded-lg transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-2">Read Full History <span class="material-symbols-outlined text-sm">arrow_forward</span></button></div></div></div></section>
+<section class="reveal bg-surface flex flex-col md:flex-row h-[800px] max-h-[90vh]" id="map"><div class="relative w-full h-full flex overflow-hidden"><div class="absolute top-6 left-6 z-40 w-80 flex flex-col gap-4 pointer-events-none"><div class="bg-surface-container-lowest/95 backdrop-blur-md p-6 rounded-xl shadow-xl border border-outline pointer-events-auto"><h3 class="font-headline-md text-headline-md text-primary mb-4 flex items-center gap-2"><span class="material-symbols-outlined">map</span> Archive Map</h3><div class="space-y-4"><div class="relative"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline-variant">search</span><input class="w-full pl-10 pr-4 py-2 bg-surface-container-low border border-outline rounded-lg text-sm focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all" id="map-search" placeholder="Search locations..." type="text"></div><div class="space-y-2"><h4 class="font-label-caps text-[10px] text-outline uppercase tracking-widest">Categories</h4><div class="flex flex-wrap gap-2"><button class="px-3 py-1 rounded-full border border-primary bg-primary text-white text-xs font-ui-main transition-all">Lesbian Space</button><button class="px-3 py-1 rounded-full border border-outline text-on-surface-variant text-xs font-ui-main hover:border-secondary transition-all">Mixed LGBT</button><button class="px-3 py-1 rounded-full border border-outline text-on-surface-variant text-xs font-ui-main hover:border-tertiary transition-all">Owned Business</button></div></div><div class="pt-2"><div class="flex justify-between items-center mb-2"><h4 class="font-label-caps text-[10px] text-outline uppercase tracking-widest">Active Era</h4><span class="text-primary font-bold text-sm" id="year-display">1975</span></div><input class="w-full h-1.5 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-primary" id="year-slider" max="2026" min="1920" step="1" type="range" value="1975"><div class="flex justify-between text-[10px] font-label-caps text-outline-variant mt-1"><span class="">1920</span><span class="">1950</span><span class="">1980</span><span class="">2026</span></div></div></div></div></div><div class="flex-1 relative bg-surface-dim cursor-grab active:cursor-grabbing"><img alt="West Hollywood Map" class="absolute inset-0 w-full h-full object-cover opacity-80 sepia-[.1]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDlZJkG3NuZbjxSZ3CSubR2oNeGU7ahqqa6WNjzr7_ZyY3HIS8CJ1roPI69QXfgcLupr1cR5yVsyGN-hZGz29hfYNEazGu66UjDpUdIqhVOVxVCf2Mcf2Bz10rHOMfYXH3R_J3DzQ49LrQowSm78T1E-D20Lo_AxlelGm5IDhfU-GTqACVXpBbeJDaqVJmzN4EUPEwXFoT5yS1Qw_LvQG635iisclCZSNpZGrljzH1K077Cq3CN5yNYy7Cyi5Zbd6qDpZ4jfv1qQ"><div class="absolute inset-0" id="map-pins-container"></div><div class="absolute top-6 right-6 flex flex-col gap-2"><button class="w-10 h-10 bg-white border border-outline rounded-lg shadow-md flex items-center justify-center hover:text-primary transition-colors"><span class="material-symbols-outlined">add</span></button><button class="w-10 h-10 bg-white border border-outline rounded-lg shadow-md flex items-center justify-center hover:text-primary transition-colors"><span class="material-symbols-outlined">remove</span></button></div></div><div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-50 w-[400px] max-w-[90vw] bg-surface-container-lowest rounded-2xl shadow-2xl border border-outline overflow-hidden hidden animate-in fade-in slide-in-from-bottom-4 duration-300" id="location-popup"><div class="h-48 bg-surface-variant relative"><img class="w-full h-full object-cover" id="popup-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgcng9IjgiIGZpbGw9IiNlOGVhZWQiLz48cGF0aCBkPSJNMTcwIDEzMCBsMzAgNDAgbDIwLTE1IGw0MCA1NSBIMTQweiIgZmlsbD0iI2JkYzFjNiIvPjxjaXJjbGUgY3g9IjI1MCIgY3k9IjEyMCIgcj0iMTgiIGZpbGw9IiNiZGMxYzYiLz48L3N2Zz4="><button class="absolute top-3 right-3 w-8 h-8 bg-black/20 hover:bg-black/40 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-colors" id="close-popup"><span class="material-symbols-outlined text-sm">close</span></button></div><div class="p-6"><div class="flex justify-between items-start mb-2"><h4 class="font-headline-md text-2xl text-on-surface" id="popup-name"></h4><span class="text-[10px] font-label-caps bg-primary/10 text-primary px-2 py-1 rounded border border-primary/20" id="popup-dates"></span></div><p class="text-sm text-on-surface-variant mb-4 flex items-center gap-1" id="popup-address"><span class="material-symbols-outlined text-sm">location_on</span> <span></span></p><p class="text-essay-body text-sm text-on-surface leading-relaxed mb-6 line-clamp-3" id="popup-desc"></p><button class="w-full py-3 bg-tertiary-container hover:bg-tertiary text-white font-label-caps text-xs uppercase rounded-lg transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-2 hidden" id="popup-detail-btn" type="button">Read Full History <span class="material-symbols-outlined text-sm">arrow_forward</span></button></div></div></div></section>
 <!-- Footer -->
 <footer class="bg-surface-container-highest dark:bg-inverse-surface text-on-surface dark:text-inverse-on-surface relative bottom-0 w-full border-t-4 border-primary dark:border-primary-fixed flat no shadows font-ui-main text-ui-main">
 <div class="flex flex-col md:flex-row justify-between items-center py-12 px-margin-desktop gap-8 transition-opacity duration-300">
@@ -400,67 +403,10 @@
         });
 
     });
-</script><script>
-(function() {
-    const locations = [
-        { name: "The Abbey", address: "692 N Robertson Blvd", lat: 34.0835, lng: -118.3854, open: 1991, close: 2026, type: "bar", desc: "The Abbey opened in 1991 as a coffee shop, and has since become a significant LGBTQ+ cultural landmark." },
-        { name: "Tess's Café International", address: "8711 Sunset Blvd", lat: 34.0917, lng: -118.3810, open: 1936, close: 1942, type: "bar", desc: "A lesbian nightclub owned and operated by Elmer and Tess Wheeler, featuring early drag kings." },
-        { name: "Connexxus", address: "9054 Santa Monica Blvd", lat: 34.0816, lng: -118.3885, open: 1985, close: 1988, type: "nonprofit", desc: "A feminist and lesbian community center in West Hollywood during the mid- to late 1980s." },
-        { name: "Different Light Bookstore", address: "8853 Santa Monica Blvd", lat: 34.0854, lng: -118.3836, open: 1990, close: 2009, type: "nonprofit", desc: "An independent LGBT bookstore retailer and home to the Lesbian Writers Series." },
-        { name: "Fan Girl Cafe", address: "8157 Santa Monica Blvd", lat: 34.0911, lng: -118.3667, open: 2023, close: 2026, type: "cafe", desc: "Opened in 2023 to celebrate women and LGBTQ musicians." },
-        { name: "Garden of Allah Hotel", address: "8152 Sunset Blvd", lat: 34.0972, lng: -118.3663, open: 1927, close: 1959, type: "hotel", desc: "Originally the estate of lesbian silent film star Alla Nazimova, a hub for Hollywood's LGBTQ+ community." },
-        { name: "The Palms Bar", address: "8572 Santa Monica Blvd", lat: 34.0882, lng: -118.3782, open: 1965, close: 2013, type: "bar", desc: "The oldest continuously operating lesbian bar in Southern California." }
-    ];
-
-    const icons = {
-        bar: 'local_bar',
-        cafe: 'restaurant',
-        nonprofit: 'menu_book',
-        hotel: 'bed',
-        misc: 'star'
-    };
-
-    const container = document.getElementById('map-pins-container');
-    const slider = document.getElementById('year-slider');
-    const display = document.getElementById('year-display');
-    const popup = document.getElementById('location-popup');
-
-    function updatePins(year) {
-        container.innerHTML = '';
-        locations.forEach(loc => {
-            if (loc.open <= year && loc.close >= year) {
-                const pin = document.createElement('div');
-                pin.className = 'absolute cursor-pointer group transition-transform hover:scale-110';
-                // Simple mapping of lat/lng to % for simulation
-                const top = ((34.1 - loc.lat) * 5000) + 40;
-                const left = ((loc.lng + 118.4) * 5000) + 50;
-                pin.style.top = top + '%';
-                pin.style.left = left + '%';
-                pin.innerHTML = `<div class="w-8 h-8 bg-primary text-white rounded-t-lg rounded-b-2xl flex items-center justify-center shadow-md border-2 border-white"><span class="material-symbols-outlined text-sm">${icons[loc.type] || 'location_on'}</span></div>`;
-                pin.onclick = () => showPopup(loc);
-                container.appendChild(pin);
-            }
-        });
-    }
-
-    function showPopup(loc) {
-        document.getElementById('popup-name').textContent = loc.name;
-        document.getElementById('popup-address').querySelector('span').textContent = loc.address;
-        document.getElementById('popup-dates').textContent = `${loc.open} - ${loc.close === 2026 ? 'Present' : loc.close}`;
-        document.getElementById('popup-desc').textContent = loc.desc;
-        popup.classList.remove('hidden');
-    }
-
-    slider.oninput = (e) => {
-        display.textContent = e.target.value;
-        updatePins(parseInt(e.target.value));
-    };
-
-    document.getElementById('close-popup').onclick = () => popup.classList.add('hidden');
-
-    updatePins(1975);
-})();
 </script>
+<script src="js/locations.js"></script>
+<script src="js/map-view.js"></script>
+<script src="js/site-search.js"></script>
 
 
 
