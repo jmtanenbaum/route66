@@ -110,13 +110,15 @@
 <!-- TopNavBar (Shared Component) -->
 <nav class="bg-background/80 dark:bg-background/80 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant dark:border-outline flat no shadows font-ui-main text-ui-main transition-all duration-300" id="main-nav">
 <div class="flex justify-between items-center px-margin-desktop max-w-container-max mx-auto py-4">
-<a class="flex items-center gap-4 group" href="#">
-<img alt="Mazer Logo" class="h-16 w-16 object-contain group-hover:scale-110 transition-transform duration-500 cubic-bezier(0.4, 0, 0.2, 1)" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSpx1HraMKJ9rLF0vW85sycBHkzP0Rha4NqfVx8lWHMWla9pqZB2yF7XBARvX0ZKVkTu2bDNgsTIltcB9db8Ex0KV1dfK9pQBn1zNVfTm9qhUajxDYcraax-8K9AbDFzoE9HrSNNg1D_B-nQQwLWWDca8n8AXIMd5N2Yr9pcnOY6_fV8-ei5zuflFyyOWRpMfcc7GhNru21eHd-OzP3yqwb-aBRyhZ7hz7fyHeBDszLxzK7ZfiwuzfCBmHj4MYvxEPCp6JhBfXMw">
+<a class="flex items-center gap-3 sm:gap-4 group min-w-0 flex-1 mr-2" href="#">
+<img alt="Mazer Logo" class="h-16 w-16 shrink-0 object-contain group-hover:scale-110 transition-transform duration-500 cubic-bezier(0.4, 0, 0.2, 1)" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSpx1HraMKJ9rLF0vW85sycBHkzP0Rha4NqfVx8lWHMWla9pqZB2yF7XBARvX0ZKVkTu2bDNgsTIltcB9db8Ex0KV1dfK9pQBn1zNVfTm9qhUajxDYcraax-8K9AbDFzoE9HrSNNg1D_B-nQQwLWWDca8n8AXIMd5N2Yr9pcnOY6_fV8-ei5zuflFyyOWRpMfcc7GhNru21eHd-OzP3yqwb-aBRyhZ7hz7fyHeBDszLxzK7ZfiwuzfCBmHj4MYvxEPCp6JhBfXMw">
 <div class="hidden md:flex flex-col">
 <span class="font-display-lg text-primary dark:text-primary-fixed-dim uppercase tracking-wider leading-tight">Discovering West Hollywood's Route 66</span>
 <span class="font-label-caps text-on-surface-variant opacity-80">Lesbian Historical Places Digital Map</span>
 </div>
-<span class="font-display-lg-mobile text-display-lg-mobile text-primary dark:text-primary-fixed-dim uppercase tracking-wider block md:hidden">QWR66</span>
+<div class="flex flex-col md:hidden min-w-0">
+<span class="font-display-lg text-primary dark:text-primary-fixed-dim uppercase tracking-wide leading-tight text-[11px] sm:text-[13px]">Discovering West Hollywood's Route 66</span>
+</div>
 </a>
 <div class="hidden md:flex items-center gap-8 font-nav-item text-nav-item relative" id="nav-links">
 <a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim pb-1 transition-colors duration-300 relative" data-target="home" href="#home">Home</a>
