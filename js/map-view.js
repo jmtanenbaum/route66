@@ -27,7 +27,18 @@
     function locationMatchesQuery(loc, query) {
         const q = normalize(query);
         if (!q) return true;
-        const haystack = normalize([loc.name, loc.address, loc.type, loc.desc].join(" "));
+        const haystack = normalize([
+            loc.name,
+            loc.organizationName,
+            loc.locationLabel,
+            loc.address,
+            loc.type,
+            loc.desc,
+            loc.shortDescription,
+            loc.description,
+            loc.tags,
+            loc.tags2
+        ].join(" "));
         return haystack.includes(q);
     }
 

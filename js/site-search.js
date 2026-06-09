@@ -13,9 +13,15 @@
         return locations.filter(function (loc) {
             const haystack = normalize([
                 loc.name,
+                loc.organizationName,
+                loc.locationLabel,
                 loc.address,
                 loc.type,
                 loc.desc,
+                loc.shortDescription,
+                loc.description,
+                loc.tags,
+                loc.tags2,
                 loc.id.replace(/-/g, " ")
             ].join(" "));
             return haystack.includes(q);
@@ -106,9 +112,13 @@
             btn.setAttribute("role", "option");
 
             const years = loc.open + " – " + (loc.close === 2026 ? "Present" : loc.close);
+            const locationNote = loc.locationLabel
+                ? '<span class="site-search-result-badge">' + loc.locationLabel + '</span>'
+                : "";
             btn.innerHTML =
                 '<span class="site-search-result-name">' + loc.name + '</span>' +
                 '<span class="site-search-result-meta">' + loc.address + ' · ' + years + '</span>' +
+                locationNote +
                 (loc.detailPage ? '<span class="site-search-result-badge">View full history</span>' : '');
 
             btn.addEventListener("click", function () {

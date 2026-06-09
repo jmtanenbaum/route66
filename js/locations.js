@@ -1,86 +1,813 @@
 window.ROUTE66_LOCATIONS = [
     {
-        id: "the-abbey",
-        name: "The Abbey",
-        address: "692 N Robertson Blvd",
-        lat: 34.0835,
-        lng: -118.3854,
-        open: 1991,
-        close: 2026,
-        type: "bar",
-        desc: "The Abbey opened in 1991 as a coffee shop, and has since become a significant LGBTQ+ cultural landmark.",
-        detailPage: null
+        "id": "the-abbey",
+        "name": "The Abbey",
+        "organizationName": "The Abbey",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "692 N Robertson Boulevard",
+        "lat": 34.0835,
+        "lng": -118.385465,
+        "open": 1991,
+        "close": 2026,
+        "type": "bar",
+        "desc": "The Abbey opened in 1991 as a coffee shop, and has since become a significant LGBTQ+ nightlife landmark. The Abbey is known for hosting one of the longest-running lesbian nights in Los Angeles on Wednesdays.",
+        "description": "The Abbey opened in 1991 as a coffee shop, and has since become a significant LGBTQ+ cultural landmark. This venue was founded by David Cooley with the intention of providing a safe space for the gay community. The Abbey is known for hosting one of the longest-running lesbian nights in Los Angeles on Wednesdays. The bar was also the location that inspired lesbian pop star Chappel Roan’s hit “Pink Pony Club.” The Abbey also historically hosted meetings and events for organizations including ACT UP, GLAAD, APLA, HRC, and Gay and Lesbian Elder Housing. After Proposition Eight banned gay marriage in 2008, the Abbey’s owner David Cooley paid for busses to take protestors downtown.",
+        "shortDescription": "The Abbey opened in 1991 as a coffee shop, and has since become a significant LGBTQ+ nightlife landmark. The Abbey is known for hosting one of the longest-running lesbian nights in Los Angeles on Wednesdays.",
+        "tags": "Mixed LGBT Space",
+        "tags2": "",
+        "sources": "Denny. “This World-Famous LA Queer Bar Goes on Sale after 30 Years, but Not before Its Dark Past Comes Back to Haunt It.” Reckon, July 19, 2023. https://www.reckon.news/lgbtq/2023/07/this-world-famous-la-queer-bar-goes-on-sale-after-30-years-but-not-before-its-dark-past-comes-back-to-haunt-it.html.\nElina Shatkin. “The Abbey: The Story of an LA Icon | Discover Los Angeles.” December 8, 2025. https://www.discoverlosangeles.com/things-to-do/the-abbey-the-story-of-an-la-icon.\nHeadliner. “Chappell Roan: How an Unforgettable Night at a Gay Club Led to Pink Pony Club.” Accessed April 28, 2026. https://headlinerhub.com/chappell-roan-california-here-we-come.html.",
+        "distanceMiles": 0.0377,
+        "detailPage": null,
+        "photos": [
+            {
+                "file": "The_Abbey_West_Hollywood_08.jpeg",
+                "caption": "Courtesy of The Abbey"
+            }
+        ]
     },
     {
-        id: "tess-cafe",
-        name: "Tess's Café International",
-        address: "8711 Sunset Blvd",
-        lat: 34.0917,
-        lng: -118.3810,
-        open: 1936,
-        close: 1942,
-        type: "bar",
-        desc: "A lesbian nightclub owned and operated by Elmer and Tess Wheeler, featuring early drag kings.",
-        detailPage: null
+        "id": "the-chapel",
+        "name": "The Chapel",
+        "organizationName": "The Chapel",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "692 N Robertson Boulevard",
+        "lat": 34.0835,
+        "lng": -118.385465,
+        "open": 2016,
+        "close": 2026,
+        "type": "bar",
+        "desc": "The Chapel, which opened as a sister venue to The Abbey, was established in October 2016. The Chapel is a gay dance-focused nightclub. It hosts some lesbian and queer centric events like 2026's BBGRL: SUNDAY SERVICE for Lesbian Visibility Day and ALTAR GIRLS.",
+        "description": "The Chapel, which opened as a sister venue to The Abbey, was established in October 2016. The Chapel is a gay dance-focused nightclub. It hosts some lesbian and queer centric events like 2026's BBGRL: SUNDAY SERVICE for Lesbian Visibility Day and ALTAR GIRLS.",
+        "shortDescription": "The Chapel, which opened as a sister venue to The Abbey, was established in October 2016. The Chapel is a gay dance-focused nightclub. It hosts some lesbian and queer centric events like 2026's BBGRL: SUNDAY SERVICE for Lesbian Visibility Day and ALTAR GIRLS.",
+        "tags": "Mixed LGBT Space",
+        "tags2": "",
+        "sources": "Denny. “This World-Famous LA Queer Bar Goes on Sale after 30 Years, but Not before Its Dark Past Comes Back to Haunt It.” Reckon, July 19, 2023. https://www.reckon.news/lgbtq/2023/07/this-world-famous-la-queer-bar-goes-on-sale-after-30-years-but-not-before-its-dark-past-comes-back-to-haunt-it.html.\nElina Shatkin. “The Abbey: The Story of an LA Icon | Discover Los Angeles.” December 8, 2025. https://www.discoverlosangeles.com/things-to-do/the-abbey-the-story-of-an-la-icon.\nHeadliner. “Chappell Roan: How an Unforgettable Night at a Gay Club Led to Pink Pony Club.” Accessed April 28, 2026. https://headlinerhub.com/chappell-roan-california-here-we-come.html.",
+        "distanceMiles": 0.0377,
+        "detailPage": null,
+        "photos": [
+            {
+                "file": "Chapel1Web.jpg",
+                "caption": "Courtesy of The Abbey"
+            }
+        ]
     },
     {
-        id: "connexxus",
-        name: "Connexxus",
-        address: "9054 Santa Monica Blvd",
-        lat: 34.0816,
-        lng: -118.3885,
-        open: 1985,
-        close: 1988,
-        type: "nonprofit",
-        desc: "A feminist and lesbian community center in West Hollywood during the mid- to late 1980s.",
-        detailPage: null
+        "id": "tess-caf-international",
+        "name": "Tess's Café International",
+        "organizationName": "Tess's Café International",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "8711 Sunset Boulevard, West Hollywood, CA 90069",
+        "lat": 34.091792,
+        "lng": -118.38104,
+        "open": 1936,
+        "close": 1942,
+        "type": "misc",
+        "desc": "Tess's Café Internationale, also known as Tess's Continental, was a lesbian nightclub owned and operated by Elmer and Tess Wheeler. Entertainment included early drag kings such as Tommy Williams and Jimmy Renard.",
+        "description": "Tess's Café Internationale, also known as Tess's Continental, was a lesbian nightclub owned and operated by Elmer and Tess Wheeler. Entertainment included early drag kings such as Tommy Williams and Jimmy Renard. According to historian Lillian Faderman, Williams brought actress Marlene Dietrich to the club, where he sang love songs to her. The Navy banned sailors from the premises in 1942, which led state authorities to revoke the club’s liquor license. Tess later opened another club after the war.",
+        "shortDescription": "Tess's Café Internationale, also known as Tess's Continental, was a lesbian nightclub owned and operated by Elmer and Tess Wheeler. Entertainment included early drag kings such as Tommy Williams and Jimmy Renard.",
+        "tags": "Lesbian Space",
+        "tags2": "Lesbian Owned Business",
+        "sources": "1936: Cafe Internationale: Historic Sunset Strip Lesbian Bars. n.d. Accessed April 28, 2026. https://www.westhollywoodhistory.org/playground-to-the-stars/historic-sunset-strip-lesbian-bars-cafe-internationale/.\nFaderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. Univ of California Press, 2009.\nLord, Jack, and Lloyd Hoff. How to Sin in Hollywood. Guggenheim, 1940.",
+        "distanceMiles": 0.28,
+        "detailPage": null,
+        "photos": [
+            {
+                "file": "TessHowtoSininHollywood.jpg",
+                "caption": "Lord, Jack, and Lloyd Hoff. How to Sin in Hollywood. Guggenheim, 1940."
+            }
+        ]
     },
     {
-        id: "different-light",
-        name: "Different Light Bookstore",
-        address: "8853 Santa Monica Blvd",
-        lat: 34.0854,
-        lng: -118.3836,
-        open: 1990,
-        close: 2009,
-        type: "nonprofit",
-        desc: "An independent LGBT bookstore retailer and home to the Lesbian Writers Series.",
-        detailPage: null
+        "id": "connexxus-centro-de-mujeres",
+        "name": "Connexxus Centro de Mujeres",
+        "organizationName": "Connexxus Centro de Mujeres",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "9054 Santa Monica Boulevard, West Hollywood, CA 90069",
+        "lat": 34.081648,
+        "lng": -118.388539,
+        "open": 1985,
+        "close": 1988,
+        "type": "nonprofit",
+        "desc": "Connexxus was a  feminist and lesbian community center in West Hollywood during the mid- to late 1980s. It held a library, workshops, support groups, counseling, and social events.",
+        "description": "Connexxus was a  feminist and lesbian community center in West Hollywood during the mid- to late 1980s. The founders Adel Martinez and Lauren Jardine brought together a wide network of lesbian, feminist, and multicultural projects in the space. It held a library, workshops, support groups, counseling, and social events. At its peak, Connexxus had an annual budget of over $200,000, which was rare for a grassroots lesbian organization at the time.",
+        "shortDescription": "Connexxus was a  feminist and lesbian community center in West Hollywood during the mid- to late 1980s. It held a library, workshops, support groups, counseling, and social events.",
+        "tags": "Lesbian Space",
+        "tags2": "Lesbian Run Non-Profit Organization",
+        "sources": "McHugh, Kathleen A., Brenda Johnson-Grau, and Ben Raphael Sher, eds. Making Invisible Histories Visible: A Resource Guide to the Collections of the June L. Mazer Lesbian Archives. 2014. https://escholarship.org/uc/item/5k44b4tk.\nSangwand, T.-Kay. “Connexxus/Centro de Mujeres Collection, 1985-1991 Finding Aid.” Online Archive of California, December 11, 2025. https://oac.cdlib.org/findaid/ark:/13030/kt1779r55b/.",
+        "distanceMiles": 0.0271,
+        "detailPage": null,
+        "photos": [
+            {
+                "file": "Connexusphoto1.jpg",
+                "caption": "Connexxus office: Brothers for Sisters Committee Members Start Construction on Wall of Support for Connexxus, Circa. 1984- 1990, Connexxus/Centro de Mujeres Collection, 1985-1991, The June L. Mazer Lesbian Archives"
+            },
+            {
+                "file": "connexusphoto2.jpg",
+                "caption": "Connexxus office: Front desk, Circa. 1984- 1990, Connexxus/Centro de Mujeres Collection, 1985-1991, The June L. Mazer Lesbian Archives"
+            }
+        ]
     },
     {
-        id: "fan-girl-cafe",
-        name: "Fan Girl Cafe",
-        address: "8157 Santa Monica Blvd",
-        lat: 34.0911,
-        lng: -118.3667,
-        open: 2023,
-        close: 2026,
-        type: "cafe",
-        desc: "Opened in 2023 to celebrate women and LGBTQ musicians.",
-        detailPage: null
+        "id": "connexxus-centro-de-mujeres-second-location",
+        "name": "Connexxus Centro de Mujeres (second location)",
+        "organizationName": "Connexxus Centro de Mujeres",
+        "isRelocation": true,
+        "locationLabel": "Second Location",
+        "address": "1017 N. La Cienega, West Hollywood, CA 90069",
+        "lat": 34.0901335,
+        "lng": -118.3765698,
+        "open": 1988,
+        "close": 1990,
+        "type": "nonprofit",
+        "desc": "Connexxus was a  feminist and lesbian community center in West Hollywood during the mid- to late 1980s. It held a library, workshops, support groups, counseling, and social events.",
+        "description": "Connexxus was a  feminist and lesbian community center in West Hollywood during the mid- to late 1980s. The founders Adel Martinez and Lauren Jardine brought together a wide network of lesbian, feminist, and multicultural projects in the space. It held a library, workshops, support groups, counseling, and social events. At its peak, Connexxus had an annual budget of over $200,000, which was rare for a grassroots lesbian organization at the time.",
+        "shortDescription": "Connexxus was a  feminist and lesbian community center in West Hollywood during the mid- to late 1980s. It held a library, workshops, support groups, counseling, and social events.",
+        "tags": "Lesbian Space",
+        "tags2": "Lesbian Run Non-Profit Organization",
+        "sources": "McHugh, Kathleen A., Brenda Johnson-Grau, and Ben Raphael Sher, eds. Making Invisible Histories Visible: A Resource Guide to the Collections of the June L. Mazer Lesbian Archives. 2014. https://escholarship.org/uc/item/5k44b4tk.\nSangwand, T.-Kay. “Connexxus/Centro de Mujeres Collection, 1985-1991 Finding Aid.” Online Archive of California, December 11, 2025. https://oac.cdlib.org/findaid/ark:/13030/kt1779r55b/.",
+        "distanceMiles": 0.0359,
+        "detailPage": null,
+        "photos": [
+            {
+                "file": "Connexusphoto1.jpg",
+                "caption": "Connexxus office: Brothers for Sisters Committee Members Start Construction on Wall of Support for Connexxus, Circa. 1984- 1990, Connexxus/Centro de Mujeres Collection, 1985-1991, The June L. Mazer Lesbian Archives"
+            },
+            {
+                "file": "connexusphoto2.jpg",
+                "caption": "Connexxus office: Front desk, Circa. 1984- 1990, Connexxus/Centro de Mujeres Collection, 1985-1991, The June L. Mazer Lesbian Archives"
+            }
+        ]
     },
     {
-        id: "garden-of-allah",
-        name: "Garden of Allah Hotel",
-        address: "8152 Sunset Blvd",
-        lat: 34.0972,
-        lng: -118.3663,
-        open: 1927,
-        close: 1959,
-        type: "hotel",
-        desc: "Originally the estate of lesbian silent film star Alla Nazimova, a hub for Hollywood's LGBTQ+ community.",
-        detailPage: null
+        "id": "different-light-bookstore",
+        "name": "Different Light Bookstore",
+        "organizationName": "Different Light Bookstore",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "8853 Santa Monica Boulevard, West Hollywood, CA 90069",
+        "lat": 34.085474,
+        "lng": -118.383654,
+        "open": 1990,
+        "close": 2009,
+        "type": "nonprofit",
+        "desc": "A Different Light Bookstore was an independent LGBT bookstore. In 1984, A Different Light clerk Ann Bradley founded the Lesbian Writers Series at A Different Light bookstore, and it eventually moved to the West Hollywood location.",
+        "description": "A Different Light Bookstore was an independent LGBT bookstore retailer with locations in West Hollywood, New York City, and San Francisco. The West Hollywood location opened in 1990. In 1984, A Different Light clerk Ann Bradley founded the Lesbian Writers Series at A Different Light bookstore, and it eventually moved to the West Hollywood location. The series hosted numerous lesbian and queer literary icons including June Jordan, Joan Nestle, and many more. The West Hollywood location closed in 2009 due to numerous factors including reduced pedestrian accessibility and parking after construction on Santa Monica Blvd.",
+        "shortDescription": "A Different Light Bookstore was an independent LGBT bookstore. In 1984, A Different Light clerk Ann Bradley founded the Lesbian Writers Series at A Different Light bookstore, and it eventually moved to the West Hollywood location.",
+        "tags": "Mixed LGBT Space",
+        "tags2": "",
+        "sources": "Chong, Jia-Rui. “Gathering Celebrates Literary Series for Lesbian Writers.” Books. Los Angeles Times, March 29, 2004. https://www.latimes.com/archives/la-xpm-2004-mar-29-me-lit29-story.html.\nKellogg, Carolyn. “A Different Light Going Dark.” Jacket Copy. Los Angeles Times, February 25, 2009. https://www.latimes.com/archives/blogs/jacket-copy/story/2009-02-25/a-different-light-going-dark.\n“Queer Maps — A Different Light.” Accessed April 28, 2026. https://queermaps.org/.",
+        "distanceMiles": 0.0124,
+        "detailPage": null,
+        "photos": [
+            {
+                "file": "differentlightsite.jpeg",
+                "caption": "A Different Light Bookstore Site, Angela Brinskele, 2026."
+            }
+        ]
     },
     {
-        id: "the-palms-bar",
-        name: "The Palms Bar",
-        address: "8572 Santa Monica Blvd",
-        lat: 34.0882,
-        lng: -118.3782,
-        open: 1965,
-        close: 2013,
-        type: "bar",
-        desc: "The oldest continuously operating lesbian bar in Southern California.",
-        detailPage: "palms-bar-detail.html"
+        "id": "drip-and-dolce",
+        "name": "Drip & Dolce",
+        "organizationName": "Drip & Dolce",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "8807 Santa Monica Boulevard, West Hollywood, CA 90069",
+        "lat": 34.0858752,
+        "lng": -118.3832274,
+        "open": 2025,
+        "close": 2026,
+        "type": "cafe",
+        "desc": "Drip & Dolce is a cafe and bakery founded by lesbian entrepreneur Morgan Salmans.",
+        "description": "Drip & Dolce is a cafe and bakery founded by lesbian entrepreneur Morgan Salmans. Salmans sees the cafe as a joyful queer space built for connection and inclusivity.",
+        "shortDescription": "Drip & Dolce is a cafe and bakery founded by lesbian entrepreneur Morgan Salmans.",
+        "tags": "Lesbian Owned Business",
+        "tags2": "",
+        "sources": "Murillo, Paulo. New Drip & Dolce Bakery Opens in West Hollywood Rainbow District - WEHO TIMES West Hollywood News, Nightlife and Events. September 5, 2025. https://wehotimes.com/new-drip-dolce-bakery-opens-in-west-hollywood-rainbow-district/.\nNicole, Kirstie. “Drip & Dolce: A Queer-Owned Café Bringing Couture Croissants and Community to West Hollywood.” She Comes With Baggage Media, November 27, 2025. https://www.shecomeswithbaggagemedia.com/post/drip-dolce-a-queer-owned-café-bringing-couture-croissants-and-community-to-west-hollywood.",
+        "distanceMiles": 0.0203,
+        "detailPage": null,
+        "photos": []
+    },
+    {
+        "id": "fan-girl-cafe",
+        "name": "Fan Girl Cafe",
+        "organizationName": "Fan Girl Cafe",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "8157 Santa Monica Boulevard, West Hollywood, CA 90046",
+        "lat": 34.0911919,
+        "lng": -118.36676,
+        "open": 2023,
+        "close": 2026,
+        "type": "cafe",
+        "desc": "Betsy Martinez and her wife Cynthia Temblador opened Fan Girl Cafe in November 2023 to celebrate women and LGBTQ musicians.",
+        "description": "Betsy Martinez and her wife Cynthia Temblador opened Fan Girl Cafe in November 2023 to celebrate women and LGBTQ musicians. The cafe’s walls are covered with concert photographs and its menu includes items referencing musicians like Chappel Roan. The storefront itself has a storied musical history, and was home to P.J.’s nightclub in the 1960s.",
+        "shortDescription": "Betsy Martinez and her wife Cynthia Temblador opened Fan Girl Cafe in November 2023 to celebrate women and LGBTQ musicians.",
+        "tags": "Lesbian Owned Business",
+        "tags2": "",
+        "sources": "De Lorea, Carlos. “Fan Girl Cafe Carries on the Musical Legacy of Its West Hollywood Location with Coffee and Good Vibes.” De Los. Los Angeles Times, April 30, 2025. https://www.latimes.com/delos/story/2025-04-30/fan-girl-cafe-latinx-starwood-west-hollywood.",
+        "distanceMiles": 0.0281,
+        "detailPage": null,
+        "photos": [
+            {
+                "file": "Fangirlcafe.jpeg",
+                "caption": "Fan Girl Cafe, Angela Brinskele, 2026"
+            }
+        ]
+    },
+    {
+        "id": "the-french-market",
+        "name": "The French Market",
+        "organizationName": "The French Market",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "7985 Santa Monica Boulevard, West Hollywood, CA 90046",
+        "lat": 34.09084641,
+        "lng": -118.3641157,
+        "open": 1974,
+        "close": 2015,
+        "type": "cafe",
+        "desc": "The French Market Place was a gathering place for the LGBTQ community from the mid-1970s until its closure in 2015. This complex housed a large restaurant, the French Quarter, surrounded by various small shops, including the gay shop Dorothy's Surrender.",
+        "description": "The French Market Place was a gathering place for the LGBTQ community from the mid-1970s until its closure in 2015. This complex housed a large restaurant, the French Quarter, surrounded by various small shops, including the gay shop Dorothy's Surrender. The site held organizing meetings for LGBT rights organizations like the Municipal Elections Committee of Los Angeles (MECLA). The dining patio increased LGBT visibility by allowing community members to dine openly on a major street without fear of reprisal. The French Market also provided access to LGBT periodicals and was a popular starting point for the Pride Parade.",
+        "shortDescription": "The French Market Place was a gathering place for the LGBTQ community from the mid-1970s until its closure in 2015. This complex housed a large restaurant, the French Quarter, surrounded by various small shops, including the gay shop Dorothy's Surrender.",
+        "tags": "Mixed LGBT Space",
+        "tags2": "",
+        "sources": "Holmes, Mona. “West Hollywood’s Iconic French Market Place Boasts a Glitzy New Design.” Eater LA, August 1, 2018. https://la.eater.com/2018/8/1/17635658/two-restaurants-underground-bar-west-hollywood-french-market-place-development.\nTime Out Los Angeles. “Dorothy’s Surrender.” September 25, 2012. https://www.timeout.com/los-angeles/shopping/dorothys-surrender-closed.\nTrinh, Jean. “1970s Gay WeHo Hangout Could Be Razed For New Development.” LAist, December 30, 2015. https://laist.com/news/food/goodbye-french-market-place.\nWeHo Online. “Inspired by a Trip to New Orleans, the Hartmans Were the Couple Behind the French Market.” Accessed April 28, 2026. https://wehoonline.com/inspired-by-a-trip-to-new-orleans-the-hartmans-were-the-couple-behind-the-french-market/.",
+        "distanceMiles": 0.001,
+        "detailPage": null,
+        "photos": [
+            {
+                "file": "FrenchMarketBuilding.jpeg",
+                "caption": "The French Market Building, Angela Brinskele, 2026"
+            }
+        ]
+    },
+    {
+        "id": "garden-of-allah-hotel",
+        "name": "Garden of Allah Hotel",
+        "organizationName": "Garden of Allah Hotel",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "8152 Sunset Boulevard, Los Angeles, CA 90046",
+        "lat": 34.0972933,
+        "lng": -118.3663451,
+        "open": 1927,
+        "close": 1959,
+        "type": "hotel",
+        "desc": "The Garden of Allah Hotel was originally the estate of lesbian silent film star Alla Nazimova and became known as a hub for Hollywood's LGBTQ+ community and celebrities from 1927 to 1959.",
+        "description": "The Garden of Allah Hotel was originally the estate of lesbian silent film star Alla Nazimova and became known as a hub for Hollywood's LGBTQ+ community and celebrities from 1927 to 1959. The hotel hosted women-only pool parties and was a gathering place for the \"sewing circle,\" a term Nazimova coined to describe a group of lesbian and bisexual actresses and artists. The group included stars like actress Marlene Dietrich, director Dorothy Arzner, and writer Mercedes de Acosta.",
+        "shortDescription": "The Garden of Allah Hotel was originally the estate of lesbian silent film star Alla Nazimova and became known as a hub for Hollywood's LGBTQ+ community and celebrities from 1927 to 1959.",
+        "tags": "Mixed LGBT Space",
+        "tags2": "Lesbian Owned Business",
+        "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. Univ of California Press, 2009.\nShokin, Sammantha. “The Founding Mother of Sapphic Hollywood - Arts & Letters.” Arts & Letters. Tablet Magazine, June 1, 2022. https://www.tabletmag.com/sections/arts-letters/articles/alla-nazimova-sapphic-hollywood.\nTatna, Meher. “Forgotten Hollywood: The Garden of Allah.” Golden Globes, September 22, 2022. https://goldenglobes.com/articles/forgotten-hollywood-garden-allah/.",
+        "distanceMiles": 0.4479,
+        "detailPage": null,
+        "photos": [
+            {
+                "file": "Alla_Nazimova_LCCN2014712156.tif.jpg",
+                "caption": "Nazimova on the grounds of the Garden of Alla, By Bain News Service, Circa. 1915-1920, publisher - Library of Congress Catalog: https://lccn.loc.gov/2014712156Image download"
+            },
+            {
+                "file": "GardenofAllahLAPLView1.jpg",
+                "caption": "Garden of Allah Hotel, View 1. 1927. Security Pacific National Bank Collection, Los Angeles Public Library Photo Collection. https://tessa2.lapl.org/digital/collection/photos/id/85193/."
+            }
+        ]
+    },
+    {
+        "id": "jane-jones-little-club",
+        "name": "Jane Jones' Little Club",
+        "organizationName": "Jane Jones' Little Club",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "8730 Sunset Boulevard, West Hollywood, CA 90069",
+        "lat": 34.0914848,
+        "lng": -118.3813529,
+        "open": 1936,
+        "close": 1939,
+        "type": "bar",
+        "desc": "Jane Jones' Little Club was one of Los Angeles’ earliest and most notable lesbian nightclubs, operating from 1929-1939. The club attracted a well-dressed crowd of Hollywood figures alongside local lesbians who watched male impersonators perform.",
+        "description": "Jane Jones' Little Club was one of Los Angeles’ earliest and most notable lesbian nightclubs, operating from 1929-1939. Former vaudeville star Jane Jones owned and operated the club. She was a large woman with a basso profundo voice. The club attracted a well-dressed crowd of Hollywood figures alongside local lesbians who watched male impersonators perform. Its run ended abruptly on September 2, 1939, when the Los Angeles County Sheriff's vice squad raided the club, arrested staff. Soon after the club's liquor license was revoked and it closed.",
+        "shortDescription": "Jane Jones' Little Club was one of Los Angeles’ earliest and most notable lesbian nightclubs, operating from 1929-1939. The club attracted a well-dressed crowd of Hollywood figures alongside local lesbians who watched male impersonators perform.",
+        "tags": "Mixed LGBT Space",
+        "tags2": "",
+        "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. Univ of California Press, 2009.\nHamel, Jenny. “The Pansy Craze: When Gay Nightlife in Los Angeles….” KCRW, May 11, 2018. https://www.kcrw.com/shows/curious-coast/stories/the-pansy-craze-when-gay-nightlife-in-los-angeles-really-kicked-off.\nPonder, Joe. “1936: Jane Jones’ Little Club – Historic Sunset Strip Lesbian Bars.” West Hollywood History, n.d. Accessed April 28, 2026. https://www.westhollywoodhistory.org/playground-to-the-stars/historic-sunset-strip-lesbian-bars-jane-jones-little-club/.\n“Queer Maps — Jane Jones Little Club.” Accessed April 28, 2026. https://queermaps.org/.",
+        "distanceMiles": 0.2729,
+        "detailPage": null,
+        "photos": [
+            {
+                "file": "littleclub.webp",
+                "caption": "Jane Jones’ Little Club, Circa. 1937. Life magazine."
+            }
+        ]
+    },
+    {
+        "id": "june-l-mazer-lesbian-archives",
+        "name": "June L. Mazer Lesbian Archives",
+        "organizationName": "June L. Mazer Lesbian Archives",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "626 North Robertson Boulevard, West Hollywood, CA 90069",
+        "lat": 34.081707,
+        "lng": -118.3852884,
+        "open": 1989,
+        "close": 2026,
+        "type": "nonprofit",
+        "desc": "The June L. Mazer Lesbian Archives is a community based archive committed to preserving and sharing lesbian, feminist, and queer women’s histories for future generations. It was founded in Oakland in 1981, and moved to its current home in the Werle Building in 1989.",
+        "description": "The June L. Mazer Lesbian Archives began in 1981 as the West Coast Lesbian Collections, founded in Oakland by Lynn Fonfa and Cherrie Cox. The archive was relocated to Southern California in 1985 by June L. Mazer and her partner Nancy “Bunny” Mac Culloch, who safeguarded the growing collection in their home. After June’s death in 1987, the Archives were renamed in her honor and, in 1989, moved to the Werle Building in West Hollywood. For more than four decades, the Mazer has been sustained by dedicated volunteers committed to preserving and sharing lesbian, feminist, and queer women’s histories with future generations. The archives hold extensive collections of personal papers, photographs, periodicals, audiovisual materials, and ephemera.",
+        "shortDescription": "The June L. Mazer Lesbian Archives is a community based archive committed to preserving and sharing lesbian, feminist, and queer women’s histories for future generations. It was founded in Oakland in 1981, and moved to its current home in the Werle Building in 1989.",
+        "tags": "Lesbian Space",
+        "tags2": "Lesbian Run Non-Profit Organization",
+        "sources": "June L. Mazer Lesbian Archives. “About.” Accessed April 28, 2026. https://www.mazerlesbianarchives.org/about.\nJune L. Mazer Lesbian Archives. “June L. Mazer Lesbian Archives.” January 26, 2026. https://www.mazerlesbianarchives.org.\nMcHugh, Kathleen A., Brenda Johnson-Grau, and Ben Raphael Sher, eds. Making Invisible Histories Visible: A Resource Guide to the Collections of the June L. Mazer Lesbian Archives. 2014. https://escholarship.org/uc/item/5k44b4tk.",
+        "distanceMiles": 0.1387,
+        "detailPage": null,
+        "photos": [
+            {
+                "file": "mazerhistoricphoto.jpg",
+                "caption": "June L. Mazer Lesbian Archives historic photograph, n.d."
+            },
+            {
+                "file": "newphoto.jpg",
+                "caption": "June L. Mazer Lesbian Archives, 2026"
+            },
+            {
+                "file": "mazerchairs.jpg",
+                "caption": "June L. Mazer Lesbian Archives, 2026"
+            }
+        ]
+    },
+    {
+        "id": "los-angeles-lgbt-center-weho",
+        "name": "Los Angeles LGBT Center WeHo",
+        "organizationName": "Los Angeles LGBT Center WeHo",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "8745 Santa Monica Boulevard, West Hollywood, CA 90069",
+        "lat": 34.0870887,
+        "lng": -118.3813998,
+        "open": 2015,
+        "close": 2025,
+        "type": "nonprofit",
+        "desc": "The Los Angeles LGBT Center was founded in 1969 to care and advocate for the LGBTQ community in Los Angeles and beyond. In October 2015, they opened a West Hollywood clinic which offered testing and treatment and help qualifying for financial assistance.",
+        "description": "The Los Angeles LGBT Center was founded in 1969 to care and advocate for the LGBTQ community in Los Angeles and beyond. In October 2015, they opened a West Hollywood clinic which offered HIV testing and treatment, STD testing and treatment, vaccinations, and help qualifying for financial assistance programs. The clinic closed in 2025, as the Trump administration froze government contracts and cut funding. The LGBT Center offers programs and services across the city.",
+        "shortDescription": "The Los Angeles LGBT Center was founded in 1969 to care and advocate for the LGBTQ community in Los Angeles and beyond. In October 2015, they opened a West Hollywood clinic which offered testing and treatment and help qualifying for financial assistance.",
+        "tags": "Mixed LGBT Space",
+        "tags2": "",
+        "sources": "Murillo, Paulo. Los Angeles LGBT Center Is Closing Center WeHo Location - WEHO TIMES West Hollywood News, Nightlife and Events. April 9, 2025. https://wehotimes.com/los-angeles-lgbt-center-is-closing-center-weho-location/.",
+        "distanceMiles": 0.0183,
+        "detailPage": null,
+        "photos": []
+    },
+    {
+        "id": "little-frida",
+        "name": "Little Frida’s",
+        "organizationName": "Little Frida’s",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "8545 Santa Monica Boulevard, West Hollywood, CA 90069",
+        "lat": 34.089119,
+        "lng": -118.3775986,
+        "open": 1991,
+        "close": 1999,
+        "type": "misc",
+        "desc": "Little Frida’s operated as both a coffee house and a lesbian community center with art exhibitions, music nights, comedy shows, and other events, from 1991 to 1999. The space was featured on the now famous coming-out episode of Ellen and the film Bar Girls.",
+        "description": "Little Frida's Coffee House was an iconic lesbian community space operating from approximately 1991 at its original address of 8545 Santa Monica Boulevard before relocating to 8730 Santa Monica Boulevard by September 1995, and eventually closing around May 1999. It was founded by lesbian club promoter Caroline Clone, who sold the coffeehouse to Rita Boyadjin in 1993. Little Frida’s operated as both a coffee house and a lesbian community center with art exhibitions, music nights, comedy shows, and other events. The space fostered the careers of comedians like Lea DeLaria and Tig Notaro and musicians like Melissa Ferrick. The space was featured on the now famous coming-out episode of Ellen and the film Bar Girls.",
+        "shortDescription": "Little Frida’s operated as both a coffee house and a lesbian community center with art exhibitions, music nights, comedy shows, and other events, from 1991 to 1999. The space was featured on the now famous coming-out episode of Ellen and the film Bar Girls.",
+        "tags": "Lesbian Space",
+        "tags2": "Lesbian Owned Business",
+        "sources": "Dr. Alex D. Ketchum, The Directory, https://docs.google.com/document/d/1X07SFiXtIfcGaf_K-xFWGviDO5vUzXMghE8drGFP0zU/edit?usp=sharing “Lost Womyn’s Space: Little Frida’s Coffee House.” Lost Womyn’s Space, December 4, 2011. https://lostwomynsspace.blogspot.com/2011/12/little-fridas-coffee-house.html.\nMitchell, Schuyler. “How Did L.A. Become a City Without Lesbian Bars?” LAmag, July 1, 2020. https://lamag.com/lgbtq/lesbian-bars-los-angeles/.\nYarbro, Stan. “The Great Lesbian Club Wars.” Miami New Times, October 5, 1993. https://www.miaminewtimes.com/uncategorized/the-great-lesbian-club-wars-6362245/.",
+        "distanceMiles": 0.0158,
+        "detailPage": null,
+        "photos": [
+            {
+                "file": "littlefridasflyer.jpeg",
+                "caption": "Little Frida's Coffee House Flier, Circa 1991-1991, June L. Mazer Lesbian Archives."
+            },
+            {
+                "file": "littlefridascard.jpeg",
+                "caption": "Little Frida's Coffee House Business Card, Circa 1991-1991, June L. Mazer Lesbian Archives."
+            }
+        ]
+    },
+    {
+        "id": "little-frida-location-2",
+        "name": "Little Frida’s (location 2)",
+        "organizationName": "Little Frida’s",
+        "isRelocation": true,
+        "locationLabel": "Relocated",
+        "address": "8730 Santa Monica Boulevard, West Hollywood, CA 90069",
+        "lat": 34.0866366,
+        "lng": -118.3809488,
+        "open": 1991,
+        "close": 1999,
+        "type": "misc",
+        "desc": "Little Frida’s operated as both a coffee house and a lesbian community center with art exhibitions, music nights, comedy shows, and other events, from 1991 to 1999. The space was featured on the now famous coming-out episode of Ellen and the film Bar Girls.",
+        "description": "Little Frida's Coffee House was an iconic lesbian community space operating from approximately 1991 at its original address of 8545 Santa Monica Boulevard before relocating to 8730 Santa Monica Boulevard by September 1995, and eventually closing around May 1999. It was founded by lesbian club promoter Caroline Clone, who sold the coffeehouse to Rita Boyadjin in 1993. Little Frida’s operated as both a coffee house and a lesbian community center with art exhibitions, music nights, comedy shows, and other events. The space fostered the careers of comedians like Lea DeLaria and Tig Notaro and musicians like Melissa Ferrick. The space was featured on the now famous coming-out episode of Ellen and the film Bar Girls.",
+        "shortDescription": "Little Frida’s operated as both a coffee house and a lesbian community center with art exhibitions, music nights, comedy shows, and other events, from 1991 to 1999. The space was featured on the now famous coming-out episode of Ellen and the film Bar Girls.",
+        "tags": "Lesbian Space",
+        "tags2": "Lesbian Owned Business",
+        "sources": "Dr. Alex D. Ketchum, The Directory, https://docs.google.com/document/d/1X07SFiXtIfcGaf_K-xFWGviDO5vUzXMghE8drGFP0zU/edit?usp=sharing “Lost Womyn’s Space: Little Frida’s Coffee House.” Lost Womyn’s Space, December 4, 2011. https://lostwomynsspace.blogspot.com/2011/12/little-fridas-coffee-house.html.\nMitchell, Schuyler. “How Did L.A. Become a City Without Lesbian Bars?” LAmag, July 1, 2020. https://lamag.com/lgbtq/lesbian-bars-los-angeles/.\nYarbro, Stan. “The Great Lesbian Club Wars.” Miami New Times, October 5, 1993. https://www.miaminewtimes.com/uncategorized/the-great-lesbian-club-wars-6362245/.",
+        "distanceMiles": 0.0222,
+        "detailPage": null,
+        "photos": [
+            {
+                "file": "littlefridasflyer.jpeg",
+                "caption": "Little Frida's Coffee House Flier, Circa 1991-1991, June L. Mazer Lesbian Archives."
+            },
+            {
+                "file": "littlefridascard.jpeg",
+                "caption": "Little Frida's Coffee House Business Card, Circa 1991-1991, June L. Mazer Lesbian Archives."
+            }
+        ]
+    },
+    {
+        "id": "marix-tex-mex-cafe",
+        "name": "Marix Tex-Mex Cafe",
+        "organizationName": "Marix Tex-Mex Cafe",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "1108 Flores St, West Hollywood, CA 90069",
+        "lat": 34.0910852,
+        "lng": -118.3713436,
+        "open": 1984,
+        "close": 2026,
+        "type": "cafe",
+        "desc": "Marix Tex-Mex Cafe is a West Hollywood favorite fast casual restaurant owned by a lesbian couple, Mary Sweeney and Vickie Shemaria of Food Biz Inc. It opened in 1984 and continues to operate.",
+        "description": "Marix Tex-Mex Cafe is a West Hollywood favorite fast casual restaurant owned by a lesbian couple, Mary Sweeney and Vickie Shemaria of Food Biz Inc. It opened in 1984 and continues to operate. Often celebrities are spotted there.",
+        "shortDescription": "Marix Tex-Mex Cafe is a West Hollywood favorite fast casual restaurant owned by a lesbian couple, Mary Sweeney and Vickie Shemaria of Food Biz Inc. It opened in 1984 and continues to operate.",
+        "tags": "Lesbian Owned Business",
+        "tags2": "",
+        "sources": "Murillo, Paulo. Mum’s the Word at Marix Tex Mex Café, But Reopening Appears Imminent in West Hollywood - WEHO TIMES West Hollywood News, Nightlife and Events. April 12, 2025. https://wehotimes.com/mums-the-word-at-marix-tex-mex-cafe-but-reopening-appears-imminent-in-west-hollywood/.\nReichl, Ruth. “The Legend of Marix Moves West.” Los Angeles Times, January 31, 1986. https://www.latimes.com/archives/la-xpm-1986-01-31-ca-2901-story.html.",
+        "distanceMiles": 0.0292,
+        "detailPage": null,
+        "photos": [
+            {
+                "file": "Matix.jpeg",
+                "caption": "Marix Building photograph, Angela Brinskele, 2026"
+            }
+        ]
+    },
+    {
+        "id": "basix-food-and-bar",
+        "name": "Basix Food and Bar",
+        "organizationName": "Basix Food and Bar",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "8333 Santa Monica Boulevard, West Hollywood, CA 90069",
+        "lat": 34.09054537,
+        "lng": -118.3742172,
+        "open": 1994,
+        "close": 2020,
+        "type": "cafe",
+        "desc": "Basix is a West Hollywood favorite fast casual new American restaurant owned by a lesbian couple, Mary Sweeney and Vickie Shemaria of Food Biz Inc. It opened in 1994 and closed in 2020.",
+        "description": "Basix is a West Hollywood favorite fast casual new American restaurant owned by a lesbian couple, Mary Sweeney and Vickie Shemaria of Food Biz Inc. It opened in 1994 and closed in 2020.",
+        "shortDescription": "Basix is a West Hollywood favorite fast casual new American restaurant owned by a lesbian couple, Mary Sweeney and Vickie Shemaria of Food Biz Inc. It opened in 1994 and closed in 2020.",
+        "tags": "Lesbian Owned Business",
+        "tags2": "",
+        "sources": "Huneven, Michelle. “RESTAURANT REVIEW : Where They Get Down to Basix.” Los Angeles Times, December 23, 1994. https://www.latimes.com/archives/la-xpm-1994-12-23-ca-12111-story.html.\nMurillo, Paulo. West Hollywood Moves to Lease with Option to Purchase Basix Café Property - WEHO TIMES West Hollywood News, Nightlife and Events. July 31, 2025. https://wehotimes.com/west-hollywood-moves-to-lease-with-option-to-purchase-basix-cafe-property/.",
+        "distanceMiles": 0.0001,
+        "detailPage": null,
+        "photos": [
+            {
+                "file": "BASIX.jpeg",
+                "caption": "Basix Building photograph, Angela Brinskele, 2026"
+            }
+        ]
+    },
+    {
+        "id": "the-palms-bar",
+        "name": "The Palms Bar",
+        "organizationName": "The Palms Bar",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "8572 Santa Monica Boulevard, West Hollywood, CA 90069",
+        "lat": 34.0882547,
+        "lng": -118.3782217,
+        "open": 1965,
+        "close": 2013,
+        "type": "bar",
+        "desc": "The Palms Bar was the oldest continuously operating lesbian bar in Southern California. The bar was known for catering exclusively to women and attracting a wealthy and glamorous clientele.",
+        "description": "The Palms Bar was the oldest continuously operating lesbian bar in Southern California. In 1965 Howard \"Butch\" Gottlieb and Jack Frohman purchased the bar and brought in Norma Jasper from New York to run it. The bar was known for catering exclusively to women and attracting a wealthy and glamorous clientele. By the late 1960s, the Palms attracted celebrities including Jim Morrison, Tom Waits, Janis Joplin, and Jimi Hendrix. Later celebrity patrons included Ellen DeGeneres, Portia de Rossi, Melissa Etheridge, k.d. lang, and Kristy McNichol.  For many women, the Palms was the first openly lesbian space they ever entered . Business declined from the late 1990s onward as lesbian life diversified and more options emerged . The Palms closed on June 9, 2013,  the final day of LA Pride, after the property's owner had decided to redevelop the entire block into a four-story mixed-use building.",
+        "shortDescription": "The Palms Bar was the oldest continuously operating lesbian bar in Southern California. The bar was known for catering exclusively to women and attracting a wealthy and glamorous clientele.",
+        "tags": "Lesbian Space",
+        "tags2": "",
+        "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. New York: Basic Books, 2006.\nWEHOonline. \"Palms Bar Sets Closing Date; Lesbian 'Safe Haven' Remembered Fondly.\" wehoonline.com, May 6, 2013. https://wehoonline.com/palms-bar-sets-closing-date-lesbian-safe-haven-remembered-fondly/ \nCarter, Noelle. \"Farewell to the Palms, a bar — and a home — in West Hollywood.\" Los Angeles Times, June 6, 2013. \nhttps://www.latimes.com/local/la-xpm-2013-jun-06-la-me-carter-palms-20130607-story.html",
+        "distanceMiles": 0.0124,
+        "detailPage": "palms-bar-detail.html",
+        "photos": [
+            {
+                "file": "palmsgoodman1.jpg",
+                "caption": "Film Fatale Event Photograph, Rosser Goodman Papers, June L. Mazer Lesbian Archives"
+            },
+            {
+                "file": "palmsgoodman2.jpg",
+                "caption": "Film Fatale Event Photograph, Rosser Goodman Papers, June L. Mazer Lesbian Archives"
+            }
+        ]
+    },
+    {
+        "id": "peanuts",
+        "name": "Peanuts",
+        "organizationName": "Peanuts",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "7969 Santa Monica Boulevard, West Hollywood, CA 90046",
+        "lat": 34.090771,
+        "lng": -118.363441,
+        "open": 1979,
+        "close": 1988,
+        "type": "bar",
+        "desc": "Peanuts was a popular lesbian nightclub and disco in a historic building, known for its sexually uninhibited atmosphere. The club attracted young financially privileged women for wild nights out.",
+        "description": "Peanuts was a popular lesbian nightclub and disco in a historic building, which housed the burlesque club the Pink Pussycat College of Strip Tease until 1970. Soon after, Alice Schiller then transformed the space into Peanuts, a lesbian nightclub that evolved over time into a mixed LGBTQ+ space. The club was known for its sexually uninhibited atmosphere. The club attracted young financially privileged women for wild nights out. By 1995, the space lost its lesbian character and became Club 7969, a strip club that served both straight and LGBT patrons.",
+        "shortDescription": "Peanuts was a popular lesbian nightclub and disco in a historic building, known for its sexually uninhibited atmosphere. The club attracted young financially privileged women for wild nights out.",
+        "tags": "Lesbian Space",
+        "tags2": "",
+        "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. New York: Basic Books, 2006.;  Siegmund, Heidi. \"Club Review: 7969: Equal Opportunity Enjoyment.\" Los Angeles Times, March 24, 1995.\nhttps://www.latimes.com/archives/la-xpm-1988-03-17-we-1903-story.html \n\"The Pink Pussycat College of Strip Tease.\" Atomic Redhead, July 11, 2018. — https://atomicredhead.com/2018/07/11/the-pink-pussycat-college-of-strip-tease-where-yesteryears-strippers-learned-their-craft/",
+        "distanceMiles": 0.0035,
+        "detailPage": null,
+        "photos": [
+            {
+                "file": "Peanuts.jpeg",
+                "caption": "Peanuts Building, Angela Brinskele, 2026"
+            }
+        ]
+    },
+    {
+        "id": "rose-tattoo",
+        "name": "Rose Tattoo",
+        "organizationName": "Rose Tattoo",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "665 North Robertson Boulevard, West Hollywood, CA 90069",
+        "lat": 34.0826664,
+        "lng": -118.3857947,
+        "open": 1988,
+        "close": 1993,
+        "type": "misc",
+        "desc": "The Rose Tattoo was a cabaret, restaurant, and piano bar owned by lesbian Broadway performer Linda Gerard in the historic building that housed Studio One. Gerard's longtime friend and former partner Pam Genevrino joined her, managing the restaurant upstairs while Gerard ran the cabaret below.",
+        "description": "The Rose Tattoo was a cabaret, restaurant, and piano bar owned by lesbian Broadway performer Linda Gerard in the historic building that housed Studio One. Gerard gained renown as a standby for Barbra Streisand as Fanny Brice in the original production of Funny Girl and as the co-owner of the Provincetown lesbian bar The Pied Piper. Gerard envisioned the bar as \"a real New York cabaret,\" and she opened each evening with a song before jazz singers and a range of musicians performed. Gerard's longtime friend and former partner Pam Genevrino joined her, managing the restaurant upstairs while Gerard ran the cabaret below. Gerard also made a point of mentoring emerging LGBTQ performers. The Rose Tattoo closed in 1993 when Gerard relocated to Palm Springs. The building soon became The Factory dance club.",
+        "shortDescription": "The Rose Tattoo was a cabaret, restaurant, and piano bar owned by lesbian Broadway performer Linda Gerard in the historic building that housed Studio One. Gerard's longtime friend and former partner Pam Genevrino joined her, managing the restaurant upstairs while Gerard ran the cabaret below.",
+        "tags": "Mixed LGBT Space",
+        "tags2": "Lesbian Owned Business",
+        "sources": "“Linda Gerard Obituary (2014) - New York, NY - New York Times.” Accessed April 28, 2026. https://www.legacy.com/us/obituaries/nytimes/name/linda-gerard-obituary?pid=170391477.\nNational Trust for Historic Preservation. “One Building, Three Lives: Saving the LGBTQ Heritage of the Factory | National Trust for Historic Preservation.” Accessed April 28, 2026. https://savingplaces.org/stories/one-building-three-lives-saving-the-lgbtq-heritage-of-the-factory.\n“Queer Maps — Rose Tattoo.” Accessed April 28, 2026. https://queermaps.org/.\nStaff. “Zany, Talented, Larger-than-Life Linda Gerard Remembered in Provincetown.” Wicked Local. Accessed April 28, 2026. https://www.wickedlocal.com/story/provincetown-banner/2014/09/01/zany-talented-larger-than-life/36563013007/.",
+        "distanceMiles": 0.0686,
+        "detailPage": null,
+        "photos": [
+            {
+                "file": "LindaGerard.jpeg",
+                "caption": "Linda Gerard, Photographer Unknown, Source: https://obituaries.forestlawn.com/obituaries/linda-gerard"
+            }
+        ]
+    },
+    {
+        "id": "sally-hershberger-salon",
+        "name": "Sally Hershberger Salon",
+        "organizationName": "Sally Hershberger Salon",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "760 North La Cienega Boulevard, Los Angeles, CA 90069",
+        "lat": 34.085201,
+        "lng": -118.3761209,
+        "open": 2008,
+        "close": 2026,
+        "type": "cafe",
+        "desc": "The Sally Hershberger Salon has operated since 2008 as the independent West Hollywood flagship store of celebrity hair stylist Sally Hershberger. Hershberger invented an iconic androgynous shag for Meg Ryan in the film French Kiss that was later adopted by many lesbians.",
+        "description": "The Sally Hershberger Salon has operated since 2008 as the independent West Hollywood flagship store of celebrity hair stylist Sally Hershberger. Hershberger worked on Hollywood sets and with notable photographers, before inventing her iconic shag for Meg Ryan for the 1995 film French Kiss. The androgynous style became extremely popular with West Coast lesbians. Hershberger became widely regarded as the real-life inspiration for Shane McCutcheon, the character played by Katherine Moennig in the Showtime series The L Word.",
+        "shortDescription": "The Sally Hershberger Salon has operated since 2008 as the independent West Hollywood flagship store of celebrity hair stylist Sally Hershberger. Hershberger invented an iconic androgynous shag for Meg Ryan in the film French Kiss that was later adopted by many lesbians.",
+        "tags": "Miscellaneous",
+        "tags2": "",
+        "sources": "“Hershberger, Sally | Encyclopedia.Com.” Accessed April 28, 2026. https://www.encyclopedia.com/books/culture-magazines/hershberger-sally.\n“SALLY HERSHBERGER LA: Why the Famed Los Angeles Salon Remains a Cut above. - LA Weekly.” Accessed April 28, 2026. https://www.laweekly.com/sally-hershberger-la-why-the-famed-los-angeles-salon-remains-a-cut-above/.",
+        "distanceMiles": 0.254,
+        "detailPage": null,
+        "photos": []
+    },
+    {
+        "id": "southern-california-women-for-understanding",
+        "name": "Southern California Women for Understanding",
+        "organizationName": "Southern California Women for Understanding",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "9054 Santa Monica Boulevard, West Hollywood, CA 90069",
+        "lat": 34.0816453,
+        "lng": -118.388477,
+        "open": 1985,
+        "close": 1999,
+        "type": "misc",
+        "desc": "An office at 9054 Santa Monica Boulevard served as the third headquarters of Southern California Women for Understanding (SCWU), one of the earliest lesbian nonprofit organizations in the country. The group focused on on educational and social events, fundraising, political advocacy, and providing social services to the lesbian community.",
+        "description": "An office at 9054 Santa Monica Boulevard served as the third headquarters of Southern California Women for Understanding (SCWU), one of the earliest lesbian nonprofit organizations in the country. The organization started in 1976 as a support group affiliated with the Whitman-Radclyffe Foundation, a San Francisco-based gay rights organization. After the two organizations separated in 1978, the group took on the name Southern California Women for Understanding and focused its efforts on educational and social events, fundraising, political advocacy, and providing services to the lesbian community. SCWU moved to the West Hollywood office on Santa Monica Boulevard in 1985. At the time it held educational programs, theater productions, fundraising dinners, and more. SCWU catered primarily to professional middle and upper class women, according to historians like Lillian Faderman. Records document the organization’s activities until 1999.",
+        "shortDescription": "An office at 9054 Santa Monica Boulevard served as the third headquarters of Southern California Women for Understanding (SCWU), one of the earliest lesbian nonprofit organizations in the country. The group focused on on educational and social events, fundraising, political advocacy, and providing social services to the lesbian community.",
+        "tags": "Lesbian Space",
+        "tags2": "Lesbian Run Non-Profit Organization",
+        "sources": "Sangwand, T.-Kay. “Southern California Women for Understanding (SCWU) Collection Finding Aid.” Online Archive of California, 2009. https://oac.cdlib.org/static_findaids/ark:/13030/kt1f59r455.html.\nFaderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. New York: Basic Books, 2006.",
+        "distanceMiles": 0.0297,
+        "detailPage": null,
+        "photos": [
+            {
+                "file": "wehoscwu.jpg",
+                "caption": "West Hollywood SCWU Office, December, 1984, Southern California Women for Understanding (SCWU) collection, 1975-1999, June L. Mazer Lesbian Archives"
+            }
+        ]
+    },
+    {
+        "id": "girl-bar-at-studio-one",
+        "name": "Girl Bar at Studio One",
+        "organizationName": "Girl Bar at Studio One",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "652 N La Peer Dr, West Hollywood, CA 90069",
+        "lat": 34.0825545,
+        "lng": -118.3863452,
+        "open": 1990,
+        "close": 2013,
+        "type": "bar",
+        "desc": "Girl Bar was a long running lesbian nightlife event founded in November 1990 by Robin Gans and Sandy Sachs, The event’s glamorous and feminine attendees epitomized the new aesthetic of “lesbian chic” as lesbian representation in the mainstream media increased throughout the 1990s.",
+        "description": "Girl Bar was a long running lesbian nightlife event founded in November 1990 by Robin Gans and Sandy Sachs, a couple who had relocated from New York to Los Angeles the previous year. Scott Forbes, owner of Studio One and its Backlot showroom, approached Gans and Sachs in 1990 and invited them to launch a weekly women's night. Girl Bar featured valet parking, go-go dancers, a billiards room, and a dance floor that was usually packed with a racially diverse group of women. The event’s glamorous and feminine attendees epitomized the new aesthetic of “lesbian chic” as lesbian representation in the mainstream media increased throughout the 1990s. Celebrities often frequented the club, including Nona Hendryx and Sabrina Johnston. After Studio One closed, Girl Bar continued at the Factory building under various iterations. By 2013 the event had been running for over twenty years. The physical Factory building was demolished for redevelopment in 2020 .",
+        "shortDescription": "Girl Bar was a long running lesbian nightlife event founded in November 1990 by Robin Gans and Sandy Sachs, The event’s glamorous and feminine attendees epitomized the new aesthetic of “lesbian chic” as lesbian representation in the mainstream media increased throughout the 1990s.",
+        "tags": "Mixed LGBT Space",
+        "tags2": "",
+        "sources": "Allman, Kevin. “Looking for Ms. Girlbar.” Los Angeles Times, September 5, 1993. https://www.latimes.com/archives/la-xpm-1993-09-05-vw-31894-story.html.\nContributor. “Robin Gans.” WEHOonline.Com, January 1, 2013. https://wehoonline.com/robin-gans/.\n“Girl Bar | Gay Lesbian Women’s Girl Nightclub Dance Bar History.” April 29, 2006. https://web.archive.org/web/20060429153858/http://girlbar.com/history.html.\nMurillo, Paulo. THE SEEN – 20th Anniversary Last Dance at The Factory & Ultra Suede - WEHO TIMES West Hollywood News, Nightlife and Events. December 12, 2019. https://wehotimes.com/the-seen-20th-anniversary-last-dance-at-the-factory-ultra-suede/.",
+        "distanceMiles": 0.0578,
+        "detailPage": null,
+        "photos": [
+            {
+                "file": "GirlBarFoundersMay2205.JPG",
+                "caption": "Sandy Sachs and Robin Gans, Angela Brinskele, May 22, 2005, Angela Brinskele Collection, June L. Mazer Lesbian Archives."
+            }
+        ]
+    },
+    {
+        "id": "normandie-room",
+        "name": "Normandie Room",
+        "organizationName": "Normandie Room",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "8737 Santa Monica Boulevard, West Hollywood, CA 90069",
+        "lat": 34.0870528,
+        "lng": -118.3813654,
+        "open": 1999,
+        "close": 2009,
+        "type": "bar",
+        "desc": "The Normandie Room opened on October 28, 1993 and soon gained a reputation as a lesbian centric bar. The bar was founded by straight owner Jason Shokrian, but women began gravitating to the welcoming, artistic, and cozy bar organically.",
+        "description": "The Normandie Room opened on October 28, 1993 and soon gained a reputation as a lesbian centric bar. The bar was founded by straight owner Jason Shokrian with the intention of treating everyone equally, but women began gravitating there organically because they were not welcomed at many of the gay male centric establishments on Santa Monica Blvd at the time. The bar was artistic and cozy. It was one of the many businesses that closed due to the combined pressures of prolonged Santa Monica Boulevard construction and the 2008 recession, in this case in 2009.",
+        "shortDescription": "The Normandie Room opened on October 28, 1993 and soon gained a reputation as a lesbian centric bar. The bar was founded by straight owner Jason Shokrian, but women began gravitating to the welcoming, artistic, and cozy bar organically.",
+        "tags": "Lesbian Space",
+        "tags2": "",
+        "sources": "Anonymous. “Lost Womyn’s Space: Normandie Room.” Lost Womyn’s Space, July 6, 2011. https://lostwomynsspace.blogspot.com/2011/07/normandie-room.html.\nGoldberg, Lesley. “Fave Los Angeles Lesbian Bar The Normandie Room Goes Under.” July 28, 2009. https://www.pride.com/g-spot/fave-los-angeles-lesbian-bar-normandie-room-goes-under.",
+        "distanceMiles": 0.0151,
+        "detailPage": null,
+        "photos": [
+            {
+                "file": "NormandieNY97.jpg",
+                "caption": "The Normandie Room New Years Eve 1997 Bar photograph, December 31, 1997, The Normandie Room Collection, June L. Mazer Lesbian Archives"
+            },
+            {
+                "file": "NormandieNY972.jpg",
+                "caption": "The Normandie Room New Years Eve 1997 Group photograph, December 31, 1997, The Normandie Room Collection, June L. Mazer Lesbian Archives"
+            }
+        ]
+    },
+    {
+        "id": "hi-tops",
+        "name": "Hi Tops",
+        "organizationName": "Hi Tops",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "8933 Santa Monica Boulevard, West Hollywood, CA 90069",
+        "lat": 34.0845401,
+        "lng": -118.3852139,
+        "open": 2018,
+        "close": 2026,
+        "type": "bar",
+        "desc": "Hi Tops is a sports bar co-owned by a lesbian. The Real L Word star Whitney Mixter hosted a weekly event celebrating The L Word: Generation Q on Sundays at this bar.",
+        "description": "Hi Tops is a sports bar co-owned by a lesbian. The Real L Word star Whitney Mixter hosted a weekly event celebrating The L Word: Generation Q on Sundays at this bar.",
+        "shortDescription": "Hi Tops is a sports bar co-owned by a lesbian. The Real L Word star Whitney Mixter hosted a weekly event celebrating The L Word: Generation Q on Sundays at this bar.",
+        "tags": "Mixed LGBT Space",
+        "tags2": "",
+        "sources": "Holmes, Mona. “Popular San Francisco LGBTQ Sports Bar Lands in West Hollywood Tonight.” Eater LA, August 29, 2018. https://la.eater.com/2018/8/29/17796364/lgbtq-sports-bar-opening-west-hollywood.\nLavalette, Esmée. “Lesbian Los Angeles: Best Lesbian Clubs and Lesbian Bars Los Angeles.” Once Upon a Journey, December 26, 2019. https://onceuponajrny.com/lesbian-bars-los-angeles/.",
+        "distanceMiles": 0.018,
+        "detailPage": null,
+        "photos": []
+    },
+    {
+        "id": "rocco-weho",
+        "name": "Rocco's WeHo",
+        "organizationName": "Rocco's WeHo",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "8900 Santa Monica Boulevard, West Hollywood, CA 90069",
+        "lat": 34.0844674,
+        "lng": -118.384199,
+        "open": 2019,
+        "close": 2026,
+        "type": "bar",
+        "desc": "The Real L Word star Whitney Mixter hosts a lesbian event known as Call Out Thursdays at this bar.",
+        "description": "The Real L Word star Whitney Mixter hosts a lesbian event known as Call Out Thursdays at this bar.",
+        "shortDescription": "The Real L Word star Whitney Mixter hosts a lesbian event known as Call Out Thursdays at this bar.",
+        "tags": "Mixed LGBT Space",
+        "tags2": "",
+        "sources": "About - Mattie’s West Hollywood. March 13, 2023. https://roccosweho.com/drinks-2/.\nLavalette, Esmée. “Lesbian Los Angeles: Best Lesbian Clubs and Lesbian Bars Los Angeles.” Once Upon a Journey, December 26, 2019. https://onceuponajrny.com/lesbian-bars-los-angeles/.",
+        "distanceMiles": 0.0277,
+        "detailPage": null,
+        "photos": []
+    },
+    {
+        "id": "first-lesbian-tide-offices",
+        "name": "First Lesbian Tide Offices",
+        "organizationName": "First Lesbian Tide Offices",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "1124½ Ogden Drive, West Hollywood, CA 90046",
+        "lat": 34.091519,
+        "lng": -118.358916,
+        "open": 1972,
+        "close": 1973,
+        "type": "nonprofit",
+        "desc": "Jeanne Córdova’s apartment at 1124½ Ogden Drive was the first working editorial headquarters of The Lesbian Tide, the first publicly circulated lesbian periodical in the United States to reach a national audience. The periodical began in 1971 as the newsletter of the Los Angeles chapter of the Daughters of Bilitis, but it soon became an independent publication.",
+        "description": "Jeanne Córdova’s apartment at 1124½ Ogden Drive was the first working editorial headquarters of The Lesbian Tide, a publication described by historians as “the newspaper of record for the lesbian feminist decade.” The periodical began in 1971 as the newsletter of the Los Angeles chapter of the Daughters of Bilitis, but it soon became an independent publication because of political differences between its radical lesbian feminist editors and the more conservative leadership of DOB. Córdova edited and published the newspaper from this address until early 1973, when the magazine moved to 373 No. Western Avenue in Los Angeles. During the Tide’s run from 1972 to 1980, Lesbian Tide staff simultaneously organized the first West Coast Lesbian Conference (1971), the first National Lesbian Conference at UCLA (1973), and opened the first lesbian community center in Los Angeles. The Lesbian Tide was also the first publicly circulated lesbian periodical in the United States to reach a national audience.",
+        "shortDescription": "Jeanne Córdova’s apartment at 1124½ Ogden Drive was the first working editorial headquarters of The Lesbian Tide, the first publicly circulated lesbian periodical in the United States to reach a national audience. The periodical began in 1971 as the newsletter of the Los Angeles chapter of the Daughters of Bilitis, but it soon became an independent publication.",
+        "tags": "Lesbian Space",
+        "tags2": "Lesbian Owned Business",
+        "sources": "City of West Hollywood. “City of West Hollywood HCS and Survey Report.” September 2016. https://www.wehopreservation.org/wp-content/uploads/2016/10/Tile-4-Hist-Context.pdf.\nFaderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. Univ of California Press, 2009.\nMarc Stein, ed. Encyclopedia of Lesbian, Gay, Bisexual, and Transgender History in America. New York, NY : Charles Scribner’s Sons/Thomson/Gale, 2004. http://archive.org/details/encyclopediaofle0001unse_c3g4.\nONE Archives at the USC Libraries. “Pioneering Lesbian Activist Jeanne Córdova (1948-2016) | One Archives.” Accessed April 29, 2026. https://one.usc.edu/news/pioneering-lesbian-activist-jeanne-cordova-1948-2016.\nThe Advocate. “Sex History And Lesbian Outlaws | Advocate.Com.” December 3, 2011. https://www.advocate.com/arts-entertainment/books/2011/12/03/sex-history-and-lesbian-outlaws.\nThe Lesbian Tide, Vol. 1, No. 10 (April 1972); The Lesbian Tide, Vol 2, No 6 (January 1973) The Lesbian Tide, Vol 3, No 3, (October 1973).",
+        "distanceMiles": 0.0455,
+        "detailPage": null,
+        "photos": [
+            {
+                "file": "Tide1.jpg",
+                "caption": "The Lesbian Tide, 1972, June L. Mazer Lesbian Archives"
+            }
+        ]
+    },
+    {
+        "id": "footlight-club",
+        "name": "Footlight Club",
+        "organizationName": "Footlight Club",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "7746 Santa Monica Boulevard, West Hollywood, CA 90069",
+        "lat": 34.090528,
+        "lng": -118.358147,
+        "open": 1930,
+        "close": 1940,
+        "type": "bar",
+        "desc": "Drag king Tommy Williams performed at this 1930s West Hollywood nightclub.",
+        "description": "Drag king Tommy Williams performed at this 1930s West Hollywood nightclub.",
+        "shortDescription": "Drag king Tommy Williams performed at this 1930s West Hollywood nightclub.",
+        "tags": "Mixed LGBT Space",
+        "tags2": "",
+        "sources": "“Gay Los Angeles: The Early Days.” The Tangent Group, January 2, 1988. https://www.tangentgroup.org/gay-los-angeles-early-days/.",
+        "distanceMiles": 0.024,
+        "detailPage": null,
+        "photos": []
+    },
+    {
+        "id": "one-institute-later-one-archives-gallery-and-museum",
+        "name": "ONE Institute / Later ONE Archives Gallery & Museum",
+        "organizationName": "ONE Institute / Later ONE Archives Gallery & Museum",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "626 N Robertson Blvd, West Hollywood, CA 90069",
+        "lat": 34.081707,
+        "lng": -118.3852884,
+        "open": 1988,
+        "close": 2026,
+        "type": "nonprofit",
+        "desc": "Founded in 1952, the ONE Institute initially focused on publishing ONE Magazine, the first major widely distributed LGBT periodical in the United States, but expanded to promote scholarship about LGBTQ people and defend press freedom in court. This West Hollywood building originally held the International Gay and Lesbian Archives founded by ONE Magazine contributor and activist Jim Kepner, which merged with the ONE Institute in 1994, and it currently serves as a permanent gallery for One Institute.",
+        "description": "Founded in 1952, the ONE Institute initially focused on publishing ONE Magazine, the first major widely distributed LGBT periodical in the United States. The Los Angeles postal authorities charged ONE Inc. with obscenity, and ONE fought the charges in court. In 1958 the Supreme Court sided with ONE Inc in ONE Inc v Olesen. With the litigation ongoing, ONE’s leaders established the first gay studies program in America, later launching the ONE Institute Quarterly of Homophile Studies in 1958 to promote scholarly journalism. At the same time, homophile activist and ONE magazine contributor Jim Kepner was collecting material related to LGBTQ history. First the Western Gay Archives, then the National Gay Archives, and finally the International Gay and Lesbian Archives, the collection grew in size and scope. In 1994, Kepner’s archives merged with the ONE Institute. This West Hollywood location originally became a home for the International Gay and Lesbian Archives in 1988 after the city provided the space, and it currently serves as a permanent gallery for One Institute.",
+        "shortDescription": "Founded in 1952, the ONE Institute initially focused on publishing ONE Magazine, the first major widely distributed LGBT periodical in the United States, but expanded to promote scholarship about LGBTQ people and defend press freedom in court. This West Hollywood building originally held the International Gay and Lesbian Archives founded by ONE Magazine contributor and activist Jim Kepner, which merged with the ONE Institute in 1994, and it currently serves as a permanent gallery for One Institute.",
+        "tags": "Mixed LGBT Space",
+        "tags2": "",
+        "sources": "About One – One Institute. n.d. Accessed May 6, 2026. https://www.oneinstitute.org/about/.\n“History | One Archives.” Accessed May 13, 2026. https://one.usc.edu/about/history.",
+        "distanceMiles": 0.1387,
+        "detailPage": null,
+        "photos": [
+            {
+                "file": "ONE-Gallery_626_North_Robertson.jpg",
+                "caption": "Panterstaco, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons"
+            }
+        ]
+    },
+    {
+        "id": "sweetwater",
+        "name": "Sweetwater",
+        "organizationName": "Sweetwater",
+        "isRelocation": false,
+        "locationLabel": null,
+        "address": "8869 Santa Monica Blvd, West Hollywood, CA 90069",
+        "lat": 34.085237,
+        "lng": -118.384032,
+        "open": 2026,
+        "close": 2026,
+        "type": "bar",
+        "desc": "Sweetwater is a new nightlife venue focused on queer women On Santa Monica Blvd. It was founded by Berni Gambino.",
+        "description": "Sweetwater is a new nightlife venue focused on queer women On Santa Monica Blvd. It was founded by Berni Gambino.",
+        "shortDescription": "Sweetwater is a new nightlife venue focused on queer women On Santa Monica Blvd. It was founded by Berni Gambino.",
+        "tags": "Lesbian Space",
+        "tags2": "Lesbian Owned Business",
+        "sources": "Murillo, Paulo. “SweetWater WeHo Nightclub Is Opening in West Hollywood for WeHo Pride Weekend.” WEHO TIMES West Hollywood News, Nightlife and Events, May 24, 2026. https://wehotimes.com/sweetwater-weho-nightclub-is-opening-in-west-hollywood-for-weho-pride-weekend/.",
+        "distanceMiles": null,
+        "detailPage": null,
+        "photos": []
     }
 ];
