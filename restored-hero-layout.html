@@ -1,0 +1,466 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" data-stitch-anim-opacity="true"><head></head><body class="bg-background text-on-surface font-ui-main text-ui-main antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Queer Women's Route 66</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&amp;family=Oswald:wght@500;600;700&amp;family=Source+Serif+4:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-container": "#df2e07",
+                      "on-surface-variant": "#584046",
+                      "surface-container-highest": "#eae1dd",
+                      "on-error-container": "#93000a",
+                      "secondary": "#9e3678",
+                      "surface-container": "#f5ece8",
+                      "surface-container-high": "#f0e6e3",
+                      "surface-dim": "#e1d8d5",
+                      "primary-fixed-dim": "#ffb1c5",
+                      "surface-tint": "#b5185c",
+                      "background": "#fff8f5",
+                      "outline": "#8c7076",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-fixed-variant": "#8d1600",
+                      "on-primary": "#ffffff",
+                      "primary-fixed": "#ffd9e1",
+                      "surface-variant": "#eae1dd",
+                      "inverse-primary": "#ffb1c5",
+                      "tertiary": "#b41f00",
+                      "surface": "#fff8f5",
+                      "on-primary-fixed": "#3f001a",
+                      "secondary-fixed": "#ffd8ea",
+                      "surface-container-low": "#fbf2ee",
+                      "outline-variant": "#dfbec5",
+                      "inverse-on-surface": "#f8efeb",
+                      "secondary-fixed-dim": "#ffaed9",
+                      "on-primary-container": "#fffbff",
+                      "on-error": "#ffffff",
+                      "on-primary-fixed-variant": "#8f0045",
+                      "on-secondary-fixed-variant": "#801c5f",
+                      "on-secondary-container": "#791559",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-fixed": "#ffdad3",
+                      "on-tertiary-fixed": "#3e0500",
+                      "surface-bright": "#fff8f5",
+                      "primary-container": "#d33472",
+                      "primary": "#b21559",
+                      "on-secondary-fixed": "#3c002a",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-fixed-dim": "#ffb4a4",
+                      "secondary-container": "#fd86cb",
+                      "on-tertiary-container": "#fffbff",
+                      "on-secondary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "on-surface": "#1f1b19",
+                      "inverse-surface": "#342f2d",
+                      "on-background": "#1f1b19"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "container-max": "1200px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "20px",
+                      "unit": "4px"
+              },
+              "fontFamily": {
+                      "nav-item": [
+                              "Oswald"
+                      ],
+                      "display-lg-mobile": [
+                              "Oswald"
+                      ],
+                      "essay-body": [
+                              "Source Serif 4"
+                      ],
+                      "headline-md": [
+                              "Oswald"
+                      ],
+                      "display-lg": [
+                              "Oswald"
+                      ],
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "ui-main": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "nav-item": [
+                              "18px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "36px",
+                              {
+                                      "lineHeight": "42px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "essay-body": [
+                              "20px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "ui-main": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .road-line {
+            background: linear-gradient(to right, theme('colors.primary'), theme('colors.primary') 33.3%, theme('colors.secondary') 33.3%, theme('colors.secondary') 66.6%, theme('colors.tertiary-container') 66.6%);
+            height: 4px;
+            width: 100%;
+            display: block;
+            background-size: 200% 100%;
+            animation: road-scroll 10s linear infinite;
+        }
+        
+        @keyframes road-scroll {
+            0% { background-position: 0% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        .road-line-vertical {
+             background: linear-gradient(to bottom, theme('colors.primary'), theme('colors.primary') 33.3%, theme('colors.secondary') 33.3%, theme('colors.secondary') 66.6%, theme('colors.tertiary-container') 66.6%);
+            width: 4px;
+            height: 100%;
+        }
+        
+        .tactile-border {
+            border: 1px solid theme('colors.outline');
+        }
+        
+        .tactile-card {
+            background-color: theme('colors.surface-container-lowest');
+            border: 1px solid theme('colors.outline');
+            border-radius: theme('borderRadius.xl');
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .tactile-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(33, 29, 27, 0.1), 0 4px 6px -2px rgba(33, 29, 27, 0.05);
+            border-color: theme('colors.primary');
+            border-width: 2px;
+            transform: translateY(-4px);
+        }
+        
+        /* Map custom scrollbar */
+        .sidebar-scroll::-webkit-scrollbar {
+            width: 6px;
+        }
+        .sidebar-scroll::-webkit-scrollbar-track {
+            background: theme('colors.surface');
+        }
+        .sidebar-scroll::-webkit-scrollbar-thumb {
+            background: theme('colors.outline-variant');
+            border-radius: 4px;
+        }
+        .sidebar-scroll::-webkit-scrollbar-thumb:hover {
+            background: theme('colors.outline');
+        }
+
+        /* Animations */
+        @media (prefers-reduced-motion: no-preference) {
+            .reveal {
+                opacity: 0;
+                transform: translateY(30px);
+                transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            .reveal.active {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            .stagger-1 { transition-delay: 100ms; }
+            .stagger-2 { transition-delay: 200ms; }
+            .stagger-3 { transition-delay: 300ms; }
+        }
+
+        .btn-arrow-slide .material-symbols-outlined {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-arrow-slide:hover .material-symbols-outlined {
+            transform: translateX(4px);
+        }
+
+        .map-pin {
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .map-pin:hover {
+            transform: scale(1.2) translateY(-10px);
+        }
+        
+        .map-pin-active {
+            animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        }
+
+        @keyframes pulse-ring {
+            0% { box-shadow: 0 0 0 0 rgba(178, 21, 89, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(178, 21, 89, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(178, 21, 89, 0); }
+        }
+
+        .parallax-bg {
+            will-change: transform;
+        }
+        
+        .header-scrolled {
+            background-color: rgba(255, 248, 245, 0.9);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+        .dark .header-scrolled {
+            background-color: rgba(52, 47, 45, 0.9);
+        }
+      </style>
+<!-- TopNavBar -->
+<nav class="bg-background/80 dark:bg-background/80 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant dark:border-outline flat no shadows font-ui-main text-ui-main transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center px-margin-desktop max-w-container-max mx-auto py-4">
+<a class="flex items-center gap-4 group" href="#">
+<img alt="Mazer Logo" class="h-16 w-16 object-contain group-hover:scale-110 transition-transform duration-500 cubic-bezier(0.4, 0, 0.2, 1)" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSpx1HraMKJ9rLF0vW85sycBHkzP0Rha4NqfVx8lWHMWla9pqZB2yF7XBARvX0ZKVkTu2bDNgsTIltcB9db8Ex0KV1dfK9pQBn1zNVfTm9qhUajxDYcraax-8K9AbDFzoE9HrSNNg1D_B-nQQwLWWDca8n8AXIMd5N2Yr9pcnOY6_fV8-ei5zuflFyyOWRpMfcc7GhNru21eHd-OzP3yqwb-aBRyhZ7hz7fyHeBDszLxzK7ZfiwuzfCBmHj4MYvxEPCp6JhBfXMw">
+<div class="hidden md:flex flex-col">
+<span class="font-display-lg text-primary dark:text-primary-fixed-dim uppercase tracking-wider leading-tight">Discovering West Hollywood's Route 66</span>
+<span class="font-label-caps text-on-surface-variant opacity-80">Lesbian Historical Places Digital Map</span>
+</div>
+<span class="font-display-lg-mobile text-display-lg-mobile text-primary dark:text-primary-fixed-dim uppercase tracking-wider block md:hidden">QWR66</span>
+</a>
+<div class="hidden md:flex items-center gap-8 font-nav-item text-nav-item relative" id="nav-links">
+<a class="nav-link dark:text-tertiary-fixed-dim pb-1 font-bold transition-colors duration-300 relative text-tertiary" data-target="home" href="#home">Home</a>
+<a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim pb-1 transition-colors duration-300 relative" data-target="introduction" href="#introduction">Introduction</a>
+<a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim pb-1 transition-colors duration-300 relative" data-target="about" href="about.html">About</a>
+<div class="absolute bottom-0 left-0 h-0.5 bg-tertiary transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]" id="nav-indicator" style="width: 45.9844px; transform: translateX(0px);"></div>
+<a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim pb-1 transition-colors duration-300 relative" data-target="map" href="#map">Map</a><button class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center p-2 rounded-full hover:bg-surface-variant duration-300">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+</div>
+<!-- Mobile Menu Button -->
+<button class="md:hidden text-on-surface p-2 hover:bg-surface-variant rounded-full transition-colors">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+<div class="road-line"></div>
+</nav>
+<!-- Hero Section -->
+<section class="relative pt-32 pb-24 md:pt-48 md:pb-32 bg-inverse-surface text-inverse-on-surface overflow-hidden min-h-[90vh] flex items-center" id="home">
+<!-- Sunset Strip aerial background -->
+<div class="absolute inset-0 bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuCJlTneuph3atQYCBIHZEKWqDoCYT4hTvtmRrHEK9a_IpwB7FU_-3n0_Zek-lghbFA5BNw-j5GIWeOR_-qwVE6GUCOZoL-rHpQYxOazaCbe75e6mgSBS2xSZA1MI7jucNPsI0f09KpbmXVZEEjfunKjGAvEHPM6vm4UskoJ7lrSSKPz0lpI_7Cy87q9PO8FQe1XWS4ZDT6nYEODooRmEXN5ONg92rh6SMnSDcSjJp_6-3nG94w8QHKhErcnx7mYmkDzvpQS7tiO-A')] bg-cover bg-center sepia-[.2] parallax-bg" id="hero-bg" style="transform: translateY(0px);"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-inverse-surface/95 to-inverse-surface/70 mix-blend-multiply pointer-events-none"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 w-full">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-12 flex flex-col items-center text-center gap-8">
+<h1 class="reveal stagger-1 font-display-lg text-display-lg md:text-[64px] md:leading-tight text-surface-container-lowest drop-shadow-md active">Discovering West Hollywood's Route 66</h1>
+<h2 class="reveal stagger-2 font-headline-md text-headline-md md:text-[48px] md:leading-tight active" style="color: rgb(255, 177, 197);">Lesbian Historical Places Digital Map</h2>
+<div class="reveal stagger-3 flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto active justify-center">
+<a class="btn-arrow-slide inline-flex items-center justify-center gap-2 bg-tertiary-container hover:bg-tertiary text-on-tertiary font-label-caps text-label-caps uppercase px-8 py-4 rounded-lg transition-all duration-300 shadow-sm hover:shadow-md" href="#introduction">
+                            Read the Introduction
+                            <span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+<a class="btn-arrow-slide inline-flex items-center justify-center gap-2 bg-surface-container text-on-surface hover:bg-surface-variant font-label-caps text-label-caps uppercase px-8 py-4 rounded-lg transition-all duration-300 shadow-sm hover:shadow-md" href="#map">
+                            Explore the Map
+                            <span class="material-symbols-outlined text-[18px]">map</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom road accent -->
+<div class="absolute bottom-0 left-0 w-full flex flex-col">
+<div class="h-2 bg-primary w-full bg-[linear-gradient(90deg,theme('colors.primary')_0%,theme('colors.primary')_50%,rgba(178,21,89,0.8)_100%)] bg-[length:200%_100%] animate-[road-scroll_3s_linear_infinite]"></div>
+<div class="h-2 bg-secondary w-full bg-[linear-gradient(90deg,theme('colors.secondary')_0%,theme('colors.secondary')_50%,rgba(158,54,120,0.8)_100%)] bg-[length:200%_100%] animate-[road-scroll_4s_linear_infinite]"></div>
+<div class="h-2 bg-tertiary-container w-full bg-[linear-gradient(90deg,theme('colors.tertiary-container')_0%,theme('colors.tertiary-container')_50%,rgba(223,46,7,0.8)_100%)] bg-[length:200%_100%] animate-[road-scroll_5s_linear_infinite]"></div>
+</div>
+</section>
+<!-- Introduction Essay Section -->
+<section class="py-24 bg-surface text-on-surface relative" id="introduction">
+<div class="max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="text-center mb-16 reveal active">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">The Mother Road's Hidden History</h2>
+<div class="w-24 h-1 bg-secondary mx-auto"></div>
+</div>
+<div class="prose prose-lg font-essay-body text-essay-body space-y-8 text-on-surface-variant"><p class="reveal stagger-1 first-letter:text-7xl first-letter:font-display-lg first-letter:text-tertiary-container first-letter:mr-3 first-letter:float-left active">Route 66 has long been cemented in the American imagination as a symbol of freedom, mobility, and masculine adventure. Yet, woven into the neon glow and asphalt stretches is a profound, often overlooked history of queer women seeking sanctuary, community, and identity.</p><figure class="reveal stagger-1 my-12 tactile-card p-4 mx-[-1rem] md:mx-[-4rem] bg-white rotate-1 hover:rotate-0 transition-transform duration-500 active"><div class="aspect-video w-full bg-surface-variant rounded-t-lg overflow-hidden relative border-b border-outline-variant group"><img alt="West Hollywood aerial view" class="w-full h-full object-cover sepia-[.3] contrast-125 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy0s_yRF7kz4m1vxmzffjQ4my59fJ-A74XKboe_agdAcM6TQ3PFCAb_5S0irl4RosEVg2D1KsB9T-4azDVI7ft1YGCygjXq4ZI6oppddjY7YiISVY2uLeigLE2VSRbtQh4_0syKNWzafhh3Gkc_Swrwj47wMbZnWqlkkfE8cfro5GI21wwLKG9fyxzQWamAAAWvUldn7Zp_A51RM-rVcr3oU-By26OrT1DoK1gPHtwR7vWFrTJwfJzPuo9No2rCujpA-KzwipA4A"></div><figcaption class="pt-4 pb-2 px-2 font-essay-body text-sm text-on-surface-variant"><span class=""><strong class="font-label-caps text-label-caps text-on-surface">Fig. 1</strong> — West Hollywood aerial view, circa 1926.</span></figcaption></figure><p class="reveal stagger-2 active">In West Hollywood and its surrounding enclaves, the highway served not just as a thoroughfare, but as a lifeline. From clandestine lesbian bars tucked behind unassuming facades to feminist bookstores that functioned as intellectual hubs, these spaces formed an archipelago of resistance.</p><figure class="reveal stagger-2 my-12 tactile-card p-4 mx-[-1rem] md:mx-[-4rem] bg-white -rotate-1 hover:rotate-0 transition-transform duration-500 active"><div class="grid grid-cols-2 gap-4 aspect-video w-full bg-surface-variant rounded-t-lg overflow-hidden relative border-b border-outline-variant group"><img alt="Garden of Alla" class="w-full h-full object-cover sepia-[.2] group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuE9u9I0g2cQJSj2VKbjzljaXFWmHE30Cg02s0IqdbJLrchSuLc3hihisithN39NPoqOC0CkDqP9E-0-toJL35t1eQcBFA2zNI6kzXMTknIs0VbbcNl3v7xyJgD1YSyVdXbXt-oMhuvWgqvHwcdrLf9whBK6uVARIj7pUGyB65QYUAs3x-5_cA9R1STOdG-Wjr44fUj0O06MpfMLzVJ7ib7WblZc4vk8ublQOjZmL-UGAjmmRqFJ3ykNyst3M_akAB_2cxRwt42A"><img alt="Alla Nazimova" class="w-full h-full object-cover sepia-[.2] group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7htYD4ECkss83fieAykJqWEtmkx1LhEANZk0WLj21gyHAH5nW7Moy4wC90eE-rNXmvNmUGbRJIZ1Fo7ifMy760GYuu719bZKnKyhqSViNpzNr9WOL1YYjC-1FR5MJLdulP1dle6cT1adOuqqgCv75pnNkKTSMEUSlmeoUuw9zGk4fQL0j3XHkPpoIe1PLrcqwcgahjhJWvcRV1urR1eLazqVz1JtthHtyZd_gAbwTvIYJvWSwVM9g1KhvyxA0rlBCud1TyLBQJw"></div><figcaption class="pt-4 pb-2 px-2 font-essay-body text-sm text-on-surface-variant"><span class=""><strong class="font-label-caps text-label-caps text-on-surface">Fig. 2</strong> — The Garden of Alla and its founder, the legendary Alla Nazimova.</span></figcaption></figure><p class="reveal stagger-1 active">The June L. Mazer Lesbian Archives seeks to reclaim this geography. By physically mapping these locations—many of which have been lost to gentrification or time—we ground the ephemeral nature of queer history into the tangible landscape of Southern California.</p><p class="reveal stagger-1 active">This project is a living document. It invites you to traverse a Route 66 that existed parallel to the mainstream narrative—a road where women found each other, forged radical politics, and built institutions that continue to shape the LGBTQ+ landscape today.</p><figure class="reveal stagger-2 my-12 tactile-card p-4 mx-[-1rem] md:mx-[-4rem] bg-white -rotate-1 hover:rotate-0 transition-transform duration-500 active"><div class="grid grid-cols-2 gap-4 w-full bg-surface-variant rounded-t-lg overflow-hidden relative border-b border-outline-variant group aspect-[3/2]"><img alt="The Palms interior" class="w-full h-full object-cover sepia-[.2] group-hover:scale-105 transition-transform duration-700 object-bottom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdl_AVDYvrDiMbYhuytR4zzpWmy-RNOASiAzcd08hVvdCcd6jN1etqJJWi3jOy4gyPtdSWSb7E5nJoQ2LIDCdxh_X3lthSfQj4TkI7MWhSwcYNhOVG8YeMImFTiZYQ9dWndM3II8Vl9M-V19Bl0JLNNsnnvXEcectsJMaon-6oBb-H57WpYbpJbcaoGQ4UxYtQ1Msa-5JwM8qRSJ0nMfZC3j2dGNcZB3PEUbzux24kEwGxJAneXVquGlSHOHN8stHyOSuj68nRvA"><img alt="The Rubyfruit exterior" class="w-full h-full object-cover sepia-[.2] group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBC2bvaheWYlEnBCGXLD3cnSt5-FmJ9MEuEhQ_KKQYa3vE9m_S3VHvULstZruuRsku4U_FCcJ0Ny2Gw6ZmbDFKvLiisKhg7MGliGrLvHU-_JIZw_WziisEH10PSYXoPQakN1MggQbWGLbjdxzUuzTfgKypEZWwE7O9SR34K6p0WYkWNtU99OU3HS111dSdmUIc5R8HXWIF1CwcI8AbS3jQHZwkfUWi3g3-tqi3nqhawfHXHd_ghOjk85gXHVjCsMZXeHFu9P4S_dg"></div><figcaption class="pt-4 pb-2 px-2 font-essay-body text-sm text-on-surface-variant"><span class=""><strong class="font-label-caps text-label-caps text-on-surface">Fig. 4</strong> — Community spaces like The Palms and The Rubyfruit provided essential sanctuary and visibility.</span></figcaption></figure><div class="clear-both"></div><div class="reveal mt-16 flex items-center justify-center gap-4 text-outline active"><span class="material-symbols-outlined text-outline-variant">directions_car</span><div class="w-32 border-t-2 border-dashed border-outline-variant relative"><div class="absolute -top-[5px] left-1/2 h-2 w-2 rounded-full bg-secondary-container transform -translate-x-1/2"></div></div><span class="material-symbols-outlined text-primary">location_on</span></div></div>
+</div>
+</section>
+<!-- Section Transition: Introduction -> Map -->
+<div class="road-line" aria-hidden="true"></div>
+<!-- Main Map Section -->
+<section class="reveal bg-surface flex flex-col md:flex-row h-[800px] max-h-[90vh]" id="map"><div class="relative w-full h-full flex overflow-hidden"><div class="absolute top-6 left-6 z-40 w-80 flex flex-col gap-4 pointer-events-none"><div class="bg-surface-container-lowest/95 backdrop-blur-md p-6 rounded-xl shadow-xl border border-outline pointer-events-auto"><h3 class="font-headline-md text-headline-md text-primary mb-4 flex items-center gap-2"><span class="material-symbols-outlined">map</span> Archive Map</h3><div class="space-y-4"><div class="relative"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline-variant">search</span><input class="w-full pl-10 pr-4 py-2 bg-surface-container-low border border-outline rounded-lg text-sm focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all" id="map-search" placeholder="Search locations..." type="text"></div><div class="space-y-2"><h4 class="font-label-caps text-[10px] text-outline uppercase tracking-widest">Categories</h4><div class="flex flex-wrap gap-2"><button class="px-3 py-1 rounded-full border border-primary bg-primary text-white text-xs font-ui-main transition-all">Lesbian Space</button><button class="px-3 py-1 rounded-full border border-outline text-on-surface-variant text-xs font-ui-main hover:border-secondary transition-all">Mixed LGBT</button><button class="px-3 py-1 rounded-full border border-outline text-on-surface-variant text-xs font-ui-main hover:border-tertiary transition-all">Owned Business</button></div></div><div class="pt-2"><div class="flex justify-between items-center mb-2"><h4 class="font-label-caps text-[10px] text-outline uppercase tracking-widest">Active Era</h4><span class="text-primary font-bold text-sm" id="year-display">1975</span></div><input class="w-full h-1.5 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-primary" id="year-slider" max="2026" min="1920" step="1" type="range" value="1975"><div class="flex justify-between text-[10px] font-label-caps text-outline-variant mt-1"><span class="">1920</span><span class="">1950</span><span class="">1980</span><span class="">2026</span></div></div></div></div></div><div class="flex-1 relative bg-surface-dim cursor-grab active:cursor-grabbing"><img alt="West Hollywood Map" class="absolute inset-0 w-full h-full object-cover opacity-80 sepia-[.1]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDlZJkG3NuZbjxSZ3CSubR2oNeGU7ahqqa6WNjzr7_ZyY3HIS8CJ1roPI69QXfgcLupr1cR5yVsyGN-hZGz29hfYNEazGu66UjDpUdIqhVOVxVCf2Mcf2Bz10rHOMfYXH3R_J3DzQ49LrQowSm78T1E-D20Lo_AxlelGm5IDhfU-GTqACVXpBbeJDaqVJmzN4EUPEwXFoT5yS1Qw_LvQG635iisclCZSNpZGrljzH1K077Cq3CN5yNYy7Cyi5Zbd6qDpZ4jfv1qQ"><div class="absolute inset-0" id="map-pins-container"></div><div class="absolute top-6 right-6 flex flex-col gap-2"><button class="w-10 h-10 bg-white border border-outline rounded-lg shadow-md flex items-center justify-center hover:text-primary transition-colors"><span class="material-symbols-outlined">add</span></button><button class="w-10 h-10 bg-white border border-outline rounded-lg shadow-md flex items-center justify-center hover:text-primary transition-colors"><span class="material-symbols-outlined">remove</span></button></div></div><div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-50 w-[400px] max-w-[90vw] bg-surface-container-lowest rounded-2xl shadow-2xl border border-outline overflow-hidden hidden animate-in fade-in slide-in-from-bottom-4 duration-300" id="location-popup"><div class="h-48 bg-surface-variant relative"><img class="w-full h-full object-cover" id="popup-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgcng9IjgiIGZpbGw9IiNlOGVhZWQiLz48cGF0aCBkPSJNMTcwIDEzMCBsMzAgNDAgbDIwLTE1IGw0MCA1NSBIMTQweiIgZmlsbD0iI2JkYzFjNiIvPjxjaXJjbGUgY3g9IjI1MCIgY3k9IjEyMCIgcj0iMTgiIGZpbGw9IiNiZGMxYzYiLz48L3N2Zz4="><button class="absolute top-3 right-3 w-8 h-8 bg-black/20 hover:bg-black/40 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-colors" id="close-popup"><span class="material-symbols-outlined text-sm">close</span></button></div><div class="p-6"><div class="flex justify-between items-start mb-2"><h4 class="font-headline-md text-2xl text-on-surface" id="popup-name"></h4><span class="text-[10px] font-label-caps bg-primary/10 text-primary px-2 py-1 rounded border border-primary/20" id="popup-dates"></span></div><p class="text-sm text-on-surface-variant mb-4 flex items-center gap-1" id="popup-address"><span class="material-symbols-outlined text-sm">location_on</span> <span></span></p><p class="text-essay-body text-sm text-on-surface leading-relaxed mb-6 line-clamp-3" id="popup-desc"></p><button class="w-full py-3 bg-tertiary-container hover:bg-tertiary text-white font-label-caps text-xs uppercase rounded-lg transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-2">Read Full History <span class="material-symbols-outlined text-sm">arrow_forward</span></button></div></div></div></section>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface text-on-surface dark:text-inverse-on-surface relative bottom-0 w-full border-t-4 border-primary dark:border-primary-fixed flat no shadows font-ui-main text-ui-main">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-margin-desktop gap-8 transition-opacity duration-300">
+<div class="flex flex-col items-center md:items-start gap-4 reveal active">
+<div class="flex items-center gap-4">
+<a href="https://www.mazerlesbianarchives.org/" target="_blank" rel="noopener noreferrer" class="shrink-0">
+<img alt="Mazer Logo Pink" class="h-24 w-auto object-contain hover:rotate-[360deg] transition-transform duration-1000 ease-[cubic-bezier(0.4,0,0.2,1)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6IRkWBTarWZ14o1rJMC6LK3PTqItbAyVJo5h7Lf4UypHh1MsyOPugJiOYsnf0mO4jh-i4ty3Jvnz87PkBKTr9kCyGwL1At_PgCOrwrZV323W1afdro0O1ONvIucC8e5uHE5Ho5y3EbNtpIY3F7uxfNoZWEHwtrLqpxjY44HK4lBMhpbtzHDUDxq6tA8tGkToiJwgjOsb87umiUlsmEzBh5m2QXSGINW9RT57fs0iZVan6-HQ7Hj2Z68ow-HaDEwwKV7XYHcHJ8Q">
+</a>
+<div class="flex flex-col">
+<span class="font-display-lg text-primary dark:text-primary-fixed-dim uppercase tracking-wider leading-tight">Discovering West Hollywood's Route 66</span>
+<span class="font-label-caps text-on-surface-variant opacity-80">Lesbian Historical Places Digital Map</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap justify-center gap-6 font-label-caps text-label-caps reveal stagger-2 active">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:underline decoration-tertiary decoration-2 underline-offset-4 transition-all duration-300" href="#home">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:underline decoration-tertiary decoration-2 underline-offset-4 transition-all duration-300" href="about.html">About</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:underline decoration-tertiary decoration-2 underline-offset-4 transition-all duration-300" href="#map">Map</a>
+</div>
+</div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Scroll Reveal Animations using IntersectionObserver
+        const revealElements = document.querySelectorAll('.reveal');
+        // Reset pre-rendered "active" state so blocks fade up as they enter the viewport
+        if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+            revealElements.forEach(el => el.classList.remove('active'));
+        }
+        
+        const revealOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+        
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, revealOptions);
+        
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // Parallax Effect for Hero Background
+        const heroBg = document.getElementById('hero-bg');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY < window.innerHeight) {
+                const scrollY = window.scrollY;
+                heroBg.style.transform = `translateY(${scrollY * 0.3}px)`;
+            }
+        });
+
+        // Sticky Header Blur on Scroll
+        const mainNav = document.getElementById('main-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                mainNav.classList.add('header-scrolled', 'shadow-sm');
+            } else {
+                mainNav.classList.remove('header-scrolled', 'shadow-sm');
+            }
+        });
+
+    });
+</script><script>
+(function() {
+    const locations = [
+        { name: "The Abbey", address: "692 N Robertson Blvd", lat: 34.0835, lng: -118.3854, open: 1991, close: 2026, type: "bar", desc: "The Abbey opened in 1991 as a coffee shop, and has since become a significant LGBTQ+ cultural landmark." },
+        { name: "Tess's Café International", address: "8711 Sunset Blvd", lat: 34.0917, lng: -118.3810, open: 1936, close: 1942, type: "bar", desc: "A lesbian nightclub owned and operated by Elmer and Tess Wheeler, featuring early drag kings." },
+        { name: "Connexxus", address: "9054 Santa Monica Blvd", lat: 34.0816, lng: -118.3885, open: 1985, close: 1988, type: "nonprofit", desc: "A feminist and lesbian community center in West Hollywood during the mid- to late 1980s." },
+        { name: "Different Light Bookstore", address: "8853 Santa Monica Blvd", lat: 34.0854, lng: -118.3836, open: 1990, close: 2009, type: "nonprofit", desc: "An independent LGBT bookstore retailer and home to the Lesbian Writers Series." },
+        { name: "Fan Girl Cafe", address: "8157 Santa Monica Blvd", lat: 34.0911, lng: -118.3667, open: 2023, close: 2026, type: "cafe", desc: "Opened in 2023 to celebrate women and LGBTQ musicians." },
+        { name: "Garden of Allah Hotel", address: "8152 Sunset Blvd", lat: 34.0972, lng: -118.3663, open: 1927, close: 1959, type: "hotel", desc: "Originally the estate of lesbian silent film star Alla Nazimova, a hub for Hollywood's LGBTQ+ community." },
+        { name: "The Palms Bar", address: "8572 Santa Monica Blvd", lat: 34.0882, lng: -118.3782, open: 1965, close: 2013, type: "bar", desc: "The oldest continuously operating lesbian bar in Southern California." }
+    ];
+
+    const icons = {
+        bar: 'local_bar',
+        cafe: 'restaurant',
+        nonprofit: 'menu_book',
+        hotel: 'bed',
+        misc: 'star'
+    };
+
+    const container = document.getElementById('map-pins-container');
+    const slider = document.getElementById('year-slider');
+    const display = document.getElementById('year-display');
+    const popup = document.getElementById('location-popup');
+
+    function updatePins(year) {
+        container.innerHTML = '';
+        locations.forEach(loc => {
+            if (loc.open <= year && loc.close >= year) {
+                const pin = document.createElement('div');
+                pin.className = 'absolute cursor-pointer group transition-transform hover:scale-110';
+                // Simple mapping of lat/lng to % for simulation
+                const top = ((34.1 - loc.lat) * 5000) + 40;
+                const left = ((loc.lng + 118.4) * 5000) + 50;
+                pin.style.top = top + '%';
+                pin.style.left = left + '%';
+                pin.innerHTML = `<div class="w-8 h-8 bg-primary text-white rounded-t-lg rounded-b-2xl flex items-center justify-center shadow-md border-2 border-white"><span class="material-symbols-outlined text-sm">${icons[loc.type] || 'location_on'}</span></div>`;
+                pin.onclick = () => showPopup(loc);
+                container.appendChild(pin);
+            }
+        });
+    }
+
+    function showPopup(loc) {
+        document.getElementById('popup-name').textContent = loc.name;
+        document.getElementById('popup-address').querySelector('span').textContent = loc.address;
+        document.getElementById('popup-dates').textContent = `${loc.open} - ${loc.close === 2026 ? 'Present' : loc.close}`;
+        document.getElementById('popup-desc').textContent = loc.desc;
+        popup.classList.remove('hidden');
+    }
+
+    slider.oninput = (e) => {
+        display.textContent = e.target.value;
+        updatePins(parseInt(e.target.value));
+    };
+
+    document.getElementById('close-popup').onclick = () => popup.classList.add('hidden');
+
+    updatePins(1975);
+})();
+</script>
+
+
+
+
+</body></html>
