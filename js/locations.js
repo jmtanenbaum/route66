@@ -18,7 +18,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "The Abbey opened in 1991 as a coffee shop, and has since become a significant LGBTQ+ nightlife landmark. The Abbey is known for hosting one of the longest-running lesbian nights in Los Angeles on Wednesdays.",
         "tags": "Mixed LGBT Space",
         "tags2": "",
-        "sources": "Denny. “This World-Famous LA Queer Bar Goes on Sale after 30 Years, but Not before Its Dark Past Comes Back to Haunt It.” Reckon, July 19, 2023. https://www.reckon.news/lgbtq/2023/07/this-world-famous-la-queer-bar-goes-on-sale-after-30-years-but-not-before-its-dark-past-comes-back-to-haunt-it.html.\r\nElina Shatkin. “The Abbey: The Story of an LA Icon | Discover Los Angeles.” December 8, 2025. https://www.discoverlosangeles.com/things-to-do/the-abbey-the-story-of-an-la-icon.\r\nHeadliner. “Chappell Roan: How an Unforgettable Night at a Gay Club Led to Pink Pony Club.” Accessed April 28, 2026. https://headlinerhub.com/chappell-roan-california-here-we-come.html.",
+        "sources": "Denny. “This World-Famous LA Queer Bar Goes on Sale after 30 Years, but Not before Its Dark Past Comes Back to Haunt It.” Reckon, July 19, 2023. https://www.reckon.news/lgbtq/2023/07/this-world-famous-la-queer-bar-goes-on-sale-after-30-years-but-not-before-its-dark-past-comes-back-to-haunt-it.html.\nElina Shatkin. “The Abbey: The Story of an LA Icon | Discover Los Angeles.” December 8, 2025. https://www.discoverlosangeles.com/things-to-do/the-abbey-the-story-of-an-la-icon.\nHeadliner. “Chappell Roan: How an Unforgettable Night at a Gay Club Led to Pink Pony Club.” Accessed April 28, 2026. https://headlinerhub.com/chappell-roan-california-here-we-come.html.",
         "distanceMiles": 0.0377,
         "detailPage": "the-abbey-detail.html",
         "photos": [
@@ -47,7 +47,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "The Chapel, which opened as a sister venue to The Abbey, was established in October 2016. The Chapel is a gay dance-focused nightclub. It hosts some lesbian and queer centric events like 2026's BBGRL: SUNDAY SERVICE for Lesbian Visibility Day and ALTAR GIRLS.",
         "tags": "Mixed LGBT Space",
         "tags2": "",
-        "sources": "Denny. “This World-Famous LA Queer Bar Goes on Sale after 30 Years, but Not before Its Dark Past Comes Back to Haunt It.” Reckon, July 19, 2023. https://www.reckon.news/lgbtq/2023/07/this-world-famous-la-queer-bar-goes-on-sale-after-30-years-but-not-before-its-dark-past-comes-back-to-haunt-it.html.\r\nElina Shatkin. “The Abbey: The Story of an LA Icon | Discover Los Angeles.” December 8, 2025. https://www.discoverlosangeles.com/things-to-do/the-abbey-the-story-of-an-la-icon.\r\nHeadliner. “Chappell Roan: How an Unforgettable Night at a Gay Club Led to Pink Pony Club.” Accessed April 28, 2026. https://headlinerhub.com/chappell-roan-california-here-we-come.html.",
+        "sources": "Denny. “This World-Famous LA Queer Bar Goes on Sale after 30 Years, but Not before Its Dark Past Comes Back to Haunt It.” Reckon, July 19, 2023. https://www.reckon.news/lgbtq/2023/07/this-world-famous-la-queer-bar-goes-on-sale-after-30-years-but-not-before-its-dark-past-comes-back-to-haunt-it.html.\nElina Shatkin. “The Abbey: The Story of an LA Icon | Discover Los Angeles.” December 8, 2025. https://www.discoverlosangeles.com/things-to-do/the-abbey-the-story-of-an-la-icon.\nHeadliner. “Chappell Roan: How an Unforgettable Night at a Gay Club Led to Pink Pony Club.” Accessed April 28, 2026. https://headlinerhub.com/chappell-roan-california-here-we-come.html.",
         "distanceMiles": 0.0377,
         "detailPage": "the-chapel-detail.html",
         "photos": [
@@ -76,7 +76,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "Tess's Café Internationale, also known as Tess's Continental, was a lesbian nightclub owned and operated by Elmer and Tess Wheeler. Entertainment included early drag kings such as Tommy Williams and Jimmy Renard.",
         "tags": "Lesbian Space",
         "tags2": "Lesbian Owned Business",
-        "sources": "1936: Cafe Internationale: Historic Sunset Strip Lesbian Bars. n.d. Accessed April 28, 2026. https://www.westhollywoodhistory.org/playground-to-the-stars/historic-sunset-strip-lesbian-bars-cafe-internationale/.\r\nFaderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. Univ of California Press, 2009.\r\nLord, Jack, and Lloyd Hoff. How to Sin in Hollywood. Guggenheim, 1940.",
+        "sources": "1936: Cafe Internationale: Historic Sunset Strip Lesbian Bars. n.d. Accessed April 28, 2026. https://www.westhollywoodhistory.org/playground-to-the-stars/historic-sunset-strip-lesbian-bars-cafe-internationale/.\nFaderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. Univ of California Press, 2009.\nLord, Jack, and Lloyd Hoff. How to Sin in Hollywood. Guggenheim, 1940.",
         "distanceMiles": 0.28,
         "detailPage": "tess-caf-international-detail.html",
         "photos": [
@@ -105,7 +105,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "Connexxus was a  feminist and lesbian community center in West Hollywood during the mid- to late 1980s. It held a library, workshops, support groups, counseling, and social events.",
         "tags": "Lesbian Space",
         "tags2": "Lesbian Run Non-Profit Organization",
-        "sources": "McHugh, Kathleen A., Brenda Johnson-Grau, and Ben Raphael Sher, eds. Making Invisible Histories Visible: A Resource Guide to the Collections of the June L. Mazer Lesbian Archives. 2014. https://escholarship.org/uc/item/5k44b4tk.\r\nSangwand, T.-Kay. “Connexxus/Centro de Mujeres Collection, 1985-1991 Finding Aid.” Online Archive of California, December 11, 2025. https://oac.cdlib.org/findaid/ark:/13030/kt1779r55b/.",
+        "sources": "McHugh, Kathleen A., Brenda Johnson-Grau, and Ben Raphael Sher, eds. Making Invisible Histories Visible: A Resource Guide to the Collections of the June L. Mazer Lesbian Archives. 2014. https://escholarship.org/uc/item/5k44b4tk.\nSangwand, T.-Kay. “Connexxus/Centro de Mujeres Collection, 1985-1991 Finding Aid.” Online Archive of California, December 11, 2025. https://oac.cdlib.org/findaid/ark:/13030/kt1779r55b/.",
         "distanceMiles": 0.0271,
         "detailPage": "connexxus-centro-de-mujeres-detail.html",
         "photos": [
@@ -138,7 +138,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "Connexxus was a  feminist and lesbian community center in West Hollywood during the mid- to late 1980s. It held a library, workshops, support groups, counseling, and social events.",
         "tags": "Lesbian Space",
         "tags2": "Lesbian Run Non-Profit Organization",
-        "sources": "McHugh, Kathleen A., Brenda Johnson-Grau, and Ben Raphael Sher, eds. Making Invisible Histories Visible: A Resource Guide to the Collections of the June L. Mazer Lesbian Archives. 2014. https://escholarship.org/uc/item/5k44b4tk.\r\nSangwand, T.-Kay. “Connexxus/Centro de Mujeres Collection, 1985-1991 Finding Aid.” Online Archive of California, December 11, 2025. https://oac.cdlib.org/findaid/ark:/13030/kt1779r55b/.",
+        "sources": "McHugh, Kathleen A., Brenda Johnson-Grau, and Ben Raphael Sher, eds. Making Invisible Histories Visible: A Resource Guide to the Collections of the June L. Mazer Lesbian Archives. 2014. https://escholarship.org/uc/item/5k44b4tk.\nSangwand, T.-Kay. “Connexxus/Centro de Mujeres Collection, 1985-1991 Finding Aid.” Online Archive of California, December 11, 2025. https://oac.cdlib.org/findaid/ark:/13030/kt1779r55b/.",
         "distanceMiles": 0.0359,
         "detailPage": "connexxus-centro-de-mujeres-second-location-detail.html",
         "photos": [
@@ -171,7 +171,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "A Different Light Bookstore was an independent LGBT bookstore. In 1984, A Different Light clerk Ann Bradley founded the Lesbian Writers Series at A Different Light bookstore, and it eventually moved to the West Hollywood location.",
         "tags": "Mixed LGBT Space",
         "tags2": "",
-        "sources": "Chong, Jia-Rui. “Gathering Celebrates Literary Series for Lesbian Writers.” Books. Los Angeles Times, March 29, 2004. https://www.latimes.com/archives/la-xpm-2004-mar-29-me-lit29-story.html.\r\nKellogg, Carolyn. “A Different Light Going Dark.” Jacket Copy. Los Angeles Times, February 25, 2009. https://www.latimes.com/archives/blogs/jacket-copy/story/2009-02-25/a-different-light-going-dark.\r\n“Queer Maps — A Different Light.” Accessed April 28, 2026. https://queermaps.org/.",
+        "sources": "Chong, Jia-Rui. “Gathering Celebrates Literary Series for Lesbian Writers.” Books. Los Angeles Times, March 29, 2004. https://www.latimes.com/archives/la-xpm-2004-mar-29-me-lit29-story.html.\nKellogg, Carolyn. “A Different Light Going Dark.” Jacket Copy. Los Angeles Times, February 25, 2009. https://www.latimes.com/archives/blogs/jacket-copy/story/2009-02-25/a-different-light-going-dark.\n“Queer Maps — A Different Light.” Accessed April 28, 2026. https://queermaps.org/.",
         "distanceMiles": 0.0124,
         "detailPage": "different-light-bookstore-detail.html",
         "photos": [
@@ -200,7 +200,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "Drip & Dolce is a cafe and bakery founded by lesbian entrepreneur Morgan Salmans.",
         "tags": "Lesbian Owned Business",
         "tags2": "",
-        "sources": "Murillo, Paulo. New Drip & Dolce Bakery Opens in West Hollywood Rainbow District - WEHO TIMES West Hollywood News, Nightlife and Events. September 5, 2025. https://wehotimes.com/new-drip-dolce-bakery-opens-in-west-hollywood-rainbow-district/.\r\nNicole, Kirstie. “Drip & Dolce: A Queer-Owned Café Bringing Couture Croissants and Community to West Hollywood.” She Comes With Baggage Media, November 27, 2025. https://www.shecomeswithbaggagemedia.com/post/drip-dolce-a-queer-owned-café-bringing-couture-croissants-and-community-to-west-hollywood.",
+        "sources": "Murillo, Paulo. New Drip & Dolce Bakery Opens in West Hollywood Rainbow District - WEHO TIMES West Hollywood News, Nightlife and Events. September 5, 2025. https://wehotimes.com/new-drip-dolce-bakery-opens-in-west-hollywood-rainbow-district/.\nNicole, Kirstie. “Drip & Dolce: A Queer-Owned Café Bringing Couture Croissants and Community to West Hollywood.” She Comes With Baggage Media, November 27, 2025. https://www.shecomeswithbaggagemedia.com/post/drip-dolce-a-queer-owned-café-bringing-couture-croissants-and-community-to-west-hollywood.",
         "distanceMiles": 0.0203,
         "detailPage": "drip-and-dolce-detail.html",
         "photos": []
@@ -253,7 +253,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "The French Market Place was a gathering place for the LGBTQ community from the mid-1970s until its closure in 2015. This complex housed a large restaurant, the French Quarter, surrounded by various small shops, including the gay shop Dorothy's Surrender.",
         "tags": "Mixed LGBT Space",
         "tags2": "",
-        "sources": "Holmes, Mona. “West Hollywood’s Iconic French Market Place Boasts a Glitzy New Design.” Eater LA, August 1, 2018. https://la.eater.com/2018/8/1/17635658/two-restaurants-underground-bar-west-hollywood-french-market-place-development.\r\nTime Out Los Angeles. “Dorothy’s Surrender.” September 25, 2012. https://www.timeout.com/los-angeles/shopping/dorothys-surrender-closed.\r\nTrinh, Jean. “1970s Gay WeHo Hangout Could Be Razed For New Development.” LAist, December 30, 2015. https://laist.com/news/food/goodbye-french-market-place.\r\nWeHo Online. “Inspired by a Trip to New Orleans, the Hartmans Were the Couple Behind the French Market.” Accessed April 28, 2026. https://wehoonline.com/inspired-by-a-trip-to-new-orleans-the-hartmans-were-the-couple-behind-the-french-market/.",
+        "sources": "Holmes, Mona. “West Hollywood’s Iconic French Market Place Boasts a Glitzy New Design.” Eater LA, August 1, 2018. https://la.eater.com/2018/8/1/17635658/two-restaurants-underground-bar-west-hollywood-french-market-place-development.\nTime Out Los Angeles. “Dorothy’s Surrender.” September 25, 2012. https://www.timeout.com/los-angeles/shopping/dorothys-surrender-closed.\nTrinh, Jean. “1970s Gay WeHo Hangout Could Be Razed For New Development.” LAist, December 30, 2015. https://laist.com/news/food/goodbye-french-market-place.\nWeHo Online. “Inspired by a Trip to New Orleans, the Hartmans Were the Couple Behind the French Market.” Accessed April 28, 2026. https://wehoonline.com/inspired-by-a-trip-to-new-orleans-the-hartmans-were-the-couple-behind-the-french-market/.",
         "distanceMiles": 0.001,
         "detailPage": "the-french-market-detail.html",
         "photos": [
@@ -282,7 +282,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "The Garden of Allah Hotel was originally the estate of lesbian silent film star Alla Nazimova and became known as a hub for Hollywood's LGBTQ+ community and celebrities from 1927 to 1959.",
         "tags": "Mixed LGBT Space",
         "tags2": "Lesbian Owned Business",
-        "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. Univ of California Press, 2009.\r\nShokin, Sammantha. “The Founding Mother of Sapphic Hollywood - Arts & Letters.” Arts & Letters. Tablet Magazine, June 1, 2022. https://www.tabletmag.com/sections/arts-letters/articles/alla-nazimova-sapphic-hollywood.\r\nTatna, Meher. “Forgotten Hollywood: The Garden of Allah.” Golden Globes, September 22, 2022. https://goldenglobes.com/articles/forgotten-hollywood-garden-allah/.",
+        "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. Univ of California Press, 2009.\nShokin, Sammantha. “The Founding Mother of Sapphic Hollywood - Arts & Letters.” Arts & Letters. Tablet Magazine, June 1, 2022. https://www.tabletmag.com/sections/arts-letters/articles/alla-nazimova-sapphic-hollywood.\nTatna, Meher. “Forgotten Hollywood: The Garden of Allah.” Golden Globes, September 22, 2022. https://goldenglobes.com/articles/forgotten-hollywood-garden-allah/.",
         "distanceMiles": 0.4479,
         "detailPage": "garden-of-allah-hotel-detail.html",
         "photos": [
@@ -315,7 +315,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "Jane Jones' Little Club was one of Los Angeles’ earliest and most notable lesbian nightclubs, operating from 1929-1939. The club attracted a well-dressed crowd of Hollywood figures alongside local lesbians who watched male impersonators perform.",
         "tags": "Mixed LGBT Space",
         "tags2": "",
-        "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. Univ of California Press, 2009.\r\nHamel, Jenny. “The Pansy Craze: When Gay Nightlife in Los Angeles….” KCRW, May 11, 2018. https://www.kcrw.com/shows/curious-coast/stories/the-pansy-craze-when-gay-nightlife-in-los-angeles-really-kicked-off.\r\nPonder, Joe. “1936: Jane Jones’ Little Club – Historic Sunset Strip Lesbian Bars.” West Hollywood History, n.d. Accessed April 28, 2026. https://www.westhollywoodhistory.org/playground-to-the-stars/historic-sunset-strip-lesbian-bars-jane-jones-little-club/.\r\n“Queer Maps — Jane Jones Little Club.” Accessed April 28, 2026. https://queermaps.org/.",
+        "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. Univ of California Press, 2009.\nHamel, Jenny. “The Pansy Craze: When Gay Nightlife in Los Angeles….” KCRW, May 11, 2018. https://www.kcrw.com/shows/curious-coast/stories/the-pansy-craze-when-gay-nightlife-in-los-angeles-really-kicked-off.\nPonder, Joe. “1936: Jane Jones’ Little Club – Historic Sunset Strip Lesbian Bars.” West Hollywood History, n.d. Accessed April 28, 2026. https://www.westhollywoodhistory.org/playground-to-the-stars/historic-sunset-strip-lesbian-bars-jane-jones-little-club/.\n“Queer Maps — Jane Jones Little Club.” Accessed April 28, 2026. https://queermaps.org/.",
         "distanceMiles": 0.2729,
         "detailPage": "jane-jones-little-club-detail.html",
         "photos": [
@@ -344,7 +344,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "The June L. Mazer Lesbian Archives is a community based archive committed to preserving and sharing lesbian, feminist, and queer women’s histories for future generations. It was founded in Oakland in 1981, and moved to its current home in the Werle Building in 1989.",
         "tags": "Lesbian Space",
         "tags2": "Lesbian Run Non-Profit Organization",
-        "sources": "June L. Mazer Lesbian Archives. “About.” Accessed April 28, 2026. https://www.mazerlesbianarchives.org/about.\r\nJune L. Mazer Lesbian Archives. “June L. Mazer Lesbian Archives.” January 26, 2026. https://www.mazerlesbianarchives.org.\r\nMcHugh, Kathleen A., Brenda Johnson-Grau, and Ben Raphael Sher, eds. Making Invisible Histories Visible: A Resource Guide to the Collections of the June L. Mazer Lesbian Archives. 2014. https://escholarship.org/uc/item/5k44b4tk.",
+        "sources": "June L. Mazer Lesbian Archives. “About.” Accessed April 28, 2026. https://www.mazerlesbianarchives.org/about.\nJune L. Mazer Lesbian Archives. “June L. Mazer Lesbian Archives.” January 26, 2026. https://www.mazerlesbianarchives.org.\nMcHugh, Kathleen A., Brenda Johnson-Grau, and Ben Raphael Sher, eds. Making Invisible Histories Visible: A Resource Guide to the Collections of the June L. Mazer Lesbian Archives. 2014. https://escholarship.org/uc/item/5k44b4tk.",
         "distanceMiles": 0.1387,
         "detailPage": "june-l-mazer-lesbian-archives-detail.html",
         "photos": [
@@ -405,7 +405,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "Little Frida’s operated as both a coffee house and a lesbian community center with art exhibitions, music nights, comedy shows, and other events, from 1991 to 1999. The space was featured on the now famous coming-out episode of Ellen and the film Bar Girls.",
         "tags": "Lesbian Space",
         "tags2": "Lesbian Owned Business",
-        "sources": "Dr. Alex D. Ketchum, The Directory, https://docs.google.com/document/d/1X07SFiXtIfcGaf_K-xFWGviDO5vUzXMghE8drGFP0zU/edit?usp=sharing “Lost Womyn’s Space: Little Frida’s Coffee House.” Lost Womyn’s Space, December 4, 2011. https://lostwomynsspace.blogspot.com/2011/12/little-fridas-coffee-house.html.\r\nMitchell, Schuyler. “How Did L.A. Become a City Without Lesbian Bars?” LAmag, July 1, 2020. https://lamag.com/lgbtq/lesbian-bars-los-angeles/.\r\nYarbro, Stan. “The Great Lesbian Club Wars.” Miami New Times, October 5, 1993. https://www.miaminewtimes.com/uncategorized/the-great-lesbian-club-wars-6362245/.",
+        "sources": "Dr. Alex D. Ketchum, The Directory, https://docs.google.com/document/d/1X07SFiXtIfcGaf_K-xFWGviDO5vUzXMghE8drGFP0zU/edit?usp=sharing “Lost Womyn’s Space: Little Frida’s Coffee House.” Lost Womyn’s Space, December 4, 2011. https://lostwomynsspace.blogspot.com/2011/12/little-fridas-coffee-house.html.\nMitchell, Schuyler. “How Did L.A. Become a City Without Lesbian Bars?” LAmag, July 1, 2020. https://lamag.com/lgbtq/lesbian-bars-los-angeles/.\nYarbro, Stan. “The Great Lesbian Club Wars.” Miami New Times, October 5, 1993. https://www.miaminewtimes.com/uncategorized/the-great-lesbian-club-wars-6362245/.",
         "distanceMiles": 0.0158,
         "detailPage": "little-frida-detail.html",
         "photos": [
@@ -438,7 +438,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "Little Frida’s operated as both a coffee house and a lesbian community center with art exhibitions, music nights, comedy shows, and other events, from 1991 to 1999. The space was featured on the now famous coming-out episode of Ellen and the film Bar Girls.",
         "tags": "Lesbian Space",
         "tags2": "Lesbian Owned Business",
-        "sources": "Dr. Alex D. Ketchum, The Directory, https://docs.google.com/document/d/1X07SFiXtIfcGaf_K-xFWGviDO5vUzXMghE8drGFP0zU/edit?usp=sharing “Lost Womyn’s Space: Little Frida’s Coffee House.” Lost Womyn’s Space, December 4, 2011. https://lostwomynsspace.blogspot.com/2011/12/little-fridas-coffee-house.html.\r\nMitchell, Schuyler. “How Did L.A. Become a City Without Lesbian Bars?” LAmag, July 1, 2020. https://lamag.com/lgbtq/lesbian-bars-los-angeles/.\r\nYarbro, Stan. “The Great Lesbian Club Wars.” Miami New Times, October 5, 1993. https://www.miaminewtimes.com/uncategorized/the-great-lesbian-club-wars-6362245/.",
+        "sources": "Dr. Alex D. Ketchum, The Directory, https://docs.google.com/document/d/1X07SFiXtIfcGaf_K-xFWGviDO5vUzXMghE8drGFP0zU/edit?usp=sharing “Lost Womyn’s Space: Little Frida’s Coffee House.” Lost Womyn’s Space, December 4, 2011. https://lostwomynsspace.blogspot.com/2011/12/little-fridas-coffee-house.html.\nMitchell, Schuyler. “How Did L.A. Become a City Without Lesbian Bars?” LAmag, July 1, 2020. https://lamag.com/lgbtq/lesbian-bars-los-angeles/.\nYarbro, Stan. “The Great Lesbian Club Wars.” Miami New Times, October 5, 1993. https://www.miaminewtimes.com/uncategorized/the-great-lesbian-club-wars-6362245/.",
         "distanceMiles": 0.0222,
         "detailPage": "little-frida-location-2-detail.html",
         "photos": [
@@ -471,7 +471,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "Marix Tex-Mex Cafe is a West Hollywood favorite fast casual restaurant owned by a lesbian couple, Mary Sweeney and Vickie Shemaria of Food Biz Inc. It opened in 1984 and continues to operate.",
         "tags": "Lesbian Owned Business",
         "tags2": "",
-        "sources": "Murillo, Paulo. Mum’s the Word at Marix Tex Mex Café, But Reopening Appears Imminent in West Hollywood - WEHO TIMES West Hollywood News, Nightlife and Events. April 12, 2025. https://wehotimes.com/mums-the-word-at-marix-tex-mex-cafe-but-reopening-appears-imminent-in-west-hollywood/.\r\nReichl, Ruth. “The Legend of Marix Moves West.” Los Angeles Times, January 31, 1986. https://www.latimes.com/archives/la-xpm-1986-01-31-ca-2901-story.html.",
+        "sources": "Murillo, Paulo. Mum’s the Word at Marix Tex Mex Café, But Reopening Appears Imminent in West Hollywood - WEHO TIMES West Hollywood News, Nightlife and Events. April 12, 2025. https://wehotimes.com/mums-the-word-at-marix-tex-mex-cafe-but-reopening-appears-imminent-in-west-hollywood/.\nReichl, Ruth. “The Legend of Marix Moves West.” Los Angeles Times, January 31, 1986. https://www.latimes.com/archives/la-xpm-1986-01-31-ca-2901-story.html.",
         "distanceMiles": 0.0292,
         "detailPage": "marix-tex-mex-cafe-detail.html",
         "photos": [
@@ -500,7 +500,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "Basix is a West Hollywood favorite fast casual new American restaurant owned by a lesbian couple, Mary Sweeney and Vickie Shemaria of Food Biz Inc. It opened in 1994 and closed in 2020.",
         "tags": "Lesbian Owned Business",
         "tags2": "",
-        "sources": "Huneven, Michelle. “RESTAURANT REVIEW : Where They Get Down to Basix.” Los Angeles Times, December 23, 1994. https://www.latimes.com/archives/la-xpm-1994-12-23-ca-12111-story.html.\r\nMurillo, Paulo. West Hollywood Moves to Lease with Option to Purchase Basix Café Property - WEHO TIMES West Hollywood News, Nightlife and Events. July 31, 2025. https://wehotimes.com/west-hollywood-moves-to-lease-with-option-to-purchase-basix-cafe-property/.",
+        "sources": "Huneven, Michelle. “RESTAURANT REVIEW : Where They Get Down to Basix.” Los Angeles Times, December 23, 1994. https://www.latimes.com/archives/la-xpm-1994-12-23-ca-12111-story.html.\nMurillo, Paulo. West Hollywood Moves to Lease with Option to Purchase Basix Café Property - WEHO TIMES West Hollywood News, Nightlife and Events. July 31, 2025. https://wehotimes.com/west-hollywood-moves-to-lease-with-option-to-purchase-basix-cafe-property/.",
         "distanceMiles": 0.0001,
         "detailPage": "basix-food-and-bar-detail.html",
         "photos": [
@@ -529,7 +529,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "The Palms Bar was the oldest continuously operating lesbian bar in Southern California. The bar was known for catering exclusively to women and attracting a wealthy and glamorous clientele.",
         "tags": "Lesbian Space",
         "tags2": "",
-        "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. New York: Basic Books, 2006.\r\nWEHOonline. \"Palms Bar Sets Closing Date; Lesbian 'Safe Haven' Remembered Fondly.\" wehoonline.com, May 6, 2013. https://wehoonline.com/palms-bar-sets-closing-date-lesbian-safe-haven-remembered-fondly/ \r\nCarter, Noelle. \"Farewell to the Palms, a bar — and a home — in West Hollywood.\" Los Angeles Times, June 6, 2013. \r\nhttps://www.latimes.com/local/la-xpm-2013-jun-06-la-me-carter-palms-20130607-story.html",
+        "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. New York: Basic Books, 2006.\nWEHOonline. \"Palms Bar Sets Closing Date; Lesbian 'Safe Haven' Remembered Fondly.\" wehoonline.com, May 6, 2013. https://wehoonline.com/palms-bar-sets-closing-date-lesbian-safe-haven-remembered-fondly/ \nCarter, Noelle. \"Farewell to the Palms, a bar — and a home — in West Hollywood.\" Los Angeles Times, June 6, 2013. \nhttps://www.latimes.com/local/la-xpm-2013-jun-06-la-me-carter-palms-20130607-story.html",
         "distanceMiles": 0.0124,
         "detailPage": "the-palms-bar-detail.html",
         "photos": [
@@ -562,7 +562,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "Peanuts was a popular lesbian nightclub and disco in a historic building, known for its sexually uninhibited atmosphere. The club attracted young financially privileged women for wild nights out.",
         "tags": "Lesbian Space",
         "tags2": "",
-        "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. New York: Basic Books, 2006.;  Siegmund, Heidi. \"Club Review: 7969: Equal Opportunity Enjoyment.\" Los Angeles Times, March 24, 1995.\r\nhttps://www.latimes.com/archives/la-xpm-1988-03-17-we-1903-story.html \r\n\"The Pink Pussycat College of Strip Tease.\" Atomic Redhead, July 11, 2018. — https://atomicredhead.com/2018/07/11/the-pink-pussycat-college-of-strip-tease-where-yesteryears-strippers-learned-their-craft/",
+        "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. New York: Basic Books, 2006.;  Siegmund, Heidi. \"Club Review: 7969: Equal Opportunity Enjoyment.\" Los Angeles Times, March 24, 1995.\nhttps://www.latimes.com/archives/la-xpm-1988-03-17-we-1903-story.html \n\"The Pink Pussycat College of Strip Tease.\" Atomic Redhead, July 11, 2018. — https://atomicredhead.com/2018/07/11/the-pink-pussycat-college-of-strip-tease-where-yesteryears-strippers-learned-their-craft/",
         "distanceMiles": 0.0035,
         "detailPage": "peanuts-detail.html",
         "photos": [
@@ -591,7 +591,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "The Rose Tattoo was a cabaret, restaurant, and piano bar owned by lesbian Broadway performer Linda Gerard in the historic building that housed Studio One. Gerard's longtime friend and former partner Pam Genevrino joined her, managing the restaurant upstairs while Gerard ran the cabaret below.",
         "tags": "Mixed LGBT Space",
         "tags2": "Lesbian Owned Business",
-        "sources": "“Linda Gerard Obituary (2014) - New York, NY - New York Times.” Accessed April 28, 2026. https://www.legacy.com/us/obituaries/nytimes/name/linda-gerard-obituary?pid=170391477.\r\nNational Trust for Historic Preservation. “One Building, Three Lives: Saving the LGBTQ Heritage of the Factory | National Trust for Historic Preservation.” Accessed April 28, 2026. https://savingplaces.org/stories/one-building-three-lives-saving-the-lgbtq-heritage-of-the-factory.\r\n“Queer Maps — Rose Tattoo.” Accessed April 28, 2026. https://queermaps.org/.\r\nStaff. “Zany, Talented, Larger-than-Life Linda Gerard Remembered in Provincetown.” Wicked Local. Accessed April 28, 2026. https://www.wickedlocal.com/story/provincetown-banner/2014/09/01/zany-talented-larger-than-life/36563013007/.",
+        "sources": "“Linda Gerard Obituary (2014) - New York, NY - New York Times.” Accessed April 28, 2026. https://www.legacy.com/us/obituaries/nytimes/name/linda-gerard-obituary?pid=170391477.\nNational Trust for Historic Preservation. “One Building, Three Lives: Saving the LGBTQ Heritage of the Factory | National Trust for Historic Preservation.” Accessed April 28, 2026. https://savingplaces.org/stories/one-building-three-lives-saving-the-lgbtq-heritage-of-the-factory.\n“Queer Maps — Rose Tattoo.” Accessed April 28, 2026. https://queermaps.org/.\nStaff. “Zany, Talented, Larger-than-Life Linda Gerard Remembered in Provincetown.” Wicked Local. Accessed April 28, 2026. https://www.wickedlocal.com/story/provincetown-banner/2014/09/01/zany-talented-larger-than-life/36563013007/.",
         "distanceMiles": 0.0686,
         "detailPage": "rose-tattoo-detail.html",
         "photos": [
@@ -620,7 +620,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "The Sally Hershberger Salon has operated since 2008 as the independent West Hollywood flagship store of celebrity hair stylist Sally Hershberger. Hershberger invented an iconic androgynous shag for Meg Ryan in the film French Kiss that was later adopted by many lesbians.",
         "tags": "Miscellaneous",
         "tags2": "",
-        "sources": "“Hershberger, Sally | Encyclopedia.Com.” Accessed April 28, 2026. https://www.encyclopedia.com/books/culture-magazines/hershberger-sally.\r\n“SALLY HERSHBERGER LA: Why the Famed Los Angeles Salon Remains a Cut above. - LA Weekly.” Accessed April 28, 2026. https://www.laweekly.com/sally-hershberger-la-why-the-famed-los-angeles-salon-remains-a-cut-above/.",
+        "sources": "“Hershberger, Sally | Encyclopedia.Com.” Accessed April 28, 2026. https://www.encyclopedia.com/books/culture-magazines/hershberger-sally.\n“SALLY HERSHBERGER LA: Why the Famed Los Angeles Salon Remains a Cut above. - LA Weekly.” Accessed April 28, 2026. https://www.laweekly.com/sally-hershberger-la-why-the-famed-los-angeles-salon-remains-a-cut-above/.",
         "distanceMiles": 0.254,
         "detailPage": "sally-hershberger-salon-detail.html",
         "photos": []
@@ -644,7 +644,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "An office at 9054 Santa Monica Boulevard served as the third headquarters of Southern California Women for Understanding (SCWU), one of the earliest lesbian nonprofit organizations in the country. The group focused on on educational and social events, fundraising, political advocacy, and providing social services to the lesbian community.",
         "tags": "Lesbian Space",
         "tags2": "Lesbian Run Non-Profit Organization",
-        "sources": "Sangwand, T.-Kay. “Southern California Women for Understanding (SCWU) Collection Finding Aid.” Online Archive of California, 2009. https://oac.cdlib.org/static_findaids/ark:/13030/kt1f59r455.html.\r\nFaderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. New York: Basic Books, 2006.",
+        "sources": "Sangwand, T.-Kay. “Southern California Women for Understanding (SCWU) Collection Finding Aid.” Online Archive of California, 2009. https://oac.cdlib.org/static_findaids/ark:/13030/kt1f59r455.html.\nFaderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. New York: Basic Books, 2006.",
         "distanceMiles": 0.0297,
         "detailPage": "southern-california-women-for-understanding-detail.html",
         "photos": [
@@ -673,7 +673,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "Girl Bar was a long running lesbian nightlife event founded in November 1990 by Robin Gans and Sandy Sachs, The event’s glamorous and feminine attendees epitomized the new aesthetic of “lesbian chic” as lesbian representation in the mainstream media increased throughout the 1990s.",
         "tags": "Mixed LGBT Space",
         "tags2": "",
-        "sources": "Allman, Kevin. “Looking for Ms. Girlbar.” Los Angeles Times, September 5, 1993. https://www.latimes.com/archives/la-xpm-1993-09-05-vw-31894-story.html.\r\nContributor. “Robin Gans.” WEHOonline.Com, January 1, 2013. https://wehoonline.com/robin-gans/.\r\n“Girl Bar | Gay Lesbian Women’s Girl Nightclub Dance Bar History.” April 29, 2006. https://web.archive.org/web/20060429153858/http://girlbar.com/history.html.\r\nMurillo, Paulo. THE SEEN – 20th Anniversary Last Dance at The Factory & Ultra Suede - WEHO TIMES West Hollywood News, Nightlife and Events. December 12, 2019. https://wehotimes.com/the-seen-20th-anniversary-last-dance-at-the-factory-ultra-suede/.",
+        "sources": "Allman, Kevin. “Looking for Ms. Girlbar.” Los Angeles Times, September 5, 1993. https://www.latimes.com/archives/la-xpm-1993-09-05-vw-31894-story.html.\nContributor. “Robin Gans.” WEHOonline.Com, January 1, 2013. https://wehoonline.com/robin-gans/.\n“Girl Bar | Gay Lesbian Women’s Girl Nightclub Dance Bar History.” April 29, 2006. https://web.archive.org/web/20060429153858/http://girlbar.com/history.html.\nMurillo, Paulo. THE SEEN – 20th Anniversary Last Dance at The Factory & Ultra Suede - WEHO TIMES West Hollywood News, Nightlife and Events. December 12, 2019. https://wehotimes.com/the-seen-20th-anniversary-last-dance-at-the-factory-ultra-suede/.",
         "distanceMiles": 0.0578,
         "detailPage": "girl-bar-at-studio-one-detail.html",
         "photos": [
@@ -702,7 +702,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "The Normandie Room opened on October 28, 1993 and soon gained a reputation as a lesbian centric bar. The bar was founded by straight owner Jason Shokrian, but women began gravitating to the welcoming, artistic, and cozy bar organically.",
         "tags": "Lesbian Space",
         "tags2": "",
-        "sources": "Anonymous. “Lost Womyn’s Space: Normandie Room.” Lost Womyn’s Space, July 6, 2011. https://lostwomynsspace.blogspot.com/2011/07/normandie-room.html.\r\nGoldberg, Lesley. “Fave Los Angeles Lesbian Bar The Normandie Room Goes Under.” July 28, 2009. https://www.pride.com/g-spot/fave-los-angeles-lesbian-bar-normandie-room-goes-under.",
+        "sources": "Anonymous. “Lost Womyn’s Space: Normandie Room.” Lost Womyn’s Space, July 6, 2011. https://lostwomynsspace.blogspot.com/2011/07/normandie-room.html.\nGoldberg, Lesley. “Fave Los Angeles Lesbian Bar The Normandie Room Goes Under.” July 28, 2009. https://www.pride.com/g-spot/fave-los-angeles-lesbian-bar-normandie-room-goes-under.",
         "distanceMiles": 0.0151,
         "detailPage": "normandie-room-detail.html",
         "photos": [
@@ -734,8 +734,8 @@ window.ROUTE66_LOCATIONS = [
         "description": "Hi Tops is a sports bar co-owned by a lesbian. The Real L Word star Whitney Mixter hosted a weekly event celebrating The L Word: Generation Q on Sundays at this bar.",
         "shortDescription": "Hi Tops is a sports bar co-owned by a lesbian. The Real L Word star Whitney Mixter hosted a weekly event celebrating The L Word: Generation Q on Sundays at this bar.",
         "tags": "Mixed LGBT Space",
-        "tags2": "",
-        "sources": "Holmes, Mona. “Popular San Francisco LGBTQ Sports Bar Lands in West Hollywood Tonight.” Eater LA, August 29, 2018. https://la.eater.com/2018/8/29/17796364/lgbtq-sports-bar-opening-west-hollywood.\r\nLavalette, Esmée. “Lesbian Los Angeles: Best Lesbian Clubs and Lesbian Bars Los Angeles.” Once Upon a Journey, December 26, 2019. https://onceuponajrny.com/lesbian-bars-los-angeles/.",
+        "tags2": "Lesbian Owned Business",
+        "sources": "Holmes, Mona. “Popular San Francisco LGBTQ Sports Bar Lands in West Hollywood Tonight.” Eater LA, August 29, 2018. https://la.eater.com/2018/8/29/17796364/lgbtq-sports-bar-opening-west-hollywood.\nLavalette, Esmée. “Lesbian Los Angeles: Best Lesbian Clubs and Lesbian Bars Los Angeles.” Once Upon a Journey, December 26, 2019. https://onceuponajrny.com/lesbian-bars-los-angeles/.",
         "distanceMiles": 0.018,
         "detailPage": "hi-tops-detail.html",
         "photos": []
@@ -759,7 +759,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "The Real L Word star Whitney Mixter hosts a lesbian event known as Call Out Thursdays at this bar.",
         "tags": "Mixed LGBT Space",
         "tags2": "",
-        "sources": "About - Mattie’s West Hollywood. March 13, 2023. https://roccosweho.com/drinks-2/.\r\nLavalette, Esmée. “Lesbian Los Angeles: Best Lesbian Clubs and Lesbian Bars Los Angeles.” Once Upon a Journey, December 26, 2019. https://onceuponajrny.com/lesbian-bars-los-angeles/.",
+        "sources": "About - Mattie’s West Hollywood. March 13, 2023. https://roccosweho.com/drinks-2/.\nLavalette, Esmée. “Lesbian Los Angeles: Best Lesbian Clubs and Lesbian Bars Los Angeles.” Once Upon a Journey, December 26, 2019. https://onceuponajrny.com/lesbian-bars-los-angeles/.",
         "distanceMiles": 0.0277,
         "detailPage": "rocco-weho-detail.html",
         "photos": []
@@ -783,7 +783,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "Jeanne Córdova’s apartment at 1124½ Ogden Drive was the first working editorial headquarters of The Lesbian Tide, the first publicly circulated lesbian periodical in the United States to reach a national audience. The periodical began in 1971 as the newsletter of the Los Angeles chapter of the Daughters of Bilitis, but it soon became an independent publication.",
         "tags": "Lesbian Space",
         "tags2": "Lesbian Owned Business",
-        "sources": "City of West Hollywood. “City of West Hollywood HCS and Survey Report.” September 2016. https://www.wehopreservation.org/wp-content/uploads/2016/10/Tile-4-Hist-Context.pdf.\r\nFaderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. Univ of California Press, 2009.\r\nMarc Stein, ed. Encyclopedia of Lesbian, Gay, Bisexual, and Transgender History in America. New York, NY : Charles Scribner’s Sons/Thomson/Gale, 2004. http://archive.org/details/encyclopediaofle0001unse_c3g4.\r\nONE Archives at the USC Libraries. “Pioneering Lesbian Activist Jeanne Córdova (1948-2016) | One Archives.” Accessed April 29, 2026. https://one.usc.edu/news/pioneering-lesbian-activist-jeanne-cordova-1948-2016.\r\nThe Advocate. “Sex History And Lesbian Outlaws | Advocate.Com.” December 3, 2011. https://www.advocate.com/arts-entertainment/books/2011/12/03/sex-history-and-lesbian-outlaws.\r\nThe Lesbian Tide, Vol. 1, No. 10 (April 1972); The Lesbian Tide, Vol 2, No 6 (January 1973) The Lesbian Tide, Vol 3, No 3, (October 1973).",
+        "sources": "City of West Hollywood. “City of West Hollywood HCS and Survey Report.” September 2016. https://www.wehopreservation.org/wp-content/uploads/2016/10/Tile-4-Hist-Context.pdf.\nFaderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. Univ of California Press, 2009.\nMarc Stein, ed. Encyclopedia of Lesbian, Gay, Bisexual, and Transgender History in America. New York, NY : Charles Scribner’s Sons/Thomson/Gale, 2004. http://archive.org/details/encyclopediaofle0001unse_c3g4.\nONE Archives at the USC Libraries. “Pioneering Lesbian Activist Jeanne Córdova (1948-2016) | One Archives.” Accessed April 29, 2026. https://one.usc.edu/news/pioneering-lesbian-activist-jeanne-cordova-1948-2016.\nThe Advocate. “Sex History And Lesbian Outlaws | Advocate.Com.” December 3, 2011. https://www.advocate.com/arts-entertainment/books/2011/12/03/sex-history-and-lesbian-outlaws.\nThe Lesbian Tide, Vol. 1, No. 10 (April 1972); The Lesbian Tide, Vol 2, No 6 (January 1973) The Lesbian Tide, Vol 3, No 3, (October 1973).",
         "distanceMiles": 0.0455,
         "detailPage": "first-lesbian-tide-offices-detail.html",
         "photos": [
@@ -836,7 +836,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "Founded in 1952, the ONE Institute initially focused on publishing ONE Magazine, the first major widely distributed LGBT periodical in the United States, but expanded to promote scholarship about LGBTQ people and defend press freedom in court. This West Hollywood building originally held the International Gay and Lesbian Archives founded by ONE Magazine contributor and activist Jim Kepner, which merged with the ONE Institute in 1994, and it currently serves as a permanent gallery for One Institute.",
         "tags": "Mixed LGBT Space",
         "tags2": "",
-        "sources": "About One – One Institute. n.d. Accessed May 6, 2026. https://www.oneinstitute.org/about/.\r\n“History | One Archives.” Accessed May 13, 2026. https://one.usc.edu/about/history.",
+        "sources": "About One – One Institute. n.d. Accessed May 6, 2026. https://www.oneinstitute.org/about/.\n“History | One Archives.” Accessed May 13, 2026. https://one.usc.edu/about/history.",
         "distanceMiles": 0.1387,
         "detailPage": "one-institute-later-one-archives-gallery-and-museum-detail.html",
         "photos": [
