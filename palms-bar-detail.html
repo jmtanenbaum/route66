@@ -177,10 +177,10 @@
 <!-- Slides -->
 <div class="flex transition-transform duration-500 h-full" id="carousel-track">
 <div class="min-w-full h-full flex items-center justify-center">
-<img alt="Film Fatale Event Photograph - Duplicate" class="h-full w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEm1xlvmxnYb-NElecDCs4fNM-QL9l3Rp6MBnQOMZBbIvWo-lq856JxebhmAFypJAJjhg6ctPE5NUa8GMeiTRgG9MDwYX1jLsep2iJW1dZrhLjWykhVG7xRBww7sz4MImN9MTWVfiXTq77SxKfKZUKXhRdsMhtdBlKgHyrkKhSghKt01FbRfZNBIoyWEgn_4aI6F148mkSLxnpx5fWRLSYUv6Z6FLcjpSFhgHhZNXylKbekp8KPEv29mAP6z2Zoq3Li5LkfG_lRA">
+<img alt="Film Fatale Event Photograph, Rosser Goodman Papers, June L. Mazer Lesbian Archives" class="h-full w-auto object-contain" src="assets/photos/palmsgoodman1.jpg">
 </div>
 <div class="min-w-full h-full flex items-center justify-center">
-<img alt="Film Fatale Event Photograph - Vertical" class="h-full w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEm1xlvmxnYb-NElecDCs4fNM-QL9l3Rp6MBnQOMZBbIvWo-lq856JxebhmAFypJAJjhg6ctPE5NUa8GMeiTRgG9MDwYX1jLsep2iJW1dZrhLjWykhVG7xRBww7sz4MImN9MTWVfiXTq77SxKfKZUKXhRdsMhtdBlKgHyrkKhSghKt01FbRfZNBIoyWEgn_4aI6F148mkSLxnpx5fWRLSYUv6Z6FLcjpSFhgHhZNXylKbekp8KPEv29mAP6z2Zoq3Li5LkfG_lRA">
+<img alt="Film Fatale Event Photograph, Rosser Goodman Papers, June L. Mazer Lesbian Archives" class="h-full w-auto object-contain" src="assets/photos/palmsgoodman2.jpg">
 </div>
 </div>
 <!-- Controls -->
@@ -197,7 +197,7 @@
 </div>
 </div>
 <div class="p-4 bg-surface-container-lowest border-t border-outline-variant">
-<p class="font-ui-main text-ui-main text-on-surface-variant italic">Film Fatale Event Photograph, Rosser Goodman Papers, June L. Mazer Lesbian Archives</p>
+<p class="font-ui-main text-ui-main text-on-surface-variant italic" id="carousel-caption">Film Fatale Event Photograph, Rosser Goodman Papers, June L. Mazer Lesbian Archives</p>
 </div>
 </div>
 </div>
@@ -253,11 +253,17 @@
         const prevBtn = document.getElementById('prev-btn');
         const nextBtn = document.getElementById('next-btn');
         const indicators = document.querySelectorAll('.carousel-indicator');
+        const captionEl = document.getElementById('carousel-caption');
+        const captions = [
+            'Film Fatale Event Photograph, Rosser Goodman Papers, June L. Mazer Lesbian Archives',
+            'Film Fatale Event Photograph, Rosser Goodman Papers, June L. Mazer Lesbian Archives'
+        ];
         let currentIndex = 0;
         const totalSlides = 2;
 
         function updateCarousel() {
             track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            if (captionEl) captionEl.textContent = captions[currentIndex];
             indicators.forEach((ind, index) => {
                 if(index === currentIndex) {
                     ind.classList.add('bg-primary');

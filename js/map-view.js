@@ -14,6 +14,8 @@
     const display = document.getElementById("year-display");
     const popup = document.getElementById("location-popup");
     const mapSearch = document.getElementById("map-search");
+    const popupImg = document.getElementById("popup-img");
+    const defaultPopupImg = popupImg ? popupImg.getAttribute("src") : "";
 
     if (!container || !slider || !popup) return;
 
@@ -42,12 +44,27 @@
         return haystack.includes(q);
     }
 
+    function photoUrl(file) {
+        return file ? "assets/photos/" + file : null;
+    }
+
     function showPopup(loc) {
         document.getElementById("popup-name").textContent = loc.name;
         document.getElementById("popup-address").querySelector("span").textContent = loc.address;
         document.getElementById("popup-dates").textContent =
             loc.open + " - " + (loc.close === 2026 ? "Present" : loc.close);
         document.getElementById("popup-desc").textContent = loc.desc;
+
+        if (popupImg) {
+            const firstPhoto = loc.photos && loc.photos[0];
+            if (firstPhoto && firstPhoto.file) {
+                popupImg.src = photoUrl(firstPhoto.file);
+                popupImg.alt = firstPhoto.caption || loc.name;
+            } else {
+                popupImg.src = defaultPopupImg;
+                popupImg.alt = loc.name;
+            }
+        }
 
         const detailBtn = document.getElementById("popup-detail-btn");
         if (detailBtn) {
