@@ -2,10 +2,12 @@
 """Generate js/locations.js and location detail pages from LocationDataWeHo.csv."""
 
 import csv
+import hashlib
 import html
 import json
 import os
 import re
+import shutil
 import sys
 
 ROOT_DIR = os.path.join(os.path.dirname(__file__), "..")
@@ -16,6 +18,15 @@ CSV_PATH = os.environ.get(
 OUT_PATH = os.path.join(ROOT_DIR, "js", "locations.js")
 TEMPLATE_PATH = os.path.join(ROOT_DIR, "templates", "location-detail.html")
 DETAIL_PAGES_DIR = ROOT_DIR
+PHOTOS_SRC = os.environ.get(
+    "ROUTE66_PHOTOS",
+    os.path.expanduser("~/Documents/Route66Photos"),
+)
+PHOTOS_DEST = os.path.join(ROOT_DIR, "assets", "photos")
+VALIDATION_CSV = os.environ.get(
+    "ROUTE66_VALIDATION_CSV",
+    os.path.expanduser("~/Documents/Route66Photos/Route 66 Data - Locations_to_validate_validation.csv"),
+)
 
 PLACEHOLDER_IMAGE = (
     "data:image/svg+xml;base64,"
@@ -38,7 +49,7 @@ def slugify(name: str) -> str:
 def parse_year(value, is_close=False):
     if not value or not str(value).strip():
         return None
-    v = str(value).strip()
+    v = re.sub(r"(?i)^circa\.?\s*", "", str(value).strip())
     if v.lower() == "present":
         return 2026 if is_close else None
     match = re.search(r"(19|20)\d{2}", v)
@@ -111,10 +122,44 @@ def detail_page_for(slug: str) -> str:
     return f"{slug}-detail.html"
 
 
-def format_dates(open_year: int, close_year: int) -> str:
+def format_census_address(census: str) -> str:
+    parts = [part.strip() for part in census.split(",") if part.strip()]
+    if len(parts) < 4:
+        return census.title()
+    street = parts[0].title().replace("Blvd", "Blvd").replace(" Blvd", " Blvd")
+    city = parts[1].title()
+    state = parts[2].upper()
+    zip_code = parts[3]
+    return f"{street}, {city}, {state} {zip_code}"
+
+
+def load_address_enrichments() -> dict[str, str]:
+    if not os.path.isfile(VALIDATION_CSV):
+        return {}
+
+    enrichments = {}
+    with open(VALIDATION_CSV, newline="", encoding="utf-8-sig") as handle:
+        for row in csv.DictReader(handle):
+            name = clean_text(row.get("Name") or "")
+            census = clean_text(row.get("Census_Matched_Address") or "")
+            if name and census:
+                enrichments[name] = format_census_address(census)
+    return enrichments
+
+
+def resolve_address(name: str, address: str, enrichments: dict[str, str]) -> str:
+    address = clean_text(address)
+    if "," in address:
+        return address
+    return enrichments.get(name, address)
+
+
+def format_dates(open_year: int, close_year: int, open_label: str = "", close_label: str = "") -> str:
+    if open_label and close_label:
+        return f"{open_label} - {close_label}"
     if open_year and close_year:
-        close_label = "Present" if close_year == 2026 else str(close_year)
-        return f"{open_year} - {close_label}"
+        close_display = "Present" if close_year == 2026 else str(close_year)
+        return f"{open_year} - {close_display}"
     if open_year:
         return str(open_year)
     if close_year and close_year != 2026:
@@ -266,7 +311,7 @@ def render_gallery(name: str, photos: list[dict]) -> tuple[str, str]:
     return gallery, script
 
 
-def render_detail_page(template: str, loc: dict) -> str:
+def render_detail_page(template: str, loc: dict, build_version: str) -> str:
     gallery, carousel_script = render_gallery(loc["name"], loc["photos"])
     page_title = html.escape(f"{loc['name']} — Queer Women's Route 66")
 
@@ -274,12 +319,13 @@ def render_detail_page(template: str, loc: dict) -> str:
         "{{PAGE_TITLE}}": page_title,
         "{{NAME}}": html.escape(loc["name"]),
         "{{ADDRESS}}": html.escape(loc["address"]),
-        "{{DATES}}": html.escape(format_dates(loc["open"], loc["close"])),
+        "{{DATES}}": html.escape(format_dates(loc["open"], loc["close"], loc["openLabel"], loc["closeLabel"])),
         "{{GALLERY}}": gallery,
         "{{DESCRIPTION}}": render_description(loc["description"]),
         "{{CATEGORIES}}": render_categories(loc["tags"], loc["tags2"]),
         "{{SOURCES}}": render_sources(loc["sources"]),
         "{{CAROUSEL_SCRIPT}}": carousel_script,
+        "{{BUILD_VERSION}}": build_version,
     }
 
     page = template
@@ -288,7 +334,7 @@ def render_detail_page(template: str, loc: dict) -> str:
     return page
 
 
-def build_locations(rows):
+def build_locations(rows, enrichments: dict[str, str]):
     seen_slugs = {}
     locations = []
 
@@ -302,8 +348,10 @@ def build_locations(rows):
         else:
             seen_slugs[slug] = 1
 
-        open_year = parse_year(row["Opening Date"], False)
-        close_year = parse_year(row["Closing Date"], True)
+        open_label = clean_text(row["Opening Date"])
+        close_label = clean_text(row["Closing Date"])
+        open_year = parse_year(open_label, False)
+        close_year = parse_year(close_label, True)
         if open_year is None:
             open_year = 0
         if close_year is None:
@@ -320,11 +368,13 @@ def build_locations(rows):
             "organizationName": relocation["organizationName"],
             "isRelocation": relocation["isRelocation"],
             "locationLabel": relocation["locationLabel"],
-            "address": clean_text(row["Address"]),
+            "address": resolve_address(name, row["Address"], enrichments),
             "lat": float(row["Latitude"]),
             "lng": float(row["Longitude"]),
             "open": open_year,
             "close": close_year,
+            "openLabel": open_label,
+            "closeLabel": close_label,
             "type": infer_type(name, tags, tags2),
             "desc": clean_text(row.get("Short Description") or row.get("Description") or ""),
             "description": clean_text(row.get("Description") or ""),
@@ -350,15 +400,51 @@ def build_locations(rows):
     return locations
 
 
-def write_detail_pages(locations, template: str):
+def write_detail_pages(locations, template: str, build_version: str):
     generated = []
     for loc in locations:
         filename = loc["detailPage"]
         path = os.path.join(DETAIL_PAGES_DIR, filename)
         with open(path, "w", encoding="utf-8") as handle:
-            handle.write(render_detail_page(template, loc))
+            handle.write(render_detail_page(template, loc, build_version))
         generated.append(filename)
     return generated
+
+
+SITE_PAGES = ("restored-hero-layout.html", "about.html")
+LOCATIONS_SCRIPT_PATTERN = re.compile(r"js/locations\.js(?:\?v=[^\"']+)?")
+
+
+def patch_site_pages(build_version: str):
+    script_src = f"js/locations.js?v={build_version}"
+    for filename in SITE_PAGES:
+        path = os.path.join(ROOT_DIR, filename)
+        with open(path, encoding="utf-8") as handle:
+            content = handle.read()
+        updated = LOCATIONS_SCRIPT_PATTERN.sub(script_src, content)
+        if updated != content:
+            with open(path, "w", encoding="utf-8") as handle:
+                handle.write(updated)
+
+
+def sync_photos(locations):
+    os.makedirs(PHOTOS_DEST, exist_ok=True)
+    copied = 0
+    missing = []
+
+    for loc in locations:
+        for photo in loc["photos"]:
+            filename = photo["file"]
+            src = os.path.join(PHOTOS_SRC, filename)
+            dest = os.path.join(PHOTOS_DEST, filename)
+            if not os.path.isfile(src):
+                missing.append((loc["name"], filename))
+                continue
+            if not os.path.isfile(dest) or os.path.getmtime(src) > os.path.getmtime(dest):
+                shutil.copy2(src, dest)
+                copied += 1
+
+    return copied, missing
 
 
 def main():
@@ -371,16 +457,25 @@ def main():
     with open(TEMPLATE_PATH, encoding="utf-8") as handle:
         template = handle.read()
 
-    locations = build_locations(rows)
+    enrichments = load_address_enrichments()
+    locations = build_locations(rows, enrichments)
+    copied, missing = sync_photos(locations)
     js = "window.ROUTE66_LOCATIONS = " + json.dumps(locations, indent=4, ensure_ascii=False) + ";\n"
+    build_version = hashlib.md5(js.encode("utf-8")).hexdigest()[:8]
 
     with open(out_path, "w", encoding="utf-8") as handle:
         handle.write(js)
 
-    detail_pages = write_detail_pages(locations, template)
+    detail_pages = write_detail_pages(locations, template, build_version)
+    patch_site_pages(build_version)
 
     print(f"Wrote {len(locations)} locations to {out_path}")
-    print(f"Generated {len(detail_pages)} detail pages")
+    print(f"Generated {len(detail_pages)} detail pages (cache version {build_version})")
+    print(f"Synced {copied} photo(s) to {PHOTOS_DEST}")
+    if missing:
+        print(f"Warning: {len(missing)} missing photo(s) in {PHOTOS_SRC}:")
+        for name, filename in missing:
+            print(f"  - {name}: {filename}")
 
 
 if __name__ == "__main__":

@@ -99,6 +99,8 @@ Both map and detail pages read from the same `locations.js` entry:
 python3 scripts/build-locations.py
 ```
 
+This also copies referenced photos from `~/Documents/Route66Photos/` into `assets/photos/`.
+
 Optional CSV path:
 
 ```bash

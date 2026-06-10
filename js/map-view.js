@@ -52,7 +52,9 @@
         document.getElementById("popup-name").textContent = loc.name;
         document.getElementById("popup-address").querySelector("span").textContent = loc.address;
         document.getElementById("popup-dates").textContent =
-            loc.open + " - " + (loc.close === 2026 ? "Present" : loc.close);
+            loc.openLabel && loc.closeLabel
+                ? loc.openLabel + " - " + loc.closeLabel
+                : loc.open + " - " + (loc.close === 2026 ? "Present" : loc.close);
         document.getElementById("popup-desc").textContent = loc.desc;
 
         if (popupImg) {

@@ -1,6 +1,9 @@
 (function () {
     const HOME_PAGE = "restored-hero-layout.html";
-    const locations = window.ROUTE66_LOCATIONS || [];
+
+    function getLocations() {
+        return window.ROUTE66_LOCATIONS || [];
+    }
 
     function normalize(value) {
         return value.toLowerCase().replace(/['']/g, "").trim();
@@ -8,6 +11,7 @@
 
     function searchLocations(query) {
         const q = normalize(query);
+        const locations = getLocations();
         if (!q) return locations.slice();
 
         return locations.filter(function (loc) {
@@ -111,7 +115,9 @@
             btn.className = "site-search-result";
             btn.setAttribute("role", "option");
 
-            const years = loc.open + " – " + (loc.close === 2026 ? "Present" : loc.close);
+            const years = loc.openLabel && loc.closeLabel
+                ? loc.openLabel + " – " + loc.closeLabel
+                : loc.open + " – " + (loc.close === 2026 ? "Present" : loc.close);
             const locationNote = loc.locationLabel
                 ? '<span class="site-search-result-badge">' + loc.locationLabel + '</span>'
                 : "";
