@@ -104,13 +104,18 @@
             height: 6px;
             width: 100%;
         }
+        .header-scrolled {
+            background-color: rgba(255, 248, 245, 0.9);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
     </style>
 </head>
 <body class="bg-background text-on-background font-ui-main text-ui-main antialiased selection:bg-primary selection:text-on-primary">
 <!-- TopNavBar (Shared Component) -->
 <nav class="bg-background/80 dark:bg-background/80 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant dark:border-outline flat no shadows font-ui-main text-ui-main transition-all duration-300" id="main-nav">
 <div class="flex justify-between items-center px-margin-desktop max-w-container-max mx-auto py-4">
-<a class="flex items-center gap-3 sm:gap-4 group min-w-0 flex-1 mr-2" href="#">
+<a class="flex items-center gap-3 sm:gap-4 group min-w-0 flex-1 mr-2" href="restored-hero-layout.html#home">
 <img alt="Mazer Logo" class="h-16 w-16 shrink-0 object-contain group-hover:scale-110 transition-transform duration-500 cubic-bezier(0.4, 0, 0.2, 1)" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSpx1HraMKJ9rLF0vW85sycBHkzP0Rha4NqfVx8lWHMWla9pqZB2yF7XBARvX0ZKVkTu2bDNgsTIltcB9db8Ex0KV1dfK9pQBn1zNVfTm9qhUajxDYcraax-8K9AbDFzoE9HrSNNg1D_B-nQQwLWWDca8n8AXIMd5N2Yr9pcnOY6_fV8-ei5zuflFyyOWRpMfcc7GhNru21eHd-OzP3yqwb-aBRyhZ7hz7fyHeBDszLxzK7ZfiwuzfCBmHj4MYvxEPCp6JhBfXMw">
 <div class="hidden md:flex flex-col">
 <span class="font-display-lg text-primary dark:text-primary-fixed-dim uppercase tracking-wider leading-tight">Discovering West Hollywood's Route 66</span>
@@ -121,10 +126,10 @@
 </div>
 </a>
 <div class="hidden md:flex items-center gap-8 font-nav-item text-nav-item relative" id="nav-links">
-<a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim pb-1 transition-colors duration-300 relative" data-target="home" href="#home">Home</a>
-<a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim pb-1 transition-colors duration-300 relative" data-target="introduction" href="#introduction">Introduction</a>
-<a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim pb-1 transition-colors duration-300 relative" data-target="about" href="about.html">About</a>
-<a class="nav-link dark:text-tertiary-fixed-dim pb-1 font-bold transition-colors duration-300 relative text-tertiary" data-target="map" href="#map">Map</a>
+<a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim pb-1 transition-colors duration-300 relative" href="restored-hero-layout.html#home">Home</a>
+<a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim pb-1 transition-colors duration-300 relative" href="restored-hero-layout.html#introduction">Introduction</a>
+<a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim pb-1 transition-colors duration-300 relative" href="about.html">About</a>
+<a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim pb-1 transition-colors duration-300 relative" href="restored-hero-layout.html#map">Map</a>
 <button type="button" class="nav-search-btn text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center p-2 rounded-full hover:bg-surface-variant duration-300" aria-label="Search locations">
 <span class="material-symbols-outlined" data-icon="search">search</span>
 </button>
@@ -132,9 +137,17 @@
 <button type="button" class="nav-search-btn md:hidden text-on-surface p-2 hover:bg-surface-variant rounded-full transition-colors" aria-label="Search locations">
 <span class="material-symbols-outlined" data-icon="search">search</span>
 </button>
-<button class="md:hidden text-on-surface p-2 hover:bg-surface-variant rounded-full transition-colors">
+<button type="button" id="mobile-menu-btn" class="md:hidden text-on-surface p-2 hover:bg-surface-variant rounded-full transition-colors" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
 <span class="material-symbols-outlined" data-icon="menu">menu</span>
 </button>
+</div>
+<div class="hidden md:hidden border-t border-outline-variant bg-background/95 backdrop-blur-md" id="mobile-nav">
+<div class="flex flex-col gap-1 px-margin-mobile py-4 font-nav-item text-nav-item">
+<a class="text-on-surface-variant hover:text-primary py-3 transition-colors duration-300" href="restored-hero-layout.html#home">Home</a>
+<a class="text-on-surface-variant hover:text-primary py-3 transition-colors duration-300" href="restored-hero-layout.html#introduction">Introduction</a>
+<a class="text-on-surface-variant hover:text-primary py-3 transition-colors duration-300" href="about.html">About</a>
+<a class="text-on-surface-variant hover:text-primary py-3 transition-colors duration-300" href="restored-hero-layout.html#map">Map</a>
+</div>
 </div>
 <div class="road-line"></div>
 </nav>
@@ -142,7 +155,7 @@
 <main class="pt-[120px] pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
 <!-- Action Bar -->
 <div class="mb-8 flex items-center">
-<a class="inline-flex items-center space-x-2 text-primary hover:text-tertiary transition-colors group" href="#">
+<a class="inline-flex items-center space-x-2 text-primary hover:text-tertiary transition-colors group" href="restored-hero-layout.html#map">
 <span class="material-symbols-outlined transform group-hover:-translate-x-1 transition-transform" data-icon="arrow_back">arrow_back</span>
 <span class="font-label-caps text-label-caps uppercase tracking-widest">Back to Map</span>
 </a>
@@ -293,6 +306,7 @@
         });
     });
 </script>
+<script src="js/site-nav.js"></script>
 <script src="js/locations.js"></script>
 <script src="js/site-search.js"></script>
 </body></html>

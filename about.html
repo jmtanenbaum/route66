@@ -233,9 +233,17 @@
 <button type="button" class="nav-search-btn md:hidden text-on-surface p-2 hover:bg-surface-variant rounded-full transition-colors" aria-label="Search locations">
 <span class="material-symbols-outlined" data-icon="search">search</span>
 </button>
-<button class="md:hidden text-on-surface p-2 hover:bg-surface-variant rounded-full transition-colors">
+<button type="button" id="mobile-menu-btn" class="md:hidden text-on-surface p-2 hover:bg-surface-variant rounded-full transition-colors" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
 <span class="material-symbols-outlined" data-icon="menu">menu</span>
 </button>
+</div>
+<div class="hidden md:hidden border-t border-outline-variant bg-background/95 backdrop-blur-md" id="mobile-nav">
+<div class="flex flex-col gap-1 px-margin-mobile py-4 font-nav-item text-nav-item">
+<a class="text-on-surface-variant hover:text-primary py-3 transition-colors duration-300" href="restored-hero-layout.html#home">Home</a>
+<a class="text-on-surface-variant hover:text-primary py-3 transition-colors duration-300" href="restored-hero-layout.html#introduction">Introduction</a>
+<a class="text-on-surface-variant hover:text-primary py-3 transition-colors duration-300" href="about.html">About</a>
+<a class="text-on-surface-variant hover:text-primary py-3 transition-colors duration-300" href="restored-hero-layout.html#map">Map</a>
+</div>
 </div>
 <div class="road-line"></div>
 </nav>
@@ -328,17 +336,9 @@ Explore the Map
             }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
             revealElements.forEach(el => revealObserver.observe(el));
         }
-
-        const mainNav = document.getElementById('main-nav');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                mainNav.classList.add('header-scrolled', 'shadow-sm');
-            } else {
-                mainNav.classList.remove('header-scrolled', 'shadow-sm');
-            }
-        });
     });
 </script>
+<script src="js/site-nav.js"></script>
 <script src="js/locations.js"></script>
 <script src="js/site-search.js"></script>
 </body></html>
