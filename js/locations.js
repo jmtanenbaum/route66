@@ -18,7 +18,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "",
         "sources": "Denny. “This World-Famous LA Queer Bar Goes on Sale after 30 Years, but Not before Its Dark Past Comes Back to Haunt It.” Reckon, July 19, 2023. https://www.reckon.news/lgbtq/2023/07/this-world-famous-la-queer-bar-goes-on-sale-after-30-years-but-not-before-its-dark-past-comes-back-to-haunt-it.html.\nElina Shatkin. “The Abbey: The Story of an LA Icon | Discover Los Angeles.” December 8, 2025. https://www.discoverlosangeles.com/things-to-do/the-abbey-the-story-of-an-la-icon.\nHeadliner. “Chappell Roan: How an Unforgettable Night at a Gay Club Led to Pink Pony Club.” Accessed April 28, 2026. https://headlinerhub.com/chappell-roan-california-here-we-come.html.",
         "distanceMiles": 0.0377,
-        "detailPage": null,
+        "detailPage": "the-abbey-detail.html",
         "photos": [
             {
                 "file": "The_Abbey_West_Hollywood_08.jpeg",
@@ -45,7 +45,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "",
         "sources": "Denny. “This World-Famous LA Queer Bar Goes on Sale after 30 Years, but Not before Its Dark Past Comes Back to Haunt It.” Reckon, July 19, 2023. https://www.reckon.news/lgbtq/2023/07/this-world-famous-la-queer-bar-goes-on-sale-after-30-years-but-not-before-its-dark-past-comes-back-to-haunt-it.html.\nElina Shatkin. “The Abbey: The Story of an LA Icon | Discover Los Angeles.” December 8, 2025. https://www.discoverlosangeles.com/things-to-do/the-abbey-the-story-of-an-la-icon.\nHeadliner. “Chappell Roan: How an Unforgettable Night at a Gay Club Led to Pink Pony Club.” Accessed April 28, 2026. https://headlinerhub.com/chappell-roan-california-here-we-come.html.",
         "distanceMiles": 0.0377,
-        "detailPage": null,
+        "detailPage": "the-chapel-detail.html",
         "photos": [
             {
                 "file": "Chapel1Web.jpg",
@@ -72,7 +72,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "Lesbian Owned Business",
         "sources": "1936: Cafe Internationale: Historic Sunset Strip Lesbian Bars. n.d. Accessed April 28, 2026. https://www.westhollywoodhistory.org/playground-to-the-stars/historic-sunset-strip-lesbian-bars-cafe-internationale/.\nFaderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. Univ of California Press, 2009.\nLord, Jack, and Lloyd Hoff. How to Sin in Hollywood. Guggenheim, 1940.",
         "distanceMiles": 0.28,
-        "detailPage": null,
+        "detailPage": "tess-caf-international-detail.html",
         "photos": [
             {
                 "file": "TessHowtoSininHollywood.jpg",
@@ -99,7 +99,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "Lesbian Run Non-Profit Organization",
         "sources": "McHugh, Kathleen A., Brenda Johnson-Grau, and Ben Raphael Sher, eds. Making Invisible Histories Visible: A Resource Guide to the Collections of the June L. Mazer Lesbian Archives. 2014. https://escholarship.org/uc/item/5k44b4tk.\nSangwand, T.-Kay. “Connexxus/Centro de Mujeres Collection, 1985-1991 Finding Aid.” Online Archive of California, December 11, 2025. https://oac.cdlib.org/findaid/ark:/13030/kt1779r55b/.",
         "distanceMiles": 0.0271,
-        "detailPage": null,
+        "detailPage": "connexxus-centro-de-mujeres-detail.html",
         "photos": [
             {
                 "file": "Connexusphoto1.jpg",
@@ -130,7 +130,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "Lesbian Run Non-Profit Organization",
         "sources": "McHugh, Kathleen A., Brenda Johnson-Grau, and Ben Raphael Sher, eds. Making Invisible Histories Visible: A Resource Guide to the Collections of the June L. Mazer Lesbian Archives. 2014. https://escholarship.org/uc/item/5k44b4tk.\nSangwand, T.-Kay. “Connexxus/Centro de Mujeres Collection, 1985-1991 Finding Aid.” Online Archive of California, December 11, 2025. https://oac.cdlib.org/findaid/ark:/13030/kt1779r55b/.",
         "distanceMiles": 0.0359,
-        "detailPage": null,
+        "detailPage": "connexxus-centro-de-mujeres-second-location-detail.html",
         "photos": [
             {
                 "file": "Connexusphoto1.jpg",
@@ -161,7 +161,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "",
         "sources": "Chong, Jia-Rui. “Gathering Celebrates Literary Series for Lesbian Writers.” Books. Los Angeles Times, March 29, 2004. https://www.latimes.com/archives/la-xpm-2004-mar-29-me-lit29-story.html.\nKellogg, Carolyn. “A Different Light Going Dark.” Jacket Copy. Los Angeles Times, February 25, 2009. https://www.latimes.com/archives/blogs/jacket-copy/story/2009-02-25/a-different-light-going-dark.\n“Queer Maps — A Different Light.” Accessed April 28, 2026. https://queermaps.org/.",
         "distanceMiles": 0.0124,
-        "detailPage": null,
+        "detailPage": "different-light-bookstore-detail.html",
         "photos": [
             {
                 "file": "differentlightsite.jpeg",
@@ -188,7 +188,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "",
         "sources": "Murillo, Paulo. New Drip & Dolce Bakery Opens in West Hollywood Rainbow District - WEHO TIMES West Hollywood News, Nightlife and Events. September 5, 2025. https://wehotimes.com/new-drip-dolce-bakery-opens-in-west-hollywood-rainbow-district/.\nNicole, Kirstie. “Drip & Dolce: A Queer-Owned Café Bringing Couture Croissants and Community to West Hollywood.” She Comes With Baggage Media, November 27, 2025. https://www.shecomeswithbaggagemedia.com/post/drip-dolce-a-queer-owned-café-bringing-couture-croissants-and-community-to-west-hollywood.",
         "distanceMiles": 0.0203,
-        "detailPage": null,
+        "detailPage": "drip-and-dolce-detail.html",
         "photos": []
     },
     {
@@ -210,7 +210,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "",
         "sources": "De Lorea, Carlos. “Fan Girl Cafe Carries on the Musical Legacy of Its West Hollywood Location with Coffee and Good Vibes.” De Los. Los Angeles Times, April 30, 2025. https://www.latimes.com/delos/story/2025-04-30/fan-girl-cafe-latinx-starwood-west-hollywood.",
         "distanceMiles": 0.0281,
-        "detailPage": null,
+        "detailPage": "fan-girl-cafe-detail.html",
         "photos": [
             {
                 "file": "Fangirlcafe.jpeg",
@@ -237,7 +237,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "",
         "sources": "Holmes, Mona. “West Hollywood’s Iconic French Market Place Boasts a Glitzy New Design.” Eater LA, August 1, 2018. https://la.eater.com/2018/8/1/17635658/two-restaurants-underground-bar-west-hollywood-french-market-place-development.\nTime Out Los Angeles. “Dorothy’s Surrender.” September 25, 2012. https://www.timeout.com/los-angeles/shopping/dorothys-surrender-closed.\nTrinh, Jean. “1970s Gay WeHo Hangout Could Be Razed For New Development.” LAist, December 30, 2015. https://laist.com/news/food/goodbye-french-market-place.\nWeHo Online. “Inspired by a Trip to New Orleans, the Hartmans Were the Couple Behind the French Market.” Accessed April 28, 2026. https://wehoonline.com/inspired-by-a-trip-to-new-orleans-the-hartmans-were-the-couple-behind-the-french-market/.",
         "distanceMiles": 0.001,
-        "detailPage": null,
+        "detailPage": "the-french-market-detail.html",
         "photos": [
             {
                 "file": "FrenchMarketBuilding.jpeg",
@@ -264,7 +264,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "Lesbian Owned Business",
         "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. Univ of California Press, 2009.\nShokin, Sammantha. “The Founding Mother of Sapphic Hollywood - Arts & Letters.” Arts & Letters. Tablet Magazine, June 1, 2022. https://www.tabletmag.com/sections/arts-letters/articles/alla-nazimova-sapphic-hollywood.\nTatna, Meher. “Forgotten Hollywood: The Garden of Allah.” Golden Globes, September 22, 2022. https://goldenglobes.com/articles/forgotten-hollywood-garden-allah/.",
         "distanceMiles": 0.4479,
-        "detailPage": null,
+        "detailPage": "garden-of-allah-hotel-detail.html",
         "photos": [
             {
                 "file": "Alla_Nazimova_LCCN2014712156.tif.jpg",
@@ -295,7 +295,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "",
         "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. Univ of California Press, 2009.\nHamel, Jenny. “The Pansy Craze: When Gay Nightlife in Los Angeles….” KCRW, May 11, 2018. https://www.kcrw.com/shows/curious-coast/stories/the-pansy-craze-when-gay-nightlife-in-los-angeles-really-kicked-off.\nPonder, Joe. “1936: Jane Jones’ Little Club – Historic Sunset Strip Lesbian Bars.” West Hollywood History, n.d. Accessed April 28, 2026. https://www.westhollywoodhistory.org/playground-to-the-stars/historic-sunset-strip-lesbian-bars-jane-jones-little-club/.\n“Queer Maps — Jane Jones Little Club.” Accessed April 28, 2026. https://queermaps.org/.",
         "distanceMiles": 0.2729,
-        "detailPage": null,
+        "detailPage": "jane-jones-little-club-detail.html",
         "photos": [
             {
                 "file": "littleclub.webp",
@@ -322,7 +322,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "Lesbian Run Non-Profit Organization",
         "sources": "June L. Mazer Lesbian Archives. “About.” Accessed April 28, 2026. https://www.mazerlesbianarchives.org/about.\nJune L. Mazer Lesbian Archives. “June L. Mazer Lesbian Archives.” January 26, 2026. https://www.mazerlesbianarchives.org.\nMcHugh, Kathleen A., Brenda Johnson-Grau, and Ben Raphael Sher, eds. Making Invisible Histories Visible: A Resource Guide to the Collections of the June L. Mazer Lesbian Archives. 2014. https://escholarship.org/uc/item/5k44b4tk.",
         "distanceMiles": 0.1387,
-        "detailPage": null,
+        "detailPage": "june-l-mazer-lesbian-archives-detail.html",
         "photos": [
             {
                 "file": "mazerhistoricphoto.jpg",
@@ -357,7 +357,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "",
         "sources": "Murillo, Paulo. Los Angeles LGBT Center Is Closing Center WeHo Location - WEHO TIMES West Hollywood News, Nightlife and Events. April 9, 2025. https://wehotimes.com/los-angeles-lgbt-center-is-closing-center-weho-location/.",
         "distanceMiles": 0.0183,
-        "detailPage": null,
+        "detailPage": "los-angeles-lgbt-center-weho-detail.html",
         "photos": []
     },
     {
@@ -379,7 +379,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "Lesbian Owned Business",
         "sources": "Dr. Alex D. Ketchum, The Directory, https://docs.google.com/document/d/1X07SFiXtIfcGaf_K-xFWGviDO5vUzXMghE8drGFP0zU/edit?usp=sharing “Lost Womyn’s Space: Little Frida’s Coffee House.” Lost Womyn’s Space, December 4, 2011. https://lostwomynsspace.blogspot.com/2011/12/little-fridas-coffee-house.html.\nMitchell, Schuyler. “How Did L.A. Become a City Without Lesbian Bars?” LAmag, July 1, 2020. https://lamag.com/lgbtq/lesbian-bars-los-angeles/.\nYarbro, Stan. “The Great Lesbian Club Wars.” Miami New Times, October 5, 1993. https://www.miaminewtimes.com/uncategorized/the-great-lesbian-club-wars-6362245/.",
         "distanceMiles": 0.0158,
-        "detailPage": null,
+        "detailPage": "little-frida-detail.html",
         "photos": [
             {
                 "file": "littlefridasflyer.jpeg",
@@ -410,7 +410,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "Lesbian Owned Business",
         "sources": "Dr. Alex D. Ketchum, The Directory, https://docs.google.com/document/d/1X07SFiXtIfcGaf_K-xFWGviDO5vUzXMghE8drGFP0zU/edit?usp=sharing “Lost Womyn’s Space: Little Frida’s Coffee House.” Lost Womyn’s Space, December 4, 2011. https://lostwomynsspace.blogspot.com/2011/12/little-fridas-coffee-house.html.\nMitchell, Schuyler. “How Did L.A. Become a City Without Lesbian Bars?” LAmag, July 1, 2020. https://lamag.com/lgbtq/lesbian-bars-los-angeles/.\nYarbro, Stan. “The Great Lesbian Club Wars.” Miami New Times, October 5, 1993. https://www.miaminewtimes.com/uncategorized/the-great-lesbian-club-wars-6362245/.",
         "distanceMiles": 0.0222,
-        "detailPage": null,
+        "detailPage": "little-frida-location-2-detail.html",
         "photos": [
             {
                 "file": "littlefridasflyer.jpeg",
@@ -441,7 +441,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "",
         "sources": "Murillo, Paulo. Mum’s the Word at Marix Tex Mex Café, But Reopening Appears Imminent in West Hollywood - WEHO TIMES West Hollywood News, Nightlife and Events. April 12, 2025. https://wehotimes.com/mums-the-word-at-marix-tex-mex-cafe-but-reopening-appears-imminent-in-west-hollywood/.\nReichl, Ruth. “The Legend of Marix Moves West.” Los Angeles Times, January 31, 1986. https://www.latimes.com/archives/la-xpm-1986-01-31-ca-2901-story.html.",
         "distanceMiles": 0.0292,
-        "detailPage": null,
+        "detailPage": "marix-tex-mex-cafe-detail.html",
         "photos": [
             {
                 "file": "Matix.jpeg",
@@ -468,7 +468,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "",
         "sources": "Huneven, Michelle. “RESTAURANT REVIEW : Where They Get Down to Basix.” Los Angeles Times, December 23, 1994. https://www.latimes.com/archives/la-xpm-1994-12-23-ca-12111-story.html.\nMurillo, Paulo. West Hollywood Moves to Lease with Option to Purchase Basix Café Property - WEHO TIMES West Hollywood News, Nightlife and Events. July 31, 2025. https://wehotimes.com/west-hollywood-moves-to-lease-with-option-to-purchase-basix-cafe-property/.",
         "distanceMiles": 0.0001,
-        "detailPage": null,
+        "detailPage": "basix-food-and-bar-detail.html",
         "photos": [
             {
                 "file": "BASIX.jpeg",
@@ -495,7 +495,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "",
         "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. New York: Basic Books, 2006.\nWEHOonline. \"Palms Bar Sets Closing Date; Lesbian 'Safe Haven' Remembered Fondly.\" wehoonline.com, May 6, 2013. https://wehoonline.com/palms-bar-sets-closing-date-lesbian-safe-haven-remembered-fondly/ \nCarter, Noelle. \"Farewell to the Palms, a bar — and a home — in West Hollywood.\" Los Angeles Times, June 6, 2013. \nhttps://www.latimes.com/local/la-xpm-2013-jun-06-la-me-carter-palms-20130607-story.html",
         "distanceMiles": 0.0124,
-        "detailPage": "palms-bar-detail.html",
+        "detailPage": "the-palms-bar-detail.html",
         "photos": [
             {
                 "file": "palmsgoodman1.jpg",
@@ -526,7 +526,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "",
         "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. New York: Basic Books, 2006.;  Siegmund, Heidi. \"Club Review: 7969: Equal Opportunity Enjoyment.\" Los Angeles Times, March 24, 1995.\nhttps://www.latimes.com/archives/la-xpm-1988-03-17-we-1903-story.html \n\"The Pink Pussycat College of Strip Tease.\" Atomic Redhead, July 11, 2018. — https://atomicredhead.com/2018/07/11/the-pink-pussycat-college-of-strip-tease-where-yesteryears-strippers-learned-their-craft/",
         "distanceMiles": 0.0035,
-        "detailPage": null,
+        "detailPage": "peanuts-detail.html",
         "photos": [
             {
                 "file": "Peanuts.jpeg",
@@ -553,7 +553,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "Lesbian Owned Business",
         "sources": "“Linda Gerard Obituary (2014) - New York, NY - New York Times.” Accessed April 28, 2026. https://www.legacy.com/us/obituaries/nytimes/name/linda-gerard-obituary?pid=170391477.\nNational Trust for Historic Preservation. “One Building, Three Lives: Saving the LGBTQ Heritage of the Factory | National Trust for Historic Preservation.” Accessed April 28, 2026. https://savingplaces.org/stories/one-building-three-lives-saving-the-lgbtq-heritage-of-the-factory.\n“Queer Maps — Rose Tattoo.” Accessed April 28, 2026. https://queermaps.org/.\nStaff. “Zany, Talented, Larger-than-Life Linda Gerard Remembered in Provincetown.” Wicked Local. Accessed April 28, 2026. https://www.wickedlocal.com/story/provincetown-banner/2014/09/01/zany-talented-larger-than-life/36563013007/.",
         "distanceMiles": 0.0686,
-        "detailPage": null,
+        "detailPage": "rose-tattoo-detail.html",
         "photos": [
             {
                 "file": "LindaGerard.jpeg",
@@ -580,7 +580,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "",
         "sources": "“Hershberger, Sally | Encyclopedia.Com.” Accessed April 28, 2026. https://www.encyclopedia.com/books/culture-magazines/hershberger-sally.\n“SALLY HERSHBERGER LA: Why the Famed Los Angeles Salon Remains a Cut above. - LA Weekly.” Accessed April 28, 2026. https://www.laweekly.com/sally-hershberger-la-why-the-famed-los-angeles-salon-remains-a-cut-above/.",
         "distanceMiles": 0.254,
-        "detailPage": null,
+        "detailPage": "sally-hershberger-salon-detail.html",
         "photos": []
     },
     {
@@ -602,7 +602,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "Lesbian Run Non-Profit Organization",
         "sources": "Sangwand, T.-Kay. “Southern California Women for Understanding (SCWU) Collection Finding Aid.” Online Archive of California, 2009. https://oac.cdlib.org/static_findaids/ark:/13030/kt1f59r455.html.\nFaderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. New York: Basic Books, 2006.",
         "distanceMiles": 0.0297,
-        "detailPage": null,
+        "detailPage": "southern-california-women-for-understanding-detail.html",
         "photos": [
             {
                 "file": "wehoscwu.jpg",
@@ -629,7 +629,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "",
         "sources": "Allman, Kevin. “Looking for Ms. Girlbar.” Los Angeles Times, September 5, 1993. https://www.latimes.com/archives/la-xpm-1993-09-05-vw-31894-story.html.\nContributor. “Robin Gans.” WEHOonline.Com, January 1, 2013. https://wehoonline.com/robin-gans/.\n“Girl Bar | Gay Lesbian Women’s Girl Nightclub Dance Bar History.” April 29, 2006. https://web.archive.org/web/20060429153858/http://girlbar.com/history.html.\nMurillo, Paulo. THE SEEN – 20th Anniversary Last Dance at The Factory & Ultra Suede - WEHO TIMES West Hollywood News, Nightlife and Events. December 12, 2019. https://wehotimes.com/the-seen-20th-anniversary-last-dance-at-the-factory-ultra-suede/.",
         "distanceMiles": 0.0578,
-        "detailPage": null,
+        "detailPage": "girl-bar-at-studio-one-detail.html",
         "photos": [
             {
                 "file": "GirlBarFoundersMay2205.JPG",
@@ -656,7 +656,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "",
         "sources": "Anonymous. “Lost Womyn’s Space: Normandie Room.” Lost Womyn’s Space, July 6, 2011. https://lostwomynsspace.blogspot.com/2011/07/normandie-room.html.\nGoldberg, Lesley. “Fave Los Angeles Lesbian Bar The Normandie Room Goes Under.” July 28, 2009. https://www.pride.com/g-spot/fave-los-angeles-lesbian-bar-normandie-room-goes-under.",
         "distanceMiles": 0.0151,
-        "detailPage": null,
+        "detailPage": "normandie-room-detail.html",
         "photos": [
             {
                 "file": "NormandieNY97.jpg",
@@ -687,7 +687,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "",
         "sources": "Holmes, Mona. “Popular San Francisco LGBTQ Sports Bar Lands in West Hollywood Tonight.” Eater LA, August 29, 2018. https://la.eater.com/2018/8/29/17796364/lgbtq-sports-bar-opening-west-hollywood.\nLavalette, Esmée. “Lesbian Los Angeles: Best Lesbian Clubs and Lesbian Bars Los Angeles.” Once Upon a Journey, December 26, 2019. https://onceuponajrny.com/lesbian-bars-los-angeles/.",
         "distanceMiles": 0.018,
-        "detailPage": null,
+        "detailPage": "hi-tops-detail.html",
         "photos": []
     },
     {
@@ -709,7 +709,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "",
         "sources": "About - Mattie’s West Hollywood. March 13, 2023. https://roccosweho.com/drinks-2/.\nLavalette, Esmée. “Lesbian Los Angeles: Best Lesbian Clubs and Lesbian Bars Los Angeles.” Once Upon a Journey, December 26, 2019. https://onceuponajrny.com/lesbian-bars-los-angeles/.",
         "distanceMiles": 0.0277,
-        "detailPage": null,
+        "detailPage": "rocco-weho-detail.html",
         "photos": []
     },
     {
@@ -731,7 +731,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "Lesbian Owned Business",
         "sources": "City of West Hollywood. “City of West Hollywood HCS and Survey Report.” September 2016. https://www.wehopreservation.org/wp-content/uploads/2016/10/Tile-4-Hist-Context.pdf.\nFaderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. Univ of California Press, 2009.\nMarc Stein, ed. Encyclopedia of Lesbian, Gay, Bisexual, and Transgender History in America. New York, NY : Charles Scribner’s Sons/Thomson/Gale, 2004. http://archive.org/details/encyclopediaofle0001unse_c3g4.\nONE Archives at the USC Libraries. “Pioneering Lesbian Activist Jeanne Córdova (1948-2016) | One Archives.” Accessed April 29, 2026. https://one.usc.edu/news/pioneering-lesbian-activist-jeanne-cordova-1948-2016.\nThe Advocate. “Sex History And Lesbian Outlaws | Advocate.Com.” December 3, 2011. https://www.advocate.com/arts-entertainment/books/2011/12/03/sex-history-and-lesbian-outlaws.\nThe Lesbian Tide, Vol. 1, No. 10 (April 1972); The Lesbian Tide, Vol 2, No 6 (January 1973) The Lesbian Tide, Vol 3, No 3, (October 1973).",
         "distanceMiles": 0.0455,
-        "detailPage": null,
+        "detailPage": "first-lesbian-tide-offices-detail.html",
         "photos": [
             {
                 "file": "Tide1.jpg",
@@ -758,7 +758,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "",
         "sources": "“Gay Los Angeles: The Early Days.” The Tangent Group, January 2, 1988. https://www.tangentgroup.org/gay-los-angeles-early-days/.",
         "distanceMiles": 0.024,
-        "detailPage": null,
+        "detailPage": "footlight-club-detail.html",
         "photos": []
     },
     {
@@ -780,7 +780,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "",
         "sources": "About One – One Institute. n.d. Accessed May 6, 2026. https://www.oneinstitute.org/about/.\n“History | One Archives.” Accessed May 13, 2026. https://one.usc.edu/about/history.",
         "distanceMiles": 0.1387,
-        "detailPage": null,
+        "detailPage": "one-institute-later-one-archives-gallery-and-museum-detail.html",
         "photos": [
             {
                 "file": "ONE-Gallery_626_North_Robertson.jpg",
@@ -807,7 +807,7 @@ window.ROUTE66_LOCATIONS = [
         "tags2": "Lesbian Owned Business",
         "sources": "Murillo, Paulo. “SweetWater WeHo Nightclub Is Opening in West Hollywood for WeHo Pride Weekend.” WEHO TIMES West Hollywood News, Nightlife and Events, May 24, 2026. https://wehotimes.com/sweetwater-weho-nightclub-is-opening-in-west-hollywood-for-weho-pride-weekend/.",
         "distanceMiles": null,
-        "detailPage": null,
+        "detailPage": "sweetwater-detail.html",
         "photos": []
     }
 ];

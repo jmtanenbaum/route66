@@ -1,0 +1,269 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Normandie Room — Queer Women&#x27;s Route 66</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Inter:wght@400;500;700&amp;family=Source+Serif+4:wght@400;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#df2e07",
+                        "on-surface-variant": "#584046",
+                        "surface-container-highest": "#eae1dd",
+                        "on-error-container": "#93000a",
+                        "secondary": "#9e3678",
+                        "surface-container": "#f5ece8",
+                        "surface-container-high": "#f0e6e3",
+                        "surface-dim": "#e1d8d5",
+                        "primary-fixed-dim": "#ffb1c5",
+                        "surface-tint": "#b5185c",
+                        "background": "#fff8f5",
+                        "outline": "#8c7076",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#8d1600",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#ffd9e1",
+                        "surface-variant": "#eae1dd",
+                        "inverse-primary": "#ffb1c5",
+                        "tertiary": "#b41f00",
+                        "surface": "#fff8f5",
+                        "on-primary-fixed": "#3f001a",
+                        "secondary-fixed": "#ffd8ea",
+                        "surface-container-low": "#fbf2ee",
+                        "outline-variant": "#dfbec5",
+                        "inverse-on-surface": "#f8efeb",
+                        "secondary-fixed-dim": "#ffaed9",
+                        "on-primary-container": "#fffbff",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#8f0045",
+                        "on-secondary-fixed-variant": "#801c5f",
+                        "on-secondary-container": "#791559",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed": "#ffdad3",
+                        "on-tertiary-fixed": "#3e0500",
+                        "surface-bright": "#fff8f5",
+                        "primary-container": "#d33472",
+                        "primary": "#b21559",
+                        "on-secondary-fixed": "#3c002a",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb4a4",
+                        "secondary-container": "#fd86cb",
+                        "on-tertiary-container": "#fffbff",
+                        "on-secondary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-surface": "#1f1b19",
+                        "inverse-surface": "#342f2d",
+                        "on-background": "#1f1b19"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "container-max": "1200px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "nav-item": ["Oswald"],
+                        "display-lg-mobile": ["Oswald"],
+                        "essay-body": ["Source Serif 4"],
+                        "headline-md": ["Oswald"],
+                        "display-lg": ["Oswald"],
+                        "label-caps": ["Inter"],
+                        "ui-main": ["Inter"]
+                    },
+                    "fontSize": {
+                        "nav-item": ["18px", { "lineHeight": "24px", "fontWeight": "500" }],
+                        "display-lg-mobile": ["36px", { "lineHeight": "42px", "fontWeight": "700" }],
+                        "essay-body": ["20px", { "lineHeight": "32px", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "0.02em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "ui-main": ["16px", { "lineHeight": "24px", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .road-line {
+            background: linear-gradient(to right, #ED4985 0%, #ED4985 33%, #FF9B71 33%, #FF9B71 66%, #DF2E07 66%, #DF2E07 100%);
+            height: 6px;
+            width: 100%;
+        }
+        .header-scrolled {
+            background-color: rgba(255, 248, 245, 0.9);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-ui-main text-ui-main antialiased selection:bg-primary selection:text-on-primary">
+<nav class="bg-background/80 dark:bg-background/80 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant dark:border-outline flat no shadows font-ui-main text-ui-main transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center px-margin-desktop max-w-container-max mx-auto py-4">
+<a class="flex items-center gap-3 sm:gap-4 group min-w-0 flex-1 mr-2" href="restored-hero-layout.html#home">
+<img alt="Mazer Logo" class="h-16 w-16 shrink-0 object-contain group-hover:scale-110 transition-transform duration-500 cubic-bezier(0.4, 0, 0.2, 1)" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSpx1HraMKJ9rLF0vW85sycBHkzP0Rha4NqfVx8lWHMWla9pqZB2yF7XBARvX0ZKVkTu2bDNgsTIltcB9db8Ex0KV1dfK9pQBn1zNVfTm9qhUajxDYcraax-8K9AbDFzoE9HrSNNg1D_B-nQQwLWWDca8n8AXIMd5N2Yr9pcnOY6_fV8-ei5zuflFyyOWRpMfcc7GhNru21eHd-OzP3yqwb-aBRyhZ7hz7fyHeBDszLxzK7ZfiwuzfCBmHj4MYvxEPCp6JhBfXMw">
+<div class="hidden md:flex flex-col">
+<span class="font-display-lg text-primary dark:text-primary-fixed-dim uppercase tracking-wider leading-tight">Discovering West Hollywood's Route 66</span>
+<span class="font-label-caps text-on-surface-variant opacity-80">Lesbian Historical Places Digital Map</span>
+</div>
+<div class="flex flex-col md:hidden min-w-0">
+<span class="font-display-lg text-primary dark:text-primary-fixed-dim uppercase tracking-wide leading-tight text-[11px] sm:text-[13px]">Discovering West Hollywood's Route 66</span>
+</div>
+</a>
+<div class="hidden md:flex items-center gap-8 font-nav-item text-nav-item relative" id="nav-links">
+<a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim pb-1 transition-colors duration-300 relative" href="restored-hero-layout.html#home">Home</a>
+<a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim pb-1 transition-colors duration-300 relative" href="restored-hero-layout.html#introduction">Introduction</a>
+<a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim pb-1 transition-colors duration-300 relative" href="about.html">About</a>
+<a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim pb-1 transition-colors duration-300 relative" href="restored-hero-layout.html#map">Map</a>
+<button type="button" class="nav-search-btn text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center p-2 rounded-full hover:bg-surface-variant duration-300" aria-label="Search locations">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+</div>
+<button type="button" class="nav-search-btn md:hidden text-on-surface p-2 hover:bg-surface-variant rounded-full transition-colors" aria-label="Search locations">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button type="button" id="mobile-menu-btn" class="md:hidden text-on-surface p-2 hover:bg-surface-variant rounded-full transition-colors" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+<div class="hidden md:hidden border-t border-outline-variant bg-background/95 backdrop-blur-md" id="mobile-nav">
+<div class="flex flex-col gap-1 px-margin-mobile py-4 font-nav-item text-nav-item">
+<a class="text-on-surface-variant hover:text-primary py-3 transition-colors duration-300" href="restored-hero-layout.html#home">Home</a>
+<a class="text-on-surface-variant hover:text-primary py-3 transition-colors duration-300" href="restored-hero-layout.html#introduction">Introduction</a>
+<a class="text-on-surface-variant hover:text-primary py-3 transition-colors duration-300" href="about.html">About</a>
+<a class="text-on-surface-variant hover:text-primary py-3 transition-colors duration-300" href="restored-hero-layout.html#map">Map</a>
+</div>
+</div>
+<div class="road-line"></div>
+</nav>
+<main class="pt-[120px] pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="mb-8 flex items-center">
+<a class="inline-flex items-center space-x-2 text-primary hover:text-tertiary transition-colors group" href="restored-hero-layout.html#map">
+<span class="material-symbols-outlined transform group-hover:-translate-x-1 transition-transform" data-icon="arrow_back">arrow_back</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest">Back to Map</span>
+</a>
+</div>
+<header class="mb-12 border-b border-outline-variant pb-8">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-background mb-4">Normandie Room</h1>
+<div class="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-8">
+<div class="flex items-start space-x-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="location_on" data-weight="fill">location_on</span>
+<div>
+<p class="font-label-caps text-label-caps uppercase tracking-widest text-outline">Address</p>
+<p class="font-ui-main text-ui-main text-on-background">8737 Santa Monica Boulevard, West Hollywood, CA 90069</p>
+</div>
+</div>
+<div class="flex items-start space-x-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="calendar_month">calendar_month</span>
+<div>
+<p class="font-label-caps text-label-caps uppercase tracking-widest text-outline">Active Dates</p>
+<p class="font-ui-main text-ui-main text-on-background">1999 - 2009</p>
+</div>
+</div>
+</div>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-12 flex flex-col gap-6">
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm relative group"><div class="relative aspect-[16/9] md:aspect-[21/9] bg-surface-variant overflow-hidden"><div class="flex transition-transform duration-500 h-full" id="carousel-track"><div class="min-w-full h-full flex items-center justify-center"><img alt="The Normandie Room New Years Eve 1997 Bar photograph, December 31, 1997, The Normandie Room Collection, June L. Mazer Lesbian Archives" class="h-full w-auto object-contain" src="assets/photos/NormandieNY97.jpg"></div><div class="min-w-full h-full flex items-center justify-center"><img alt="The Normandie Room New Years Eve 1997 Group photograph, December 31, 1997, The Normandie Room Collection, June L. Mazer Lesbian Archives" class="h-full w-auto object-contain" src="assets/photos/NormandieNY972.jpg"></div></div><button type="button" class="absolute left-4 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur-md p-2 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-all shadow-md z-10" id="prev-btn"><span class="material-symbols-outlined">chevron_left</span></button><button type="button" class="absolute right-4 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur-md p-2 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-all shadow-md z-10" id="next-btn"><span class="material-symbols-outlined">chevron_right</span></button><div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2"><button type="button" class="carousel-indicator w-2 h-2 rounded-full bg-outline-variant transition-colors"></button><button type="button" class="carousel-indicator w-2 h-2 rounded-full bg-outline-variant transition-colors"></button></div></div><div class="p-4 bg-surface-container-lowest border-t border-outline-variant"><p class="font-ui-main text-ui-main text-on-surface-variant italic" id="carousel-caption">The Normandie Room New Years Eve 1997 Bar photograph, December 31, 1997, The Normandie Room Collection, June L. Mazer Lesbian Archives</p></div></div>
+</div>
+<div class="md:col-span-12 flex flex-col space-y-8">
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-8 shadow-sm">
+<h2 class="font-headline-md text-headline-md text-on-background mb-6">About this location</h2>
+<div class="font-essay-body text-essay-body text-on-surface-variant space-y-6">
+<p>The Normandie Room opened on October 28, 1993 and soon gained a reputation as a lesbian centric bar. The bar was founded by straight owner Jason Shokrian with the intention of treating everyone equally, but women began gravitating there organically because they were not welcomed at many of the gay male centric establishments on Santa Monica Blvd at the time. The bar was artistic and cozy. It was one of the many businesses that closed due to the combined pressures of prolonged Santa Monica Boulevard construction and the 2008 recession, in this case in 2009.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-8 shadow-sm">
+<h3 class="font-label-caps text-label-caps uppercase tracking-widest text-outline mb-4">Categories</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-4 py-2 bg-primary-fixed text-on-primary-fixed font-ui-main text-ui-main text-sm rounded-full border border-primary-fixed-dim">Lesbian Space</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-outline-variant">
+<h3 class="font-label-caps text-label-caps uppercase tracking-widest text-outline mb-4">Sources</h3>
+<ul class="space-y-2 font-ui-main text-ui-main text-on-surface-variant"><li class="flex items-start space-x-2"><span class="material-symbols-outlined text-secondary text-sm mt-1" data-icon="book">book</span><span>Anonymous. “Lost Womyn’s Space: Normandie Room.” Lost Womyn’s Space, July 6, 2011. https://lostwomynsspace.blogspot.com/2011/07/normandie-room.html.</span></li><li class="flex items-start space-x-2"><span class="material-symbols-outlined text-secondary text-sm mt-1" data-icon="book">book</span><span>Goldberg, Lesley. “Fave Los Angeles Lesbian Bar The Normandie Room Goes Under.” July 28, 2009. https://www.pride.com/g-spot/fave-los-angeles-lesbian-bar-normandie-room-goes-under.</span></li></ul>
+</div>
+</main>
+<div class="road-line"></div>
+<footer class="bg-surface-container-highest dark:bg-inverse-surface text-on-surface dark:text-inverse-on-surface relative bottom-0 w-full border-t-4 border-primary dark:border-primary-fixed flat no shadows font-ui-main text-ui-main">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-margin-desktop gap-8 transition-opacity duration-300">
+<div class="flex flex-col items-center md:items-start gap-4 reveal active">
+<div class="flex items-center gap-4">
+<a href="https://www.mazerlesbianarchives.org/" target="_blank" rel="noopener noreferrer" class="shrink-0">
+<img alt="Mazer Logo Pink" class="h-24 w-auto object-contain hover:rotate-[360deg] transition-transform duration-1000 ease-[cubic-bezier(0.4,0,0.2,1)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6IRkWBTarWZ14o1rJMC6LK3PTqItbAyVJo5h7Lf4UypHh1MsyOPugJiOYsnf0mO4jh-i4ty3Jvnz87PkBKTr9kCyGwL1At_PgCOrwrZV323W1afdro0O1ONvIucC8e5uHE5Ho5y3EbNtpIY3F7uxfNoZWEHwtrLqpxjY44HK4lBMhpbtzHDUDxq6tA8tGkToiJwgjOsb87umiUlsmEzBh5m2QXSGINW9RT57fs0iZVan6-HQ7Hj2Z68ow-HaDEwwKV7XYHcHJ8Q">
+</a>
+<div class="flex flex-col">
+<span class="font-display-lg text-primary dark:text-primary-fixed-dim uppercase tracking-wider leading-tight">Discovering West Hollywood's Route 66</span>
+<span class="font-label-caps text-on-surface-variant opacity-80">Lesbian Historical Places Digital Map</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap justify-center gap-6 font-label-caps text-label-caps reveal stagger-2 active">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:underline decoration-tertiary decoration-2 underline-offset-4 transition-all duration-300" href="restored-hero-layout.html#home">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:underline decoration-tertiary decoration-2 underline-offset-4 transition-all duration-300" href="about.html">About</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:underline decoration-tertiary decoration-2 underline-offset-4 transition-all duration-300" href="restored-hero-layout.html#map">Map</a>
+</div>
+</div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const track = document.getElementById('carousel-track');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const indicators = document.querySelectorAll('.carousel-indicator');
+        const captionEl = document.getElementById('carousel-caption');
+        const captions = ["The Normandie Room New Years Eve 1997 Bar photograph, December 31, 1997, The Normandie Room Collection, June L. Mazer Lesbian Archives", "The Normandie Room New Years Eve 1997 Group photograph, December 31, 1997, The Normandie Room Collection, June L. Mazer Lesbian Archives"];
+        let currentIndex = 0;
+        const totalSlides = 2;
+
+        function updateCarousel() {
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            if (captionEl) captionEl.textContent = captions[currentIndex] || '';
+            indicators.forEach((ind, index) => {
+                if (index === currentIndex) {
+                    ind.classList.add('bg-primary');
+                    ind.classList.remove('bg-outline-variant');
+                } else {
+                    ind.classList.remove('bg-primary');
+                    ind.classList.add('bg-outline-variant');
+                }
+            });
+        }
+
+        if (totalSlides > 1 && prevBtn && nextBtn) {
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalSlides - 1;
+                updateCarousel();
+            });
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex < totalSlides - 1) ? currentIndex + 1 : 0;
+                updateCarousel();
+            });
+            indicators.forEach((ind, index) => {
+                ind.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateCarousel();
+                });
+            });
+        }
+    });
+</script>
+<script src="js/site-nav.js"></script>
+<script src="js/locations.js"></script>
+<script src="js/site-search.js"></script>
+</body></html>
