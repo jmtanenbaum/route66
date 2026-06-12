@@ -1,26 +1,22 @@
 (function () {
     const locations = window.ROUTE66_LOCATIONS || [];
+    const leafletMap = window.Route66LeafletMap;
 
-    const icons = {
-        bar: "local_bar",
-        cafe: "restaurant",
-        nonprofit: "menu_book",
-        hotel: "bed",
-        misc: "star"
-    };
-
-    const container = document.getElementById("map-pins-container");
     const slider = document.getElementById("year-slider");
     const display = document.getElementById("year-display");
     const popup = document.getElementById("location-popup");
     const mapSearch = document.getElementById("map-search");
+    const mapSection = document.getElementById("map");
     const popupImg = document.getElementById("popup-img");
     const defaultPopupImg = popupImg ? popupImg.getAttribute("src") : "";
+    const zoomInBtn = document.getElementById("map-zoom-in");
+    const zoomOutBtn = document.getElementById("map-zoom-out");
 
-    if (!container || !slider || !popup) return;
+    if (!slider || !popup || !leafletMap) return;
 
     let currentYear = parseInt(slider.value, 10);
     let searchQuery = "";
+    let leafletReady = false;
 
     function normalize(value) {
         return value.toLowerCase().replace(/['']/g, "").trim();
@@ -42,6 +38,12 @@
             loc.tags2
         ].join(" "));
         return haystack.includes(q);
+    }
+
+    function isLocationVisible(loc) {
+        return loc.open <= currentYear &&
+            loc.close >= currentYear &&
+            locationMatchesQuery(loc, searchQuery);
     }
 
     function photoUrl(file) {
@@ -84,24 +86,10 @@
     }
 
     function updatePins() {
-        container.innerHTML = "";
+        if (!leafletReady) return;
 
-        locations.forEach(function (loc) {
-            if (loc.open <= currentYear && loc.close >= currentYear && locationMatchesQuery(loc, searchQuery)) {
-                const pin = document.createElement("div");
-                pin.className = "absolute cursor-pointer group transition-transform hover:scale-110";
-                pin.dataset.locationId = loc.id;
-                const top = ((34.1 - loc.lat) * 5000) + 40;
-                const left = ((loc.lng + 118.4) * 5000) + 50;
-                pin.style.top = top + "%";
-                pin.style.left = left + "%";
-                pin.innerHTML =
-                    '<div class="w-8 h-8 bg-primary text-white rounded-t-lg rounded-b-2xl flex items-center justify-center shadow-md border-2 border-white">' +
-                    '<span class="material-symbols-outlined text-sm">' + (icons[loc.type] || "location_on") + '</span></div>';
-                pin.onclick = function () { showPopup(loc); };
-                container.appendChild(pin);
-            }
-        });
+        const visible = locations.filter(isLocationVisible);
+        leafletMap.updateMarkers(visible, showPopup);
     }
 
     function setYear(year) {
@@ -115,12 +103,23 @@
         const loc = locations.find(function (item) { return item.id === id; });
         if (!loc) return;
 
-        const mapSection = document.getElementById("map");
         if (mapSection) mapSection.scrollIntoView({ behavior: "smooth", block: "start" });
 
+        bootMap();
         const midYear = Math.min(Math.max(Math.floor((loc.open + loc.close) / 2), loc.open), loc.close);
         setYear(midYear);
+        leafletMap.flyToLocation(loc, 16);
         window.setTimeout(function () { showPopup(loc); }, 350);
+    }
+
+    function bootMap() {
+        if (leafletReady) {
+            leafletMap.refreshSize();
+            return;
+        }
+
+        leafletReady = leafletMap.init(locations);
+        if (leafletReady) updatePins();
     }
 
     slider.addEventListener("input", function (event) {
@@ -133,6 +132,20 @@
         mapSearch.addEventListener("input", function (event) {
             searchQuery = event.target.value;
             updatePins();
+        });
+    }
+
+    if (zoomInBtn) {
+        zoomInBtn.addEventListener("click", function () {
+            bootMap();
+            leafletMap.zoomIn();
+        });
+    }
+
+    if (zoomOutBtn) {
+        zoomOutBtn.addEventListener("click", function () {
+            bootMap();
+            leafletMap.zoomOut();
         });
     }
 
@@ -149,7 +162,20 @@
         }
     };
 
-    updatePins();
+    window.addEventListener("load", bootMap);
+
+    if (mapSection && "IntersectionObserver" in window) {
+        const mapObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) bootMap();
+            });
+        }, { threshold: 0.1 });
+        mapObserver.observe(mapSection);
+    }
+
+    if (document.readyState === "complete") {
+        bootMap();
+    }
 
     const params = new URLSearchParams(window.location.search);
     const locParam = params.get("loc");

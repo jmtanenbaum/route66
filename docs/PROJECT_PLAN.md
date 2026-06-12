@@ -52,13 +52,73 @@ Both map and detail pages read from the same `locations.js` entry:
 
 **Convention:** Each location page is named `{slug}-detail.html` (e.g. `the-palms-bar-detail.html`). Regenerate after CSV edits with `python3 scripts/build-locations.py`.
 
-### Phase 2 — Leaflet map (replace static image)
+### Phase 2 — Leaflet map (replace static image) *(in progress)*
 
 1. Swap static map for Leaflet + tile layer
 2. `fitBounds()` to all markers on load
 3. Marker per location → popup with spreadsheet fields
 4. "Read more" → `loc.detailPage`
 5. Hook sidebar search and timeline slider to marker visibility
+
+#### Phase 2 implementation steps
+
+Use a **thin vertical slice** first: real map + all pins + existing HTML popup, then layer filters/timeline polish.
+
+**Step 1 — Add Leaflet + [leaflet-providers](https://github.com/leaflet-extras/leaflet-providers)**
+
+- Leaflet CSS/JS on `restored-hero-layout.html`
+- `leaflet-providers.js` for tile layers
+- Replace static map `<img>` with `<div id="leaflet-map">`
+- Keep sidebar, search, year slider, and `#location-popup` unchanged
+
+**Recommended starter tiles** (free, no API key via leaflet-providers):
+
+| Provider | Notes |
+|----------|-------|
+| `CartoDB.Positron` | Clean light basemap — default choice |
+| `OpenStreetMap.Mapnik` | Simple OSM default |
+| `CartoDB.Voyager` | More street detail |
+
+```javascript
+L.tileLayer.provider("CartoDB.Positron").addTo(map);
+```
+
+**Step 2 — Initialize bounds**
+
+```javascript
+const bounds = L.latLngBounds(locations.map((loc) => [loc.lat, loc.lng]));
+map.fitBounds(bounds, { padding: [40, 40], maxZoom: 15 });
+```
+
+**Step 3 — Markers → existing popup**
+
+- Use `L.layerGroup()` for markers
+- Marker click calls existing `showPopup(loc)` (not Leaflet's default popup)
+- Reuse `#location-popup` panel for photo, dates, short description, Read more
+
+**Step 4 — Reconnect timeline + sidebar search** *(next)*
+
+- Filter markers when `loc.open <= year <= loc.close`
+- Filter markers by map sidebar search query
+- Update `Route66Map.showLocation(id)` to `flyTo` + popup
+
+**Step 5 — Overlapping pins** *(Phase 3)*
+
+- Abbey + Chapel share coordinates — consider marker cluster or offset
+
+**Step 6 — Mobile + polish** *(Phase 3)*
+
+- `map.invalidateSize()` on resize
+- Keep bottom popup panel on small screens
+
+#### File structure
+
+| File | Role |
+|------|------|
+| `js/leaflet-map.js` | Map init, tiles, bounds, marker layer |
+| `js/map-view.js` | Popup UI, timeline, search, `Route66Map` API |
+
+**Day 1 checklist:** Steps 1–3 complete → verify Palms + Abbey pin → popup → detail page.
 
 ### Phase 3 — Filters + polish
 
@@ -89,7 +149,8 @@ Both map and detail pages read from the same `locations.js` entry:
 | `scripts/build-locations.py` | Regenerates data + detail pages |
 | `templates/location-detail.html` | Detail page template |
 | `*-detail.html` | Generated location pages (30 total) |
-| `js/map-view.js` | Static map pins, popup, search (Leaflet replacement in Phase 2) |
+| `js/leaflet-map.js` | Leaflet init, tiles, marker layer |
+| `js/map-view.js` | Popup UI, timeline, search, `Route66Map` API |
 | `js/site-nav.js` | Mobile nav + sticky header |
 | `js/site-search.js` | Global location search modal |
 
