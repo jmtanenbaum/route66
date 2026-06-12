@@ -133,6 +133,10 @@
         return file ? "assets/photos/" + file : null;
     }
 
+    function hidePopup() {
+        popup.classList.add("hidden");
+    }
+
     function showPopup(loc) {
         document.getElementById("popup-name").textContent = loc.name;
         document.getElementById("popup-address-text").textContent = loc.address;
@@ -235,8 +239,17 @@
         });
     }
 
-    document.getElementById("close-popup").addEventListener("click", function () {
-        popup.classList.add("hidden");
+    const closePopupBtn = document.getElementById("close-popup");
+    if (closePopupBtn) {
+        closePopupBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            hidePopup();
+        });
+    }
+
+    popup.addEventListener("click", function (event) {
+        event.stopPropagation();
     });
 
     window.Route66Map = {
