@@ -76,7 +76,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "Tess's Café Internationale, also known as Tess's Continental, was a lesbian nightclub owned and operated by Elmer and Tess Wheeler. Entertainment included early drag kings such as Tommy Williams and Jimmy Renard.",
         "tags": "Lesbian Space",
         "tags2": "Lesbian Owned Business",
-        "sources": "1936: Cafe Internationale: Historic Sunset Strip Lesbian Bars. n.d. Accessed April 28, 2026. https://www.westhollywoodhistory.org/playground-to-the-stars/historic-sunset-strip-lesbian-bars-cafe-internationale/.\nFaderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. Univ of California Press, 2009.\nLord, Jack, and Lloyd Hoff. How to Sin in Hollywood. Guggenheim, 1940.",
+        "sources": "1936: Cafe Internationale: Historic Sunset Strip Lesbian Bars. n.d. Accessed April 28, 2026. https://www.westhollywoodhistory.org/playground-to-the-stars/historic-sunset-strip-lesbian-bars-cafe-internationale/.\nFaderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. Univ of California Press, 2009. 47, 87. \nLord, Jack, and Lloyd Hoff. How to Sin in Hollywood. Guggenheim, 1940. 39",
         "distanceMiles": 0.28,
         "detailPage": "tess-caf-international-detail.html",
         "photos": [
@@ -105,7 +105,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "Connexxus was a  feminist and lesbian community center in West Hollywood during the mid- to late 1980s. It held a library, workshops, support groups, counseling, and social events.",
         "tags": "Lesbian Space",
         "tags2": "Lesbian Run Non-Profit Organization",
-        "sources": "McHugh, Kathleen A., Brenda Johnson-Grau, and Ben Raphael Sher, eds. Making Invisible Histories Visible: A Resource Guide to the Collections of the June L. Mazer Lesbian Archives. 2014. https://escholarship.org/uc/item/5k44b4tk.\nSangwand, T.-Kay. “Connexxus/Centro de Mujeres Collection, 1985-1991 Finding Aid.” Online Archive of California, December 11, 2025. https://oac.cdlib.org/findaid/ark:/13030/kt1779r55b/.",
+        "sources": "McHugh, Kathleen A., Brenda Johnson-Grau, and Ben Raphael Sher, eds. Making Invisible Histories Visible: A Resource Guide to the Collections of the June L. Mazer Lesbian Archives. 2014. 119. https://escholarship.org/uc/item/5k44b4tk.\nSangwand, T.-Kay. “Connexxus/Centro de Mujeres Collection, 1985-1991 Finding Aid.” Online Archive of California, December 11, 2025. https://oac.cdlib.org/findaid/ark:/13030/kt1779r55b/.",
         "distanceMiles": 0.0271,
         "detailPage": "connexxus-centro-de-mujeres-detail.html",
         "photos": [
@@ -138,7 +138,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "Connexxus was a  feminist and lesbian community center in West Hollywood during the mid- to late 1980s. It held a library, workshops, support groups, counseling, and social events.",
         "tags": "Lesbian Space",
         "tags2": "Lesbian Run Non-Profit Organization",
-        "sources": "McHugh, Kathleen A., Brenda Johnson-Grau, and Ben Raphael Sher, eds. Making Invisible Histories Visible: A Resource Guide to the Collections of the June L. Mazer Lesbian Archives. 2014. https://escholarship.org/uc/item/5k44b4tk.\nSangwand, T.-Kay. “Connexxus/Centro de Mujeres Collection, 1985-1991 Finding Aid.” Online Archive of California, December 11, 2025. https://oac.cdlib.org/findaid/ark:/13030/kt1779r55b/.",
+        "sources": "McHugh, Kathleen A., Brenda Johnson-Grau, and Ben Raphael Sher, eds. Making Invisible Histories Visible: A Resource Guide to the Collections of the June L. Mazer Lesbian Archives. 2014. 119. https://escholarship.org/uc/item/5k44b4tk.\nSangwand, T.-Kay. “Connexxus/Centro de Mujeres Collection, 1985-1991 Finding Aid.” Online Archive of California, December 11, 2025. https://oac.cdlib.org/findaid/ark:/13030/kt1779r55b/.",
         "distanceMiles": 0.0359,
         "detailPage": "connexxus-centro-de-mujeres-second-location-detail.html",
         "photos": [
@@ -282,7 +282,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "The Garden of Allah Hotel was originally the estate of lesbian silent film star Alla Nazimova and became known as a hub for Hollywood's LGBTQ+ community and celebrities from 1927 to 1959.",
         "tags": "Mixed LGBT Space",
         "tags2": "Lesbian Owned Business",
-        "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. Univ of California Press, 2009.\nShokin, Sammantha. “The Founding Mother of Sapphic Hollywood - Arts & Letters.” Arts & Letters. Tablet Magazine, June 1, 2022. https://www.tabletmag.com/sections/arts-letters/articles/alla-nazimova-sapphic-hollywood.\nTatna, Meher. “Forgotten Hollywood: The Garden of Allah.” Golden Globes, September 22, 2022. https://goldenglobes.com/articles/forgotten-hollywood-garden-allah/.",
+        "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. Univ of California Press, 2009. 45. \nShokin, Sammantha. “The Founding Mother of Sapphic Hollywood - Arts & Letters.” Arts & Letters. Tablet Magazine, June 1, 2022. https://www.tabletmag.com/sections/arts-letters/articles/alla-nazimova-sapphic-hollywood.\nTatna, Meher. “Forgotten Hollywood: The Garden of Allah.” Golden Globes, September 22, 2022. https://goldenglobes.com/articles/forgotten-hollywood-garden-allah/.",
         "distanceMiles": 0.4479,
         "detailPage": "garden-of-allah-hotel-detail.html",
         "photos": [
@@ -315,7 +315,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "Jane Jones' Little Club was one of Los Angeles’ earliest and most notable lesbian nightclubs, operating from 1929-1939. The club attracted a well-dressed crowd of Hollywood figures alongside local lesbians who watched male impersonators perform.",
         "tags": "Mixed LGBT Space",
         "tags2": "",
-        "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. Univ of California Press, 2009.\nHamel, Jenny. “The Pansy Craze: When Gay Nightlife in Los Angeles….” KCRW, May 11, 2018. https://www.kcrw.com/shows/curious-coast/stories/the-pansy-craze-when-gay-nightlife-in-los-angeles-really-kicked-off.\nPonder, Joe. “1936: Jane Jones’ Little Club – Historic Sunset Strip Lesbian Bars.” West Hollywood History, n.d. Accessed April 28, 2026. https://www.westhollywoodhistory.org/playground-to-the-stars/historic-sunset-strip-lesbian-bars-jane-jones-little-club/.\n“Queer Maps — Jane Jones Little Club.” Accessed April 28, 2026. https://queermaps.org/.",
+        "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. Univ of California Press, 2009. 87. \nHamel, Jenny. “The Pansy Craze: When Gay Nightlife in Los Angeles….” KCRW, May 11, 2018. https://www.kcrw.com/shows/curious-coast/stories/the-pansy-craze-when-gay-nightlife-in-los-angeles-really-kicked-off.\nPonder, Joe. “1936: Jane Jones’ Little Club – Historic Sunset Strip Lesbian Bars.” West Hollywood History, n.d. Accessed April 28, 2026. https://www.westhollywoodhistory.org/playground-to-the-stars/historic-sunset-strip-lesbian-bars-jane-jones-little-club/.\n“Queer Maps — Jane Jones Little Club.” Accessed April 28, 2026. https://queermaps.org/.",
         "distanceMiles": 0.2729,
         "detailPage": "jane-jones-little-club-detail.html",
         "photos": [
@@ -344,7 +344,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "The June L. Mazer Lesbian Archives is a community based archive committed to preserving and sharing lesbian, feminist, and queer women’s histories for future generations. It was founded in Oakland in 1981, and moved to its current home in the Werle Building in 1989.",
         "tags": "Lesbian Space",
         "tags2": "Lesbian Run Non-Profit Organization",
-        "sources": "June L. Mazer Lesbian Archives. “About.” Accessed April 28, 2026. https://www.mazerlesbianarchives.org/about.\nJune L. Mazer Lesbian Archives. “June L. Mazer Lesbian Archives.” January 26, 2026. https://www.mazerlesbianarchives.org.\nMcHugh, Kathleen A., Brenda Johnson-Grau, and Ben Raphael Sher, eds. Making Invisible Histories Visible: A Resource Guide to the Collections of the June L. Mazer Lesbian Archives. 2014. https://escholarship.org/uc/item/5k44b4tk.",
+        "sources": "June L. Mazer Lesbian Archives. “About.” Accessed April 28, 2026. https://www.mazerlesbianarchives.org/about.\nJune L. Mazer Lesbian Archives. “June L. Mazer Lesbian Archives.” January 26, 2026. https://www.mazerlesbianarchives.org.\nMcHugh, Kathleen A., Brenda Johnson-Grau, and Ben Raphael Sher, eds. Making Invisible Histories Visible: A Resource Guide to the Collections of the June L. Mazer Lesbian Archives. 2014. 123-125. https://escholarship.org/uc/item/5k44b4tk.",
         "distanceMiles": 0.1387,
         "detailPage": "june-l-mazer-lesbian-archives-detail.html",
         "photos": [
@@ -529,7 +529,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "The Palms Bar was the oldest continuously operating lesbian bar in Southern California. The bar was known for catering exclusively to women and attracting a wealthy and glamorous clientele.",
         "tags": "Lesbian Space",
         "tags2": "",
-        "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. New York: Basic Books, 2006.\nWEHOonline. \"Palms Bar Sets Closing Date; Lesbian 'Safe Haven' Remembered Fondly.\" wehoonline.com, May 6, 2013. https://wehoonline.com/palms-bar-sets-closing-date-lesbian-safe-haven-remembered-fondly/ \nCarter, Noelle. \"Farewell to the Palms, a bar — and a home — in West Hollywood.\" Los Angeles Times, June 6, 2013. \nhttps://www.latimes.com/local/la-xpm-2013-jun-06-la-me-carter-palms-20130607-story.html",
+        "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. New York: Basic Books, 2006. 246-247.\nWEHOonline. \"Palms Bar Sets Closing Date; Lesbian 'Safe Haven' Remembered Fondly.\" wehoonline.com, May 6, 2013. https://wehoonline.com/palms-bar-sets-closing-date-lesbian-safe-haven-remembered-fondly/ \nCarter, Noelle. \"Farewell to the Palms, a bar — and a home — in West Hollywood.\" Los Angeles Times, June 6, 2013. \nhttps://www.latimes.com/local/la-xpm-2013-jun-06-la-me-carter-palms-20130607-story.html",
         "distanceMiles": 0.0124,
         "detailPage": "the-palms-bar-detail.html",
         "photos": [
@@ -562,7 +562,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "Peanuts was a popular lesbian nightclub and disco in a historic building, known for its sexually uninhibited atmosphere. The club attracted young financially privileged women for wild nights out.",
         "tags": "Lesbian Space",
         "tags2": "",
-        "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. New York: Basic Books, 2006.;  Siegmund, Heidi. \"Club Review: 7969: Equal Opportunity Enjoyment.\" Los Angeles Times, March 24, 1995.\nhttps://www.latimes.com/archives/la-xpm-1988-03-17-we-1903-story.html \n\"The Pink Pussycat College of Strip Tease.\" Atomic Redhead, July 11, 2018. — https://atomicredhead.com/2018/07/11/the-pink-pussycat-college-of-strip-tease-where-yesteryears-strippers-learned-their-craft/",
+        "sources": "Faderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. New York: Basic Books, 2006. 247-248;  Siegmund, Heidi. \"Club Review: 7969: Equal Opportunity Enjoyment.\" Los Angeles Times, March 24, 1995.\nhttps://www.latimes.com/archives/la-xpm-1988-03-17-we-1903-story.html \n\"The Pink Pussycat College of Strip Tease.\" Atomic Redhead, July 11, 2018. — https://atomicredhead.com/2018/07/11/the-pink-pussycat-college-of-strip-tease-where-yesteryears-strippers-learned-their-craft/",
         "distanceMiles": 0.0035,
         "detailPage": "peanuts-detail.html",
         "photos": [
@@ -644,7 +644,7 @@ window.ROUTE66_LOCATIONS = [
         "shortDescription": "An office at 9054 Santa Monica Boulevard served as the third headquarters of Southern California Women for Understanding (SCWU), one of the earliest lesbian nonprofit organizations in the country. The group focused on on educational and social events, fundraising, political advocacy, and providing social services to the lesbian community.",
         "tags": "Lesbian Space",
         "tags2": "Lesbian Run Non-Profit Organization",
-        "sources": "Sangwand, T.-Kay. “Southern California Women for Understanding (SCWU) Collection Finding Aid.” Online Archive of California, 2009. https://oac.cdlib.org/static_findaids/ark:/13030/kt1f59r455.html.\nFaderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. New York: Basic Books, 2006.",
+        "sources": "Sangwand, T.-Kay. “Southern California Women for Understanding (SCWU) Collection Finding Aid.” Online Archive of California, 2009. https://oac.cdlib.org/static_findaids/ark:/13030/kt1f59r455.html.\nFaderman, Lillian, and Stuart Timmons. Gay L.A.: A History of Sexual Outlaws, Power Politics, and Lipstick Lesbians. New York: Basic Books, 2006. 241-245.",
         "distanceMiles": 0.0297,
         "detailPage": "southern-california-women-for-understanding-detail.html",
         "photos": [
