@@ -52,7 +52,7 @@ Both map and detail pages read from the same `locations.js` entry:
 
 **Convention:** Each location page is named `{slug}-detail.html` (e.g. `the-palms-bar-detail.html`). Regenerate after CSV edits with `python3 scripts/build-locations.py`.
 
-### Phase 2 — Leaflet map (replace static image) *(in progress)*
+### Phase 2 — Leaflet map (replace static image) *(steps 1–6 complete)*
 
 1. Swap static map for Leaflet + tile layer
 2. `fitBounds()` to all markers on load
@@ -96,20 +96,20 @@ map.fitBounds(bounds, { padding: [40, 40], maxZoom: 15 });
 - Marker click calls existing `showPopup(loc)` (not Leaflet's default popup)
 - Reuse `#location-popup` panel for photo, dates, short description, Read more
 
-**Step 4 — Reconnect timeline + sidebar search** *(next)*
+**Step 4 — Reconnect timeline + sidebar search** *(done)*
 
 - Filter markers when `loc.open <= year <= loc.close`
 - Filter markers by map sidebar search query
 - Update `Route66Map.showLocation(id)` to `flyTo` + popup
 
-**Step 5 — Overlapping pins** *(Phase 3)*
+**Step 5 — Overlapping pins** *(done)*
 
-- Abbey + Chapel share coordinates — consider marker cluster or offset
+- Spread markers in a small ring when locations share coordinates (Abbey/Chapel, Mazer/ONE)
 
-**Step 6 — Mobile + polish** *(Phase 3)*
+**Step 6 — Mobile + polish** *(done)*
 
-- `map.invalidateSize()` on resize
-- Keep bottom popup panel on small screens
+- `map.invalidateSize()` on resize and when map section enters viewport
+- Bottom-sheet popup layout on small screens
 
 #### File structure
 

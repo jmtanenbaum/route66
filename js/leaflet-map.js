@@ -14,6 +14,46 @@
 
     let map = null;
     let markerLayer = null;
+    let lastLocations = [];
+
+    function coordKey(lat, lng) {
+        return lat.toFixed(6) + "," + lng.toFixed(6);
+    }
+
+    function spreadPosition(lat, lng, index, total) {
+        if (total <= 1) {
+            return [lat, lng];
+        }
+
+        const radius = 0.00014;
+        const angle = (2 * Math.PI * index) / total;
+        return [
+            lat + radius * Math.cos(angle),
+            lng + radius * Math.sin(angle)
+        ];
+    }
+
+    function markerPositions(locations) {
+        const groups = {};
+        const positions = {};
+
+        locations.forEach(function (loc) {
+            const key = coordKey(loc.lat, loc.lng);
+            if (!groups[key]) groups[key] = [];
+            groups[key].push(loc);
+        });
+
+        Object.keys(groups).forEach(function (key) {
+            const group = groups[key].slice().sort(function (a, b) {
+                return a.name.localeCompare(b.name);
+            });
+            group.forEach(function (loc, index) {
+                positions[loc.id] = spreadPosition(loc.lat, loc.lng, index, group.length);
+            });
+        });
+
+        return positions;
+    }
 
     function createMarkerIcon(type) {
         const symbol = TYPE_ICONS[type] || "location_on";
@@ -72,6 +112,13 @@
             if (map) map.invalidateSize();
         });
 
+        if (!window.__route66LeafletResizeBound) {
+            window.__route66LeafletResizeBound = true;
+            window.addEventListener("resize", function () {
+                if (map) map.invalidateSize();
+            });
+        }
+
         return true;
     }
 
@@ -82,10 +129,13 @@
     function updateMarkers(locations, onMarkerClick) {
         if (!markerLayer) return;
 
+        lastLocations = locations.slice();
+        const positions = markerPositions(locations);
         markerLayer.clearLayers();
 
         locations.forEach(function (loc) {
-            const marker = L.marker([loc.lat, loc.lng], {
+            const position = positions[loc.id] || [loc.lat, loc.lng];
+            const marker = L.marker(position, {
                 icon: createMarkerIcon(loc.type)
             });
             marker.on("click", function () {
@@ -97,7 +147,10 @@
 
     function flyToLocation(loc, zoom) {
         if (!map || !loc) return;
-        map.flyTo([loc.lat, loc.lng], zoom || 16, { duration: 0.8 });
+
+        const positions = markerPositions(lastLocations.length ? lastLocations : [loc]);
+        const position = positions[loc.id] || [loc.lat, loc.lng];
+        map.flyTo(position, zoom || 16, { duration: 0.8 });
     }
 
     function zoomIn() {
