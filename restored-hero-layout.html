@@ -283,14 +283,71 @@
         }
 
         @media (max-width: 767px) {
-            #map {
-                height: min(85vh, 720px);
-                min-height: 480px;
+            .map-section {
+                height: auto;
+                max-height: none;
             }
 
-            #map .absolute.top-6.left-6 {
-                width: calc(100% - 4.5rem);
-                max-width: 18rem;
+            .map-layout {
+                min-height: auto;
+            }
+
+            #map-controls {
+                position: static;
+                width: 100%;
+                max-width: none;
+                pointer-events: auto;
+            }
+
+            .map-controls-panel {
+                border-radius: 0;
+                box-shadow: none;
+                border: none;
+                border-bottom: 1px solid #dfbec5;
+                padding: 1rem 1rem 0.875rem;
+            }
+
+            .map-controls-panel .map-controls-title {
+                font-size: 1.375rem;
+                line-height: 1.75rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .map-controls-fields {
+                gap: 0.75rem;
+            }
+
+            #map-tag-filters {
+                flex-wrap: wrap;
+                overflow: visible;
+                gap: 0.375rem;
+            }
+
+            #map-tag-filters button {
+                flex-shrink: 1;
+                font-size: 10px;
+                line-height: 1.25;
+                padding: 0.25rem 0.625rem;
+            }
+
+            .map-era-row {
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+            }
+
+            .map-era-row #year-slider {
+                flex: 1;
+                min-width: 0;
+            }
+
+            .map-era-labels {
+                display: none;
+            }
+
+            #map-canvas-wrap {
+                min-height: 58vh;
+                height: 58vh;
             }
 
             #location-popup {
@@ -301,6 +358,12 @@
                 width: 100%;
                 max-width: 100%;
                 border-radius: 1rem 1rem 0 0;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .map-era-row {
+                display: block;
             }
         }
 
@@ -406,7 +469,47 @@
 <!-- Section Transition: Introduction -> Map -->
 <div class="road-line" aria-hidden="true"></div>
 <!-- Main Map Section -->
-<section class="reveal bg-surface flex flex-col md:flex-row h-[800px] max-h-[90vh]" id="map"><div class="relative w-full h-full flex overflow-hidden"><div class="absolute top-6 left-6 z-40 w-80 flex flex-col gap-4 pointer-events-none"><div class="bg-surface-container-lowest/95 backdrop-blur-md p-6 rounded-xl shadow-xl border border-outline pointer-events-auto"><h3 class="font-headline-md text-headline-md text-primary mb-4 flex items-center gap-2"><span class="material-symbols-outlined">map</span> Map</h3><div class="space-y-4"><div class="relative"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline-variant">search</span><input class="w-full pl-10 pr-4 py-2 bg-surface-container-low border border-outline rounded-lg text-sm focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all" id="map-search" placeholder="Search locations..." type="text"></div><div class="space-y-2"><h4 class="font-label-caps text-[10px] text-outline uppercase tracking-widest">Categories</h4><div class="flex flex-wrap gap-2" id="map-tag-filters"></div></div><div class="pt-2"><div class="flex justify-between items-center mb-2"><h4 class="font-label-caps text-[10px] text-outline uppercase tracking-widest">Active Era</h4><span class="text-primary font-bold text-sm" id="year-display">1975</span></div><input class="w-full h-1.5 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-primary" id="year-slider" max="2026" min="1920" step="1" type="range" value="1975"><div class="flex justify-between text-[10px] font-label-caps text-outline-variant mt-1"><span class="">1920</span><span class="">1950</span><span class="">1980</span><span class="">2026</span></div></div></div></div></div><div class="flex-1 relative bg-surface-dim min-h-[400px]"><div id="leaflet-map" class="absolute inset-0 z-0"></div><div class="absolute top-6 right-6 z-[500] flex flex-col gap-2"><button type="button" id="map-zoom-in" class="w-10 h-10 bg-white border border-outline rounded-lg shadow-md flex items-center justify-center hover:text-primary transition-colors"><span class="material-symbols-outlined">add</span></button><button type="button" id="map-zoom-out" class="w-10 h-10 bg-white border border-outline rounded-lg shadow-md flex items-center justify-center hover:text-primary transition-colors"><span class="material-symbols-outlined">remove</span></button></div></div><div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-50 w-[400px] max-w-[90vw] bg-surface-container-lowest rounded-2xl shadow-2xl border border-outline overflow-hidden hidden animate-in fade-in slide-in-from-bottom-4 duration-300" id="location-popup"><div class="h-48 bg-surface-variant relative"><img class="w-full h-full object-cover" id="popup-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgcng9IjgiIGZpbGw9IiNlOGVhZWQiLz48cGF0aCBkPSJNMTcwIDEzMCBsMzAgNDAgbDIwLTE1IGw0MCA1NSBIMTQweiIgZmlsbD0iI2JkYzFjNiIvPjxjaXJjbGUgY3g9IjI1MCIgY3k9IjEyMCIgcj0iMTgiIGZpbGw9IiNiZGMxYzYiLz48L3N2Zz4="><button class="absolute top-3 right-3 w-8 h-8 bg-black/20 hover:bg-black/40 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-colors" id="close-popup"><span class="material-symbols-outlined text-sm">close</span></button></div><div class="p-6"><div class="flex justify-between items-start mb-2"><h4 class="font-headline-md text-2xl text-on-surface" id="popup-name"></h4><span class="text-[10px] font-label-caps bg-primary/10 text-primary px-2 py-1 rounded border border-primary/20" id="popup-dates"></span></div><p class="text-sm text-on-surface-variant mb-4 flex items-start gap-1.5 leading-snug" id="popup-address"><span class="material-symbols-outlined text-sm shrink-0 mt-0.5">location_on</span><span class="min-w-0 break-words" id="popup-address-text"></span></p><p class="text-essay-body text-sm text-on-surface leading-relaxed mb-6 line-clamp-3" id="popup-desc"></p><button class="w-full py-3 bg-tertiary-container hover:bg-tertiary text-white font-label-caps text-xs uppercase rounded-lg transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-2 hidden" id="popup-detail-btn" type="button">Read Full History <span class="material-symbols-outlined text-sm">arrow_forward</span></button></div></div></div></section>
+<section class="map-section reveal bg-surface md:h-[800px] md:max-h-[90vh]" id="map">
+<div class="map-layout relative w-full h-full flex flex-col md:block overflow-hidden">
+<aside class="map-controls shrink-0 z-40 md:absolute md:top-6 md:left-6 md:w-80 pointer-events-none" id="map-controls">
+<div class="map-controls-panel bg-surface-container-lowest/95 md:backdrop-blur-md p-4 md:p-6 md:rounded-xl md:shadow-xl border-outline md:border pointer-events-auto">
+<h3 class="map-controls-title font-headline-md text-headline-md text-primary mb-3 md:mb-4 flex items-center gap-2"><span class="material-symbols-outlined">map</span> Map</h3>
+<div class="map-controls-fields flex flex-col space-y-3 md:space-y-4">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline-variant">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-low border border-outline rounded-lg text-sm focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all" id="map-search" placeholder="Search locations..." type="text">
+</div>
+<div class="space-y-1.5 md:space-y-2">
+<h4 class="font-label-caps text-[10px] text-outline uppercase tracking-widest">Categories</h4>
+<div class="flex flex-wrap gap-2" id="map-tag-filters"></div>
+</div>
+<div class="pt-0 md:pt-2">
+<div class="flex justify-between items-center mb-1.5 md:mb-2">
+<h4 class="font-label-caps text-[10px] text-outline uppercase tracking-widest">Active Era</h4>
+<span class="text-primary font-bold text-sm tabular-nums" id="year-display">1975</span>
+</div>
+<div class="map-era-row">
+<input class="w-full h-1.5 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-primary" id="year-slider" max="2026" min="1920" step="1" type="range" value="1975">
+</div>
+<div class="map-era-labels flex justify-between text-[10px] font-label-caps text-outline-variant mt-1">
+<span>1920</span><span>1950</span><span>1980</span><span>2026</span>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<div class="relative flex-1 min-h-[400px] md:absolute md:inset-0" id="map-canvas-wrap">
+<div class="absolute inset-0 bg-surface-dim">
+<div id="leaflet-map" class="absolute inset-0 z-0"></div>
+<div class="absolute top-4 right-4 md:top-6 md:right-6 z-[500] flex flex-col gap-2">
+<button type="button" id="map-zoom-in" class="w-10 h-10 bg-white border border-outline rounded-lg shadow-md flex items-center justify-center hover:text-primary transition-colors"><span class="material-symbols-outlined">add</span></button>
+<button type="button" id="map-zoom-out" class="w-10 h-10 bg-white border border-outline rounded-lg shadow-md flex items-center justify-center hover:text-primary transition-colors"><span class="material-symbols-outlined">remove</span></button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-50 w-[400px] max-w-[90vw] bg-surface-container-lowest rounded-2xl shadow-2xl border border-outline overflow-hidden hidden animate-in fade-in slide-in-from-bottom-4 duration-300" id="location-popup"><div class="h-48 bg-surface-variant relative"><img class="w-full h-full object-cover" id="popup-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgcng9IjgiIGZpbGw9IiNlOGVhZWQiLz48cGF0aCBkPSJNMTcwIDEzMCBsMzAgNDAgbDIwLTE1IGw0MCA1NSBIMTQweiIgZmlsbD0iI2JkYzFjNiIvPjxjaXJjbGUgY3g9IjI1MCIgY3k9IjEyMCIgcj0iMTgiIGZpbGw9IiNiZGMxYzYiLz48L3N2Zz4="><button class="absolute top-3 right-3 w-8 h-8 bg-black/20 hover:bg-black/40 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-colors" id="close-popup"><span class="material-symbols-outlined text-sm">close</span></button></div><div class="p-6"><div class="flex justify-between items-start mb-2"><h4 class="font-headline-md text-2xl text-on-surface" id="popup-name"></h4><span class="text-[10px] font-label-caps bg-primary/10 text-primary px-2 py-1 rounded border border-primary/20" id="popup-dates"></span></div><p class="text-sm text-on-surface-variant mb-4 flex items-start gap-1.5 leading-snug" id="popup-address"><span class="material-symbols-outlined text-sm shrink-0 mt-0.5">location_on</span><span class="min-w-0 break-words" id="popup-address-text"></span></p><p class="text-essay-body text-sm text-on-surface leading-relaxed mb-6 line-clamp-3" id="popup-desc"></p><button class="w-full py-3 bg-tertiary-container hover:bg-tertiary text-white font-label-caps text-xs uppercase rounded-lg transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-2 hidden" id="popup-detail-btn" type="button">Read Full History <span class="material-symbols-outlined text-sm">arrow_forward</span></button></div></div>
+</div>
+</div>
+</section>
 <!-- Footer -->
 <footer class="bg-surface-container-highest dark:bg-inverse-surface text-on-surface dark:text-inverse-on-surface relative bottom-0 w-full border-t-4 border-primary dark:border-primary-fixed flat no shadows font-ui-main text-ui-main">
 <div class="flex flex-col md:flex-row justify-between items-center py-12 px-margin-desktop gap-8 transition-opacity duration-300">
