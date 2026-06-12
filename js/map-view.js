@@ -7,19 +7,60 @@
     const popup = document.getElementById("location-popup");
     const mapSearch = document.getElementById("map-search");
     const mapSection = document.getElementById("map");
+    const tagFilters = document.getElementById("map-tag-filters");
     const popupImg = document.getElementById("popup-img");
     const defaultPopupImg = popupImg ? popupImg.getAttribute("src") : "";
     const zoomInBtn = document.getElementById("map-zoom-in");
     const zoomOutBtn = document.getElementById("map-zoom-out");
+
+    const TAG_LABELS = {
+        "Mixed LGBT Space": "Mixed LGBT",
+        "Lesbian Owned Business": "Owned Business",
+        "Lesbian Run Non-Profit Organization": "Non-Profit"
+    };
+
+    const TAG_ACTIVE_CLASS =
+        "px-3 py-1 rounded-full border border-primary bg-primary text-white text-xs font-ui-main transition-all";
+    const TAG_INACTIVE_CLASS =
+        "px-3 py-1 rounded-full border border-outline text-on-surface-variant text-xs font-ui-main hover:border-primary transition-all";
 
     if (!slider || !popup || !leafletMap) return;
 
     let currentYear = parseInt(slider.value, 10);
     let searchQuery = "";
     let leafletReady = false;
+    let allTags = [];
+    const activeTags = new Set();
 
     function normalize(value) {
         return value.toLowerCase().replace(/['']/g, "").trim();
+    }
+
+    function collectTags() {
+        const tagSet = new Set();
+        locations.forEach(function (loc) {
+            if (loc.tags && loc.tags.trim()) tagSet.add(loc.tags.trim());
+            if (loc.tags2 && loc.tags2.trim()) tagSet.add(loc.tags2.trim());
+        });
+        return Array.from(tagSet).sort(function (a, b) {
+            return a.localeCompare(b);
+        });
+    }
+
+    function locationTagList(loc) {
+        return [loc.tags, loc.tags2]
+            .filter(function (tag) { return tag && tag.trim(); })
+            .map(function (tag) { return tag.trim(); });
+    }
+
+    function locationMatchesTags(loc) {
+        if (activeTags.size === allTags.length) return true;
+        if (activeTags.size === 0) return false;
+
+        const locTags = locationTagList(loc);
+        return locTags.some(function (tag) {
+            return activeTags.has(tag);
+        });
     }
 
     function locationMatchesQuery(loc, query) {
@@ -43,7 +84,49 @@
     function isLocationVisible(loc) {
         return loc.open <= currentYear &&
             loc.close >= currentYear &&
-            locationMatchesQuery(loc, searchQuery);
+            locationMatchesQuery(loc, searchQuery) &&
+            locationMatchesTags(loc);
+    }
+
+    function tagLabel(tag) {
+        return TAG_LABELS[tag] || tag;
+    }
+
+    function syncTagButton(button, isActive) {
+        button.className = isActive ? TAG_ACTIVE_CLASS : TAG_INACTIVE_CLASS;
+        button.setAttribute("aria-pressed", isActive ? "true" : "false");
+    }
+
+    function renderTagFilters() {
+        if (!tagFilters) return;
+
+        allTags = collectTags();
+        allTags.forEach(function (tag) {
+            activeTags.add(tag);
+        });
+
+        tagFilters.innerHTML = "";
+
+        allTags.forEach(function (tag) {
+            const button = document.createElement("button");
+            button.type = "button";
+            button.textContent = tagLabel(tag);
+            button.dataset.tag = tag;
+            syncTagButton(button, true);
+
+            button.addEventListener("click", function () {
+                if (activeTags.has(tag)) {
+                    activeTags.delete(tag);
+                    syncTagButton(button, false);
+                } else {
+                    activeTags.add(tag);
+                    syncTagButton(button, true);
+                }
+                updatePins();
+            });
+
+            tagFilters.appendChild(button);
+        });
     }
 
     function photoUrl(file) {
@@ -121,6 +204,8 @@
         leafletReady = leafletMap.init(locations);
         if (leafletReady) updatePins();
     }
+
+    renderTagFilters();
 
     slider.addEventListener("input", function (event) {
         currentYear = parseInt(event.target.value, 10);

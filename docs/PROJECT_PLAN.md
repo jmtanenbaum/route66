@@ -120,12 +120,12 @@ map.fitBounds(bounds, { padding: [40, 40], maxZoom: 15 });
 
 **Day 1 checklist:** Steps 1–3 complete → verify Palms + Abbey pin → popup → detail page.
 
-### Phase 3 — Filters + polish
+### Phase 3 — Filters + polish *(in progress)*
 
-1. **Tag filters** from CSV `Tags` / `Tags 2`: unique values, checkbox UI
-2. **Timeline slider**: show location if `open ≤ year ≤ close`
-3. **Mobile**: bottom sheet or panel instead of tiny Leaflet popup
-4. **Clustering/offset** for duplicate coordinates
+1. **Tag filters** from CSV `Tags` / `Tags 2`: toggle pills, built from `locations.js` *(done)*
+2. **Timeline slider**: show location if `open ≤ year ≤ close` *(done — Phase 2)*
+3. **Mobile**: bottom sheet popup on small screens *(done — Phase 2)*
+4. **Clustering/offset** for duplicate coordinates *(done — Phase 2)*
 
 ---
 
