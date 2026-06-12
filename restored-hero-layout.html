@@ -494,6 +494,14 @@
             html:not([data-layout-mode="mobile"]) .map-era-row {
                 display: block;
             }
+
+            html:not([data-layout-mode="mobile"]) #location-popup:not(.hidden) {
+                top: 50%;
+                bottom: auto;
+                left: 50%;
+                right: auto;
+                transform: translate(-50%, -50%);
+            }
         }
 
         [data-layout-mode="mobile"] .map-section {
@@ -600,6 +608,14 @@
 
         [data-layout-mode="desktop"] .map-era-row {
             display: block;
+        }
+
+        [data-layout-mode="desktop"] #location-popup:not(.hidden) {
+            top: 50%;
+            bottom: auto;
+            left: 50%;
+            right: auto;
+            transform: translate(-50%, -50%);
         }
 
         .layout-nav-desktop {
