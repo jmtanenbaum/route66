@@ -15,8 +15,8 @@
 
     const TAG_LABELS = {
         "Mixed LGBT Space": "Mixed LGBT",
-        "Lesbian Owned Business": "Owned Business",
-        "Lesbian Run Non-Profit Organization": "Non-Profit"
+        "Lesbian Owned Business": "Lesbian Owned Business",
+        "Lesbian Run Non-Profit Organization": "Lesbian Non-Profit"
     };
 
     const TAG_ACTIVE_CLASS =
@@ -135,12 +135,13 @@
 
     function showPopup(loc) {
         document.getElementById("popup-name").textContent = loc.name;
-        document.getElementById("popup-address").querySelector("span").textContent = loc.address;
+        document.getElementById("popup-address-text").textContent = loc.address;
         document.getElementById("popup-dates").textContent =
             loc.openLabel && loc.closeLabel
                 ? loc.openLabel + " - " + loc.closeLabel
                 : loc.open + " - " + (loc.close === 2026 ? "Present" : loc.close);
-        document.getElementById("popup-desc").textContent = loc.desc;
+        document.getElementById("popup-desc").textContent =
+            loc.shortDescription || loc.desc || "";
 
         if (popupImg) {
             const firstPhoto = loc.photos && loc.photos[0];
