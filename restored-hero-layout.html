@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="scroll-smooth" lang="en" data-stitch-anim-opacity="true"><head></head><body class="bg-background text-on-surface font-ui-main text-ui-main antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!DOCTYPE html><html class="scroll-smooth" lang="en" data-stitch-anim-opacity="true"><head>
 
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -362,8 +362,68 @@
         }
 
         @media (min-width: 768px) {
+            .map-section {
+                height: 800px;
+                max-height: 90vh;
+            }
+
+            .map-layout {
+                height: 100%;
+                min-height: 0;
+            }
+
+            #map-controls {
+                position: absolute;
+                top: 1.5rem;
+                left: 1.5rem;
+                width: 20rem;
+                max-width: 20rem;
+                pointer-events: none;
+            }
+
+            .map-controls-panel {
+                border-radius: 0.75rem;
+                box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+                border: 1px solid #dfbec5;
+                border-bottom: 1px solid #dfbec5;
+                padding: 1.5rem;
+            }
+
+            .map-controls-panel .map-controls-title {
+                font-size: 2rem;
+                line-height: 2.5rem;
+                margin-bottom: 1rem;
+            }
+
+            #map-tag-filters button {
+                font-size: 0.75rem;
+                line-height: 1rem;
+                padding: 0.25rem 0.75rem;
+            }
+
+            #map-canvas-wrap {
+                position: absolute;
+                inset: 0;
+                min-height: 400px;
+                height: auto;
+            }
+
+            .map-era-labels {
+                display: flex;
+            }
+
             .map-era-row {
                 display: block;
+            }
+
+            #location-popup {
+                bottom: 2.5rem;
+                left: 50%;
+                right: auto;
+                transform: translateX(-50%);
+                width: 400px;
+                max-width: 90vw;
+                border-radius: 1rem;
             }
         }
 
@@ -386,6 +446,8 @@
             background-color: rgba(52, 47, 45, 0.9);
         }
       </style>
+</head>
+<body class="bg-background text-on-surface font-ui-main text-ui-main antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
 <!-- TopNavBar -->
 <nav class="bg-background/80 dark:bg-background/80 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant dark:border-outline flat no shadows font-ui-main text-ui-main transition-all duration-300" id="main-nav">
 <div class="flex justify-between items-center px-margin-desktop max-w-container-max mx-auto py-4">
